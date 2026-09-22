@@ -1,0 +1,935 @@
+Timestamp,Username,MAC_Address,IP_Address,Device_Name,Device_Type,SSID,Access_Point,Website,Website_Category,Upload_MB,Download_MB,Status
+2024-11-04 08:02:59,cs011,90:6B:AF:68:87:FA,192.168.2.164,Samsung Galaxy A52,Smartphone,VIIT-Faculty,AP-CAFE-01,linkedin.com,Social Media,115.67,18.27,Allowed
+2024-11-04 08:17:17,me096,B5:87:F7:62:7E:8E,192.168.4.243,Samsung Tab A7,Tablet,VIIT-Faculty,AP-ECE-01,stackoverflow.com,Education,97.66,365.74,Allowed
+2024-11-04 08:45:21,bt088,2F:56:4E:57:AC:15,192.168.1.244,Dell Inspiron,Laptop,VIIT-Faculty,AP-GYM-01,geeksforgeeks.org,Education,56.11,624.71,Allowed
+2024-11-04 08:45:41,ce046,93:50:25:E2:B0:99,192.168.5.118,Samsung Tab A7,Tablet,VIIT-Student,AP-GYM-01,twitter.com,Social Media,2.84,392.14,Allowed
+2024-11-04 08:51:01,bt065,9E:AD:71:AA:56:27,192.168.2.137,Lenovo Tab P11,Tablet,VIIT-Student,AP-CSE-02,geeksforgeeks.org,Education,46.97,502.67,Allowed
+2024-11-04 08:56:45,ch053,40:69:23:6A:6E:77,192.168.10.2,Redmi Note 12,Smartphone,VIIT-Student,AP-LIB-02,netflix.com,Streaming,128.0,356.83,Allowed
+2024-11-04 09:03:42,ce078,22:B0:7B:35:AA:44,192.168.9.88,Lenovo IdeaPad,Laptop,VIIT-Student,AP-GYM-01,whatsapp.com,Communication,63.0,259.27,Allowed
+2024-11-04 09:15:51,me055,16:9A:EA:0F:1F:F5,192.168.2.127,Realme 10 Pro,Smartphone,VIIT-Faculty,AP-SEMHALL-01,classroom.google.com,Education,1742.34,87.11,Allowed
+2024-11-04 09:26:31,ec012,42:86:52:E2:DA:04,192.168.3.141,Dell Inspiron,Laptop,VIIT-Faculty,AP-LIB-01,wetransfer.com,Cloud Storage,127.43,583.14,Allowed
+2024-11-04 09:28:48,ec001,EF:80:05:3A:88:AE,192.168.7.42,Lenovo IdeaPad,Laptop,VIIT-Student,AP-ADMIN-01,classroom.google.com,Education,71.88,748.98,Allowed
+2024-11-04 09:31:41,ec075,46:13:92:F1:47:F0,192.168.1.233,iPhone 13,Smartphone,VIIT-Student,AP-GYM-01,jiocinema.com,Streaming,98.15,297.02,Allowed
+2024-11-04 09:31:56,ec040,1A:68:88:43:93:E0,192.168.2.9,Samsung Tab A7,Tablet,VIIT-Guest,AP-GYM-01,teams.microsoft.com,Communication,105.94,255.03,Allowed
+2024-11-04 09:36:37,ce027,0D:9F:C0:CB:65:26,192.168.4.28,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-SEMHALL-01,spotify.com,Streaming,24.61,667.53,Allowed
+2024-11-04 09:36:43,me091,EA:7B:6E:B4:18:19,192.168.10.227,Realme 10 Pro,Smartphone,VIIT-Faculty,AP-HOSTEL-01,torrent-galaxy.to,Blocked,73.5,201.77,Blocked
+2024-11-04 09:36:53,me082,DA:55:E3:B3:E4:15,192.168.10.113,Samsung Tab A7,Tablet,VIIT-Guest,AP-ECE-01,twitter.com,Social Media,5.01,295.37,Allowed
+2024-11-04 09:38:14,ce014,79:53:5A:D3:0C:5B,192.168.7.207,Samsung Tab A7,Tablet,VIIT-Faculty,AP-ADMIN-01,stackoverflow.com,Education,81.55,144.57,Allowed
+2024-11-04 09:42:16,bt031,08:2F:96:71:CF:7C,192.168.6.123,iPhone 13,Smartphone,VIIT-Guest,AP-MECH-01,wetransfer.com,Cloud Storage,62.39,151.19,Allowed
+2024-11-04 09:53:04,me006,47:D8:5D:8E:EC:7F,192.168.9.27,Asus VivoBook,Laptop,VIIT-Guest,AP-LIB-01,drive.google.com,Cloud Storage,75.37,779.59,Allowed
+2024-11-04 09:55:13,ec060,50:BD:9F:A6:2B:1A,192.168.10.14,HP Pavilion,Laptop,VIIT-Student,AP-LIB-02,1337x.to,Blocked,123.63,38.37,Blocked
+2024-11-04 10:00:40,bt087,42:DD:1C:3F:4E:9B,192.168.6.241,HP Pavilion,Laptop,VIIT-Student,AP-GYM-01,meet.google.com,Communication,24.28,261.31,Allowed
+2024-11-04 10:05:43,ee033,95:40:FB:34:06:91,192.168.8.89,Realme 10 Pro,Smartphone,VIIT-Guest,AP-HOSTEL-02,stackoverflow.com,Education,103.42,128.22,Allowed
+2024-11-04 10:07:40,ec032,90:33:63:97:74:B8,192.168.1.183,Lenovo IdeaPad,Laptop,VIIT-Student,AP-GYM-01,github.com,Education,121.42,333.26,Allowed
+2024-11-04 10:07:44,ce049,CB:BB:2E:CA:07:87,192.168.8.96,iPad Air,Tablet,VIIT-Guest,AP-ADMIN-01,w3schools.com,Education,134.74,234.26,Allowed
+2024-11-04 10:09:22,ch081,2A:D9:28:DC:5C:96,192.168.2.85,Samsung Galaxy A52,Smartphone,VIIT-Faculty,AP-GYM-01,zoom.us,Communication,21.7,730.17,Allowed
+2024-11-04 10:21:52,ec060,50:BD:9F:A6:2B:1A,192.168.10.14,HP Pavilion,Laptop,VIIT-Student,AP-HOSTEL-01,stackoverflow.com,Education,114.41,401.22,Allowed
+2024-11-04 10:22:30,bt087,42:DD:1C:3F:4E:9B,192.168.6.241,HP Pavilion,Laptop,VIIT-Student,AP-SEMHALL-01,whatsapp.com,Communication,85.31,487.29,Allowed
+2024-11-04 10:23:54,me082,DA:55:E3:B3:E4:15,192.168.10.113,Samsung Tab A7,Tablet,VIIT-Guest,AP-ECE-01,teams.microsoft.com,Communication,83.98,766.3,Allowed
+2024-11-04 10:24:27,it052,CB:8D:61:3E:E8:2E,192.168.10.250,iPad Air,Tablet,VIIT-Student,AP-ADMIN-01,spotify.com,Streaming,28.18,540.45,Allowed
+2024-11-04 10:25:30,ec044,A6:1C:96:B7:BF:DC,192.168.9.107,HP Pavilion,Laptop,VIIT-Guest,AP-HOSTEL-02,geeksforgeeks.org,Education,8.62,215.19,Allowed
+2024-11-04 10:26:19,me006,32:1F:CE:AD:37:7F,192.168.9.116,HP Pavilion,Laptop,VIIT-Guest,AP-LIB-01,moodle.viit.ac.in,Education,45.52,397.03,Allowed
+2024-11-04 10:28:23,me006,32:1F:CE:AD:37:7F,192.168.9.116,HP Pavilion,Laptop,VIIT-Guest,AP-LIB-01,classroom.google.com,Education,111.08,256.76,Allowed
+2024-11-04 10:33:40,ec008,1F:A0:1D:19:F4:50,192.168.2.219,Acer Aspire,Laptop,VIIT-Student,AP-CSE-01,dropbox.com,Cloud Storage,55.19,161.67,Allowed
+2024-11-04 10:40:53,ec012,42:86:52:E2:DA:04,192.168.3.141,Dell Inspiron,Laptop,VIIT-Faculty,AP-LIB-01,twitter.com,Social Media,23.01,746.26,Allowed
+2024-11-04 10:44:08,ch079,F5:5D:45:20:EA:12,192.168.1.204,Redmi Note 12,Smartphone,VIIT-Student,AP-LIB-02,spotify.com,Streaming,139.73,405.58,Allowed
+2024-11-04 10:45:39,me096,B5:87:F7:62:7E:8E,192.168.4.243,Samsung Tab A7,Tablet,VIIT-Faculty,AP-CSE-02,facebook.com,Social Media,48.17,435.43,Allowed
+2024-11-04 10:47:26,ec050,BE:37:77:F1:0C:A7,192.168.2.164,iPad Air,Tablet,VIIT-Guest,AP-ADMIN-01,netflix.com,Streaming,146.64,700.07,Allowed
+2024-11-04 10:48:27,it052,D6:4F:D4:32:FA:D0,192.168.6.57,Samsung Galaxy A52,Smartphone,VIIT-Student,AP-LIB-01,coursera.org,Education,64.01,611.6,Allowed
+2024-11-04 10:55:29,ee042,23:8D:D4:AE:88:01,192.168.10.150,OnePlus Nord,Smartphone,VIIT-Faculty,AP-CAFE-01,whatsapp.com,Communication,65.79,792.22,Allowed
+2024-11-04 10:55:44,ee089,1E:50:E1:D4:F7:ED,192.168.10.38,Lenovo IdeaPad,Laptop,VIIT-Guest,AP-LIB-02,meet.google.com,Communication,15.86,183.09,Allowed
+2024-11-04 10:56:18,ch092,3C:41:31:C9:BF:AD,192.168.3.52,Samsung Tab A7,Tablet,VIIT-Guest,AP-HOSTEL-02,primevideo.com,Streaming,53.16,668.12,Allowed
+2024-11-04 10:56:19,cs010,33:25:6D:87:43:B2,192.168.6.74,HP Pavilion,Laptop,VIIT-Faculty,AP-CSE-01,hotstar.com,Streaming,57.77,585.96,Allowed
+2024-11-04 10:56:44,bt051,47:17:13:9B:FC:3B,192.168.9.36,HP Pavilion,Laptop,VIIT-Faculty,AP-CAFE-01,drive.google.com,Cloud Storage,126.87,134.46,Allowed
+2024-11-04 11:07:06,bt087,42:DD:1C:3F:4E:9B,192.168.6.241,HP Pavilion,Laptop,VIIT-Student,AP-SEMHALL-01,whatsapp.com,Communication,3.96,787.91,Allowed
+2024-11-04 11:07:25,ce058,BE:42:1E:A8:3E:D2,192.168.1.249,Realme 10 Pro,Smartphone,VIIT-Faculty,AP-LIB-02,stackoverflow.com,Education,101.7,710.46,Allowed
+2024-11-04 11:07:43,ce076,EA:20:38:FF:08:7B,192.168.5.111,iPad Air,Tablet,VIIT-Guest,AP-LIB-01,wetransfer.com,Cloud Storage,4.37,484.87,Allowed
+2024-11-04 11:09:32,ec008,1F:A0:1D:19:F4:50,192.168.2.219,Acer Aspire,Laptop,VIIT-Student,AP-HOSTEL-02,classroom.google.com,Education,47.32,194.67,Allowed
+2024-11-04 11:09:44,it052,CB:8D:61:3E:E8:2E,192.168.10.250,iPad Air,Tablet,VIIT-Student,AP-LIB-01,piratebay.org,Blocked,106.63,27.86,Blocked
+2024-11-04 11:12:30,ec060,50:BD:9F:A6:2B:1A,192.168.10.14,HP Pavilion,Laptop,VIIT-Student,AP-HOSTEL-01,reddit.com,Social Media,52.34,559.52,Allowed
+2024-11-04 11:16:49,cs045,28:C3:7B:FE:49:76,192.168.8.67,OnePlus Nord,Smartphone,VIIT-Student,AP-GYM-01,stackoverflow.com,Education,107.45,87.11,Allowed
+2024-11-04 11:17:05,me097,CA:B0:4A:94:15:93,192.168.6.238,iPad Air,Tablet,VIIT-Guest,AP-ADMIN-01,jiocinema.com,Streaming,148.9,194.39,Allowed
+2024-11-04 11:17:37,it052,D6:4F:D4:32:FA:D0,192.168.6.57,Samsung Galaxy A52,Smartphone,VIIT-Student,AP-HOSTEL-02,ktu.edu.in,Education,28.12,284.47,Allowed
+2024-11-04 11:19:12,ec032,90:33:63:97:74:B8,192.168.1.183,Lenovo IdeaPad,Laptop,VIIT-Student,AP-MECH-01,nptel.ac.in,Education,111.84,441.92,Allowed
+2024-11-04 11:26:56,ec060,50:BD:9F:A6:2B:1A,192.168.10.14,HP Pavilion,Laptop,VIIT-Student,AP-HOSTEL-01,nptel.ac.in,Education,63.59,256.1,Allowed
+2024-11-04 11:27:26,it059,8E:73:DB:0D:88:0E,192.168.5.237,Lenovo IdeaPad,Laptop,VIIT-Faculty,AP-HOSTEL-02,moodle.viit.ac.in,Education,125.16,45.48,Allowed
+2024-11-04 11:38:46,cs011,04:99:35:44:87:3B,192.168.3.71,Acer Aspire,Laptop,VIIT-Faculty,AP-CAFE-01,primevideo.com,Streaming,865.68,62.62,Allowed
+2024-11-04 11:48:00,it052,E3:E3:78:B9:32:BC,192.168.6.17,Lenovo Tab P11,Tablet,VIIT-Student,AP-LIB-01,whatsapp.com,Communication,92.14,406.4,Allowed
+2024-11-04 11:48:56,me096,B5:87:F7:62:7E:8E,192.168.4.243,Samsung Tab A7,Tablet,VIIT-Faculty,AP-ECE-01,youtube.com,Streaming,36.11,78.13,Allowed
+2024-11-04 11:48:57,ce070,41:2F:D8:B9:09:B9,192.168.4.89,Redmi Note 12,Smartphone,VIIT-Student,AP-ADMIN-01,twitter.com,Social Media,75.76,565.18,Allowed
+2024-11-04 11:50:00,bt073,52:66:46:80:1A:F6,192.168.2.184,iPhone 13,Smartphone,VIIT-Student,AP-HOSTEL-01,nptel.ac.in,Education,99.97,632.42,Allowed
+2024-11-04 11:52:12,ch079,66:15:A1:9E:CB:F2,192.168.4.75,Samsung Galaxy A52,Smartphone,VIIT-Student,AP-MECH-01,youtube.com,Streaming,20.01,595.36,Allowed
+2024-11-04 11:56:19,ce076,EA:20:38:FF:08:7B,192.168.5.111,iPad Air,Tablet,VIIT-Guest,AP-LIB-01,pornhub.com,Blocked,142.79,627.27,Blocked
+2024-11-04 11:56:47,it025,41:0D:C9:0D:2A:DB,192.168.3.14,Asus VivoBook,Laptop,VIIT-Faculty,AP-CAFE-01,ktu.edu.in,Education,129.81,342.25,Allowed
+2024-11-04 12:05:21,it074,1B:CA:BF:78:C5:29,192.168.1.83,Redmi Note 12,Smartphone,VIIT-Guest,AP-LIB-02,wetransfer.com,Cloud Storage,121.36,182.72,Allowed
+2024-11-04 12:07:53,ec008,1F:A0:1D:19:F4:50,192.168.2.219,Acer Aspire,Laptop,VIIT-Student,AP-HOSTEL-02,twitter.com,Social Media,52.07,24.53,Allowed
+2024-11-04 12:09:25,ce090,B0:CC:42:BD:36:A3,192.168.2.70,Asus VivoBook,Laptop,VIIT-Faculty,AP-ECE-01,spotify.com,Streaming,40.2,741.91,Allowed
+2024-11-04 12:12:48,ee072,E5:77:7A:9E:F0:63,192.168.8.120,iPhone 13,Smartphone,VIIT-Faculty,AP-ECE-01,snapchat.com,Social Media,11.15,708.57,Allowed
+2024-11-04 12:19:28,cs036,D9:3A:73:4C:88:48,192.168.3.204,Dell Inspiron,Laptop,VIIT-Guest,AP-CSE-02,classroom.google.com,Education,130.38,657.01,Allowed
+2024-11-04 12:21:12,ce067,9B:8C:1C:B4:25:9E,192.168.1.16,Realme 10 Pro,Smartphone,VIIT-Faculty,AP-HOSTEL-01,instagram.com,Social Media,139.03,83.24,Allowed
+2024-11-04 12:25:22,ee077,5F:2B:B8:22:0A:C7,192.168.7.253,Samsung Galaxy A52,Smartphone,VIIT-Faculty,AP-MECH-01,stackoverflow.com,Education,49.62,286.34,Allowed
+2024-11-04 12:26:01,me063,15:DF:09:EB:27:A0,192.168.10.105,Samsung Tab A7,Tablet,VIIT-Guest,AP-SEMHALL-01,facebook.com,Social Media,60.57,40.76,Allowed
+2024-11-04 12:27:25,ec040,1A:68:88:43:93:E0,192.168.2.9,Samsung Tab A7,Tablet,VIIT-Guest,AP-GYM-01,nptel.ac.in,Education,70.87,542.02,Allowed
+2024-11-04 12:49:12,ec040,1A:68:88:43:93:E0,192.168.2.9,Samsung Tab A7,Tablet,VIIT-Guest,AP-GYM-01,teams.microsoft.com,Communication,32.81,245.34,Allowed
+2024-11-04 12:50:08,bt065,9E:AD:71:AA:56:27,192.168.2.137,Lenovo Tab P11,Tablet,VIIT-Student,AP-GYM-01,youtube.com,Streaming,13.29,53.25,Allowed
+2024-11-04 13:10:56,cs015,74:72:0C:62:CC:A8,192.168.5.91,Samsung Galaxy A52,Smartphone,VIIT-Faculty,AP-HOSTEL-02,moodle.viit.ac.in,Education,118.16,577.73,Allowed
+2024-11-04 13:17:33,ec012,42:86:52:E2:DA:04,192.168.3.141,Dell Inspiron,Laptop,VIIT-Faculty,AP-LIB-01,moodle.viit.ac.in,Education,110.07,98.86,Allowed
+2024-11-04 13:40:20,ch019,78:9E:73:65:4B:0C,192.168.8.158,HP Pavilion,Laptop,VIIT-Faculty,AP-LIB-02,facebook.com,Social Media,45.12,90.94,Allowed
+2024-11-04 13:55:04,me055,16:9A:EA:0F:1F:F5,192.168.2.127,Realme 10 Pro,Smartphone,VIIT-Faculty,AP-SEMHALL-01,nptel.ac.in,Education,73.13,20.83,Allowed
+2024-11-04 14:13:55,bt087,42:DD:1C:3F:4E:9B,192.168.6.241,HP Pavilion,Laptop,VIIT-Student,AP-SEMHALL-01,drive.google.com,Cloud Storage,29.33,28.5,Allowed
+2024-11-04 14:14:06,ch081,2A:D9:28:DC:5C:96,192.168.2.85,Samsung Galaxy A52,Smartphone,VIIT-Faculty,AP-GYM-01,zoom.us,Communication,103.17,573.31,Allowed
+2024-11-04 14:24:09,ee024,70:F9:70:8B:DF:F8,192.168.6.173,Asus VivoBook,Laptop,VIIT-Faculty,AP-GYM-01,meet.google.com,Communication,43.25,678.6,Allowed
+2024-11-04 14:30:13,ce062,3D:03:FE:DC:59:42,192.168.4.130,iPhone 13,Smartphone,VIIT-Guest,AP-HOSTEL-01,w3schools.com,Education,124.35,70.15,Allowed
+2024-11-04 14:33:48,ec032,3D:5E:62:6E:F7:8D,192.168.9.154,Lenovo Tab P11,Tablet,VIIT-Student,AP-HOSTEL-01,w3schools.com,Education,124.35,180.37,Allowed
+2024-11-04 14:37:33,ec050,BE:37:77:F1:0C:A7,192.168.2.164,iPad Air,Tablet,VIIT-Guest,AP-ADMIN-01,hotstar.com,Streaming,67.17,78.52,Allowed
+2024-11-04 14:39:41,cs010,33:25:6D:87:43:B2,192.168.6.74,HP Pavilion,Laptop,VIIT-Faculty,AP-CSE-01,outlook.com,Communication,96.42,543.32,Allowed
+2024-11-04 14:51:47,me061,F9:9D:17:70:CA:1C,192.168.5.244,HP Pavilion,Laptop,VIIT-Student,AP-CSE-02,drive.google.com,Cloud Storage,67.59,460.09,Allowed
+2024-11-04 14:58:56,me063,15:DF:09:EB:27:A0,192.168.10.105,Samsung Tab A7,Tablet,VIIT-Guest,AP-ECE-01,stackoverflow.com,Education,83.19,57.04,Allowed
+2024-11-04 14:59:17,ch037,0A:89:14:59:F0:E2,192.168.10.113,Redmi Note 12,Smartphone,VIIT-Faculty,AP-GYM-01,primevideo.com,Streaming,21.06,158.64,Allowed
+2024-11-04 15:09:01,ec093,13:46:AA:F2:E9:4C,192.168.3.85,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-ADMIN-01,netflix.com,Streaming,58.98,559.63,Allowed
+2024-11-04 15:22:26,ce046,93:50:25:E2:B0:99,192.168.5.118,Samsung Tab A7,Tablet,VIIT-Student,AP-ECE-01,classroom.google.com,Education,107.72,491.58,Allowed
+2024-11-04 15:24:01,bt080,3F:BC:DF:CC:E1:C5,192.168.8.179,Redmi Note 12,Smartphone,VIIT-Faculty,AP-CAFE-01,github.com,Education,21.03,601.6,Allowed
+2024-11-04 15:31:14,me006,47:D8:5D:8E:EC:7F,192.168.9.27,Asus VivoBook,Laptop,VIIT-Guest,AP-LIB-01,snapchat.com,Social Media,59.81,619.98,Allowed
+2024-11-04 15:41:01,ec095,F1:1F:46:6A:A6:F4,192.168.6.246,Samsung Tab A7,Tablet,VIIT-Faculty,AP-HOSTEL-02,linkedin.com,Social Media,92.99,439.02,Allowed
+2024-11-04 15:46:19,ee089,1E:50:E1:D4:F7:ED,192.168.10.38,Lenovo IdeaPad,Laptop,VIIT-Guest,AP-MECH-01,snapchat.com,Social Media,6.35,517.6,Allowed
+2024-11-04 15:46:50,ch037,0A:89:14:59:F0:E2,192.168.10.113,Redmi Note 12,Smartphone,VIIT-Faculty,AP-GYM-01,coursera.org,Education,106.08,509.09,Allowed
+2024-11-04 15:58:52,ce014,79:53:5A:D3:0C:5B,192.168.7.207,Samsung Tab A7,Tablet,VIIT-Faculty,AP-ADMIN-01,teams.microsoft.com,Communication,103.1,750.37,Allowed
+2024-11-04 15:59:01,me097,FA:A2:F5:B2:8C:93,192.168.9.99,Acer Aspire,Laptop,VIIT-Guest,AP-ADMIN-01,w3schools.com,Education,80.11,530.02,Allowed
+2024-11-04 16:03:23,ee034,E6:E2:98:DB:9C:1E,192.168.2.244,Lenovo Tab P11,Tablet,VIIT-Guest,AP-CSE-02,ktu.edu.in,Education,98.53,743.08,Allowed
+2024-11-04 16:04:34,cs002,28:2B:F8:23:40:41,192.168.9.44,Samsung Tab A7,Tablet,VIIT-Guest,AP-ECE-01,nptel.ac.in,Education,112.0,464.76,Allowed
+2024-11-04 16:10:23,ec012,42:86:52:E2:DA:04,192.168.3.141,Dell Inspiron,Laptop,VIIT-Faculty,AP-LIB-01,1337x.to,Blocked,74.67,411.07,Blocked
+2024-11-04 16:14:04,ce004,75:70:03:24:1E:75,192.168.6.20,Dell Inspiron,Laptop,VIIT-Student,AP-HOSTEL-01,mail.google.com,Communication,141.81,536.23,Allowed
+2024-11-04 16:17:38,bt009,A1:85:68:A0:7A:87,192.168.5.119,Redmi Note 12,Smartphone,VIIT-Student,AP-HOSTEL-02,twitter.com,Social Media,117.83,651.76,Allowed
+2024-11-04 16:17:44,bt009,78:CE:3D:7E:14:29,192.168.10.135,iPhone 13,Smartphone,VIIT-Student,AP-MECH-01,w3schools.com,Education,743.48,160.97,Allowed
+2024-11-04 16:19:20,it059,8E:73:DB:0D:88:0E,192.168.5.237,Lenovo IdeaPad,Laptop,VIIT-Faculty,AP-LIB-01,stackoverflow.com,Education,946.2,84.66,Allowed
+2024-11-04 16:24:03,it035,95:10:76:93:90:E8,192.168.5.203,HP Pavilion,Laptop,VIIT-Guest,AP-GYM-01,outlook.com,Communication,112.28,680.34,Allowed
+2024-11-04 16:28:20,ec008,1F:A0:1D:19:F4:50,192.168.2.219,Acer Aspire,Laptop,VIIT-Student,AP-CSE-01,hotstar.com,Streaming,78.41,281.9,Allowed
+2024-11-04 16:30:37,ec007,2F:79:55:D0:F8:F6,192.168.1.44,Asus VivoBook,Laptop,VIIT-Faculty,AP-CSE-02,classroom.google.com,Education,107.43,632.32,Allowed
+2024-11-04 16:48:09,ce067,9B:8C:1C:B4:25:9E,192.168.1.16,Realme 10 Pro,Smartphone,VIIT-Faculty,AP-MECH-01,primevideo.com,Streaming,123.37,607.46,Allowed
+2024-11-04 16:51:19,cs002,28:2B:F8:23:40:41,192.168.9.44,Samsung Tab A7,Tablet,VIIT-Guest,AP-ECE-01,classroom.google.com,Education,77.23,368.15,Allowed
+2024-11-04 16:55:11,ee054,59:38:0D:43:07:B7,192.168.6.6,Acer Aspire,Laptop,VIIT-Faculty,AP-CSE-01,spotify.com,Streaming,100.9,440.31,Allowed
+2024-11-04 17:05:21,me061,F9:9D:17:70:CA:1C,192.168.5.244,HP Pavilion,Laptop,VIIT-Student,AP-ADMIN-01,vpngate.net,Blocked,141.59,356.85,Blocked
+2024-11-04 17:16:35,me055,16:9A:EA:0F:1F:F5,192.168.2.127,Realme 10 Pro,Smartphone,VIIT-Faculty,AP-LIB-01,snapchat.com,Social Media,2004.95,161.8,Allowed
+2024-11-04 17:17:48,ec008,1F:A0:1D:19:F4:50,192.168.2.219,Acer Aspire,Laptop,VIIT-Student,AP-CSE-01,dropbox.com,Cloud Storage,67.71,346.49,Allowed
+2024-11-04 17:32:07,bt087,42:DD:1C:3F:4E:9B,192.168.6.241,HP Pavilion,Laptop,VIIT-Student,AP-CSE-01,netflix.com,Streaming,77.83,352.73,Allowed
+2024-11-04 17:36:33,me006,32:1F:CE:AD:37:7F,192.168.9.116,HP Pavilion,Laptop,VIIT-Guest,AP-LIB-01,wetransfer.com,Cloud Storage,2.34,333.98,Allowed
+2024-11-04 17:42:57,ec075,28:09:83:6E:4C:D8,192.168.4.79,Lenovo IdeaPad,Laptop,VIIT-Student,AP-LIB-02,meet.google.com,Communication,107.21,633.1,Allowed
+2024-11-04 17:57:16,cs021,ED:19:7F:3E:E9:44,192.168.9.154,iPhone 13,Smartphone,VIIT-Faculty,AP-HOSTEL-02,twitter.com,Social Media,142.44,624.72,Allowed
+2024-11-04 17:59:47,ec008,1F:A0:1D:19:F4:50,192.168.2.219,Acer Aspire,Laptop,VIIT-Student,AP-CSE-01,mail.google.com,Communication,3.88,277.75,Allowed
+2024-11-04 18:26:26,ce085,3E:45:25:E7:58:E3,192.168.6.183,Lenovo IdeaPad,Laptop,VIIT-Guest,AP-LIB-02,netflix.com,Streaming,134.55,404.16,Allowed
+2024-11-04 18:29:43,it003,6C:66:9F:CC:BF:E0,192.168.2.65,Samsung Tab A7,Tablet,VIIT-Student,AP-CSE-02,snapchat.com,Social Media,19.54,783.09,Allowed
+2024-11-04 18:36:36,ce014,79:53:5A:D3:0C:5B,192.168.7.207,Samsung Tab A7,Tablet,VIIT-Faculty,AP-ADMIN-01,reddit.com,Social Media,104.8,731.61,Allowed
+2024-11-04 18:38:12,bt073,52:66:46:80:1A:F6,192.168.2.184,iPhone 13,Smartphone,VIIT-Student,AP-HOSTEL-01,zoom.us,Communication,148.04,686.39,Allowed
+2024-11-04 18:48:30,ec032,A9:B4:E8:8A:9C:80,192.168.4.82,Dell Inspiron,Laptop,VIIT-Student,AP-HOSTEL-01,outlook.com,Communication,51.91,378.01,Allowed
+2024-11-04 18:58:07,ce062,3D:03:FE:DC:59:42,192.168.4.130,iPhone 13,Smartphone,VIIT-Guest,AP-HOSTEL-01,drive.google.com,Cloud Storage,104.32,367.07,Allowed
+2024-11-04 19:03:17,bt065,9E:AD:71:AA:56:27,192.168.2.137,Lenovo Tab P11,Tablet,VIIT-Student,AP-HOSTEL-01,linkedin.com,Social Media,74.59,416.22,Allowed
+2024-11-04 19:03:43,ce078,22:B0:7B:35:AA:44,192.168.9.88,Lenovo IdeaPad,Laptop,VIIT-Student,AP-GYM-01,torrent-galaxy.to,Blocked,19.36,278.58,Blocked
+2024-11-04 19:06:26,me022,7A:8C:E1:27:92:78,192.168.6.230,OnePlus Nord,Smartphone,VIIT-Student,AP-GYM-01,outlook.com,Communication,17.4,558.46,Allowed
+2024-11-04 19:11:06,ec032,3D:5E:62:6E:F7:8D,192.168.9.154,Lenovo Tab P11,Tablet,VIIT-Student,AP-HOSTEL-01,stackoverflow.com,Education,28.57,20.42,Allowed
+2024-11-04 19:15:02,ec012,42:86:52:E2:DA:04,192.168.3.141,Dell Inspiron,Laptop,VIIT-Faculty,AP-LIB-01,coursera.org,Education,34.65,409.52,Allowed
+2024-11-04 19:16:44,ee056,4B:21:40:8C:A6:C3,192.168.5.118,Lenovo Tab P11,Tablet,VIIT-Guest,AP-HOSTEL-01,github.com,Education,97.24,503.17,Allowed
+2024-11-04 19:16:56,ee089,1E:50:E1:D4:F7:ED,192.168.10.38,Lenovo IdeaPad,Laptop,VIIT-Guest,AP-MECH-01,geeksforgeeks.org,Education,122.51,432.36,Allowed
+2024-11-04 19:18:02,bt009,A1:85:68:A0:7A:87,192.168.5.119,Redmi Note 12,Smartphone,VIIT-Student,AP-MECH-01,jiocinema.com,Streaming,73.56,70.72,Allowed
+2024-11-04 19:24:30,ec075,46:13:92:F1:47:F0,192.168.1.233,iPhone 13,Smartphone,VIIT-Student,AP-LIB-02,snapchat.com,Social Media,72.19,556.51,Allowed
+2024-11-04 19:49:49,ce013,41:15:9D:BA:14:B7,192.168.2.92,HP Pavilion,Laptop,VIIT-Faculty,AP-CAFE-01,onedrive.live.com,Cloud Storage,48.05,221.2,Allowed
+2024-11-04 19:53:33,ce049,CB:BB:2E:CA:07:87,192.168.8.96,iPad Air,Tablet,VIIT-Guest,AP-GYM-01,jiocinema.com,Streaming,3.71,155.3,Allowed
+2024-11-04 19:59:13,it052,CB:8D:61:3E:E8:2E,192.168.10.250,iPad Air,Tablet,VIIT-Student,AP-LIB-01,moodle.viit.ac.in,Education,26.18,604.44,Allowed
+2024-11-04 20:08:24,cs011,04:99:35:44:87:3B,192.168.3.71,Acer Aspire,Laptop,VIIT-Faculty,AP-CAFE-01,stackoverflow.com,Education,11.12,711.54,Allowed
+2024-11-04 20:08:53,ee089,1E:50:E1:D4:F7:ED,192.168.10.38,Lenovo IdeaPad,Laptop,VIIT-Guest,AP-MECH-01,nptel.ac.in,Education,96.73,685.6,Allowed
+2024-11-04 20:19:49,ce070,41:2F:D8:B9:09:B9,192.168.4.89,Redmi Note 12,Smartphone,VIIT-Student,AP-ADMIN-01,facebook.com,Social Media,97.67,298.34,Allowed
+2024-11-04 20:21:53,me055,3A:20:F3:E5:B9:37,192.168.4.244,iPhone 13,Smartphone,VIIT-Faculty,AP-SEMHALL-01,meet.google.com,Communication,2280.67,55.23,Allowed
+2024-11-04 20:22:56,it035,50:7A:58:26:50:01,192.168.10.122,Realme 10 Pro,Smartphone,VIIT-Guest,AP-GYM-01,jiocinema.com,Streaming,121.35,308.33,Allowed
+2024-11-04 20:26:33,ce078,22:B0:7B:35:AA:44,192.168.9.88,Lenovo IdeaPad,Laptop,VIIT-Student,AP-GYM-01,piratebay.org,Blocked,64.23,495.09,Blocked
+2024-11-04 20:33:26,ee072,E5:77:7A:9E:F0:63,192.168.8.120,iPhone 13,Smartphone,VIIT-Faculty,AP-ECE-01,classroom.google.com,Education,122.55,6.25,Allowed
+2024-11-04 20:37:26,bt088,91:28:80:64:8C:40,192.168.10.138,Samsung Tab A7,Tablet,VIIT-Faculty,AP-GYM-01,jiocinema.com,Streaming,122.99,362.28,Allowed
+2024-11-04 20:40:32,me061,F9:9D:17:70:CA:1C,192.168.5.244,HP Pavilion,Laptop,VIIT-Student,AP-CSE-02,wetransfer.com,Cloud Storage,148.05,92.8,Allowed
+2024-11-04 20:51:15,me006,47:D8:5D:8E:EC:7F,192.168.9.27,Asus VivoBook,Laptop,VIIT-Guest,AP-LIB-01,hotstar.com,Streaming,102.11,530.23,Allowed
+2024-11-04 20:56:34,ec029,EB:4E:DE:5A:8A:F7,192.168.10.70,Realme 10 Pro,Smartphone,VIIT-Faculty,AP-ECE-01,coursera.org,Education,75.72,275.27,Allowed
+2024-11-04 20:59:31,ec050,BE:37:77:F1:0C:A7,192.168.2.164,iPad Air,Tablet,VIIT-Guest,AP-CSE-01,spotify.com,Streaming,146.33,429.25,Allowed
+2024-11-04 20:59:38,ee028,3D:15:B1:DB:BD:23,192.168.6.5,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-HOSTEL-02,dropbox.com,Cloud Storage,58.67,510.52,Allowed
+2024-11-04 21:09:11,ch081,2A:D9:28:DC:5C:96,192.168.2.85,Samsung Galaxy A52,Smartphone,VIIT-Faculty,AP-GYM-01,instagram.com,Social Media,54.39,740.14,Allowed
+2024-11-04 21:15:24,ec032,3D:5E:62:6E:F7:8D,192.168.9.154,Lenovo Tab P11,Tablet,VIIT-Student,AP-HOSTEL-01,teams.microsoft.com,Communication,122.68,663.46,Allowed
+2024-11-04 21:21:24,ee054,59:38:0D:43:07:B7,192.168.6.6,Acer Aspire,Laptop,VIIT-Faculty,AP-CSE-01,twitter.com,Social Media,52.66,594.94,Allowed
+2024-11-04 21:27:08,it086,B8:BC:EF:42:2C:21,192.168.8.136,Realme 10 Pro,Smartphone,VIIT-Guest,AP-CSE-01,bet365.com,Blocked,92.63,317.69,Blocked
+2024-11-04 21:27:12,it083,E6:BD:BE:E3:27:46,192.168.7.82,Samsung Tab A7,Tablet,VIIT-Faculty,AP-GYM-01,jiocinema.com,Streaming,61.06,307.47,Allowed
+2024-11-04 21:57:08,me022,7A:8C:E1:27:92:78,192.168.6.230,OnePlus Nord,Smartphone,VIIT-Student,AP-GYM-01,spotify.com,Streaming,57.27,290.09,Allowed
+2024-11-04 21:57:53,ec044,2E:DE:32:33:E3:55,192.168.1.13,Samsung Tab A7,Tablet,VIIT-Guest,AP-HOSTEL-02,ktu.edu.in,Education,5.59,497.42,Allowed
+2024-11-05 08:00:29,ec038,D1:AA:A4:35:52:A8,192.168.5.171,Realme 10 Pro,Smartphone,VIIT-Guest,AP-CAFE-01,primevideo.com,Streaming,943.32,180.72,Allowed
+2024-11-05 08:19:54,ce076,EA:20:38:FF:08:7B,192.168.5.111,iPad Air,Tablet,VIIT-Guest,AP-LIB-01,reddit.com,Social Media,15.3,656.71,Allowed
+2024-11-05 08:23:49,bt051,47:17:13:9B:FC:3B,192.168.9.36,HP Pavilion,Laptop,VIIT-Faculty,AP-CAFE-01,facebook.com,Social Media,14.83,466.14,Allowed
+2024-11-05 08:43:56,me082,DA:55:E3:B3:E4:15,192.168.10.113,Samsung Tab A7,Tablet,VIIT-Guest,AP-ECE-01,nptel.ac.in,Education,90.82,143.0,Allowed
+2024-11-05 08:53:40,bt023,4E:6D:20:D4:D0:A9,192.168.7.17,Samsung Tab A7,Tablet,VIIT-Faculty,AP-CSE-02,primevideo.com,Streaming,17.55,608.66,Allowed
+2024-11-05 08:57:00,ec095,F1:1F:46:6A:A6:F4,192.168.6.246,Samsung Tab A7,Tablet,VIIT-Faculty,AP-CSE-02,nptel.ac.in,Education,94.55,536.58,Allowed
+2024-11-05 08:57:34,bt100,2D:76:13:59:D5:5A,192.168.8.49,Asus VivoBook,Laptop,VIIT-Faculty,AP-GYM-01,coursera.org,Education,31.42,671.84,Allowed
+2024-11-05 09:03:47,me082,DA:55:E3:B3:E4:15,192.168.10.113,Samsung Tab A7,Tablet,VIIT-Guest,AP-ECE-01,github.com,Education,145.79,730.8,Allowed
+2024-11-05 09:08:48,cs011,90:6B:AF:68:87:FA,192.168.2.164,Samsung Galaxy A52,Smartphone,VIIT-Faculty,AP-CAFE-01,classroom.google.com,Education,92.6,356.7,Allowed
+2024-11-05 09:09:19,me063,15:DF:09:EB:27:A0,192.168.10.105,Samsung Tab A7,Tablet,VIIT-Guest,AP-SEMHALL-01,coursera.org,Education,81.5,231.85,Allowed
+2024-11-05 09:09:38,ec093,13:46:AA:F2:E9:4C,192.168.3.85,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-HOSTEL-02,drive.google.com,Cloud Storage,120.94,500.81,Allowed
+2024-11-05 09:27:15,bt080,3F:BC:DF:CC:E1:C5,192.168.8.179,Redmi Note 12,Smartphone,VIIT-Faculty,AP-ADMIN-01,classroom.google.com,Education,122.72,551.46,Allowed
+2024-11-05 09:30:36,it035,95:10:76:93:90:E8,192.168.5.203,HP Pavilion,Laptop,VIIT-Guest,AP-HOSTEL-02,twitter.com,Social Media,65.07,630.16,Allowed
+2024-11-05 09:31:16,ec060,CD:23:48:0F:2E:6E,192.168.8.89,Realme 10 Pro,Smartphone,VIIT-Student,AP-HOSTEL-01,coursera.org,Education,50.99,95.61,Allowed
+2024-11-05 09:31:45,ce062,3D:03:FE:DC:59:42,192.168.4.130,iPhone 13,Smartphone,VIIT-Guest,AP-SEMHALL-01,zoom.us,Communication,109.89,336.45,Allowed
+2024-11-05 09:37:32,cs021,ED:19:7F:3E:E9:44,192.168.9.154,iPhone 13,Smartphone,VIIT-Faculty,AP-GYM-01,zoom.us,Communication,3.36,183.34,Allowed
+2024-11-05 09:38:45,bt065,9E:AD:71:AA:56:27,192.168.2.137,Lenovo Tab P11,Tablet,VIIT-Student,AP-HOSTEL-01,instagram.com,Social Media,68.38,265.91,Allowed
+2024-11-05 09:39:35,ec040,1A:68:88:43:93:E0,192.168.2.9,Samsung Tab A7,Tablet,VIIT-Guest,AP-GYM-01,primevideo.com,Streaming,100.83,221.76,Allowed
+2024-11-05 09:41:15,ch079,F5:5D:45:20:EA:12,192.168.1.204,Redmi Note 12,Smartphone,VIIT-Student,AP-MECH-01,classroom.google.com,Education,141.34,225.82,Allowed
+2024-11-05 09:53:49,ce014,7F:88:51:37:C3:13,192.168.4.211,Redmi Note 12,Smartphone,VIIT-Faculty,AP-ADMIN-01,instagram.com,Social Media,69.58,644.1,Allowed
+2024-11-05 09:57:39,me096,B5:87:F7:62:7E:8E,192.168.4.243,Samsung Tab A7,Tablet,VIIT-Faculty,AP-ECE-01,hotstar.com,Streaming,64.74,344.33,Allowed
+2024-11-05 10:04:34,ec032,3D:5E:62:6E:F7:8D,192.168.9.154,Lenovo Tab P11,Tablet,VIIT-Student,AP-ADMIN-01,instagram.com,Social Media,49.87,675.62,Allowed
+2024-11-05 10:06:50,ec060,CD:23:48:0F:2E:6E,192.168.8.89,Realme 10 Pro,Smartphone,VIIT-Student,AP-HOSTEL-01,coursera.org,Education,100.22,107.63,Allowed
+2024-11-05 10:09:48,it035,50:7A:58:26:50:01,192.168.10.122,Realme 10 Pro,Smartphone,VIIT-Guest,AP-CSE-01,fmovies.io,Blocked,93.67,355.17,Blocked
+2024-11-05 10:18:35,ec050,BE:37:77:F1:0C:A7,192.168.2.164,iPad Air,Tablet,VIIT-Guest,AP-ADMIN-01,reddit.com,Social Media,85.4,732.32,Allowed
+2024-11-05 10:30:30,ce085,3E:45:25:E7:58:E3,192.168.6.183,Lenovo IdeaPad,Laptop,VIIT-Guest,AP-LIB-02,zoom.us,Communication,51.63,603.77,Allowed
+2024-11-05 10:41:05,it003,6C:66:9F:CC:BF:E0,192.168.2.65,Samsung Tab A7,Tablet,VIIT-Student,AP-LIB-01,linkedin.com,Social Media,83.81,111.6,Allowed
+2024-11-05 10:45:05,ee089,1E:50:E1:D4:F7:ED,192.168.10.38,Lenovo IdeaPad,Laptop,VIIT-Guest,AP-MECH-01,facebook.com,Social Media,48.63,586.04,Allowed
+2024-11-05 10:46:11,bt080,3F:BC:DF:CC:E1:C5,192.168.8.179,Redmi Note 12,Smartphone,VIIT-Faculty,AP-ADMIN-01,mail.google.com,Communication,74.65,370.22,Allowed
+2024-11-05 10:49:27,it035,95:10:76:93:90:E8,192.168.5.203,HP Pavilion,Laptop,VIIT-Guest,AP-GYM-01,snapchat.com,Social Media,92.59,589.86,Allowed
+2024-11-05 10:59:43,bt039,81:A5:3B:CE:00:EC,192.168.4.134,Samsung Galaxy A52,Smartphone,VIIT-Guest,AP-MECH-01,jiocinema.com,Streaming,85.55,768.29,Allowed
+2024-11-05 11:12:47,ec075,28:09:83:6E:4C:D8,192.168.4.79,Lenovo IdeaPad,Laptop,VIIT-Student,AP-LIB-02,classroom.google.com,Education,66.56,388.54,Allowed
+2024-11-05 11:21:01,ec095,F1:1F:46:6A:A6:F4,192.168.6.246,Samsung Tab A7,Tablet,VIIT-Faculty,AP-HOSTEL-02,github.com,Education,45.08,98.75,Allowed
+2024-11-05 11:22:02,ec038,D1:AA:A4:35:52:A8,192.168.5.171,Realme 10 Pro,Smartphone,VIIT-Guest,AP-CAFE-01,snapchat.com,Social Media,123.11,170.07,Allowed
+2024-11-05 11:22:56,me091,F0:92:04:37:DC:44,192.168.7.95,OnePlus Nord,Smartphone,VIIT-Faculty,AP-GYM-01,linkedin.com,Social Media,148.11,701.49,Allowed
+2024-11-05 11:25:50,ee028,3D:15:B1:DB:BD:23,192.168.6.5,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-GYM-01,bet365.com,Blocked,67.27,560.95,Blocked
+2024-11-05 11:31:11,ce004,75:70:03:24:1E:75,192.168.6.20,Dell Inspiron,Laptop,VIIT-Student,AP-GYM-01,wetransfer.com,Cloud Storage,25.65,637.01,Allowed
+2024-11-05 11:32:59,me055,16:9A:EA:0F:1F:F5,192.168.2.127,Realme 10 Pro,Smartphone,VIIT-Faculty,AP-GYM-01,instagram.com,Social Media,2195.64,170.12,Allowed
+2024-11-05 11:37:12,me061,F9:9D:17:70:CA:1C,192.168.5.244,HP Pavilion,Laptop,VIIT-Student,AP-CSE-02,classroom.google.com,Education,107.3,418.13,Allowed
+2024-11-05 11:37:44,bt009,A1:85:68:A0:7A:87,192.168.5.119,Redmi Note 12,Smartphone,VIIT-Student,AP-MECH-01,mail.google.com,Communication,149.1,621.63,Allowed
+2024-11-05 11:38:16,it059,8E:73:DB:0D:88:0E,192.168.5.237,Lenovo IdeaPad,Laptop,VIIT-Faculty,AP-ADMIN-01,facebook.com,Social Media,2344.41,163.9,Allowed
+2024-11-05 11:46:25,it035,95:10:76:93:90:E8,192.168.5.203,HP Pavilion,Laptop,VIIT-Guest,AP-GYM-01,spotify.com,Streaming,22.86,404.41,Allowed
+2024-11-05 11:53:56,ce062,3D:03:FE:DC:59:42,192.168.4.130,iPhone 13,Smartphone,VIIT-Guest,AP-HOSTEL-01,outlook.com,Communication,144.38,223.6,Allowed
+2024-11-05 11:56:36,ce005,43:F2:7C:F2:D0:61,192.168.7.92,Dell Inspiron,Laptop,VIIT-Faculty,AP-CAFE-01,mail.google.com,Communication,134.27,735.73,Allowed
+2024-11-05 12:06:10,it025,85:C2:A7:6C:E8:A7,192.168.5.194,Realme 10 Pro,Smartphone,VIIT-Faculty,AP-CAFE-01,linkedin.com,Social Media,7.06,719.13,Allowed
+2024-11-05 12:10:11,me091,17:CD:1A:63:B9:93,192.168.9.117,Asus VivoBook,Laptop,VIIT-Faculty,AP-HOSTEL-02,netflix.com,Streaming,127.96,551.91,Allowed
+2024-11-05 12:11:20,cs036,FC:E0:29:14:DD:A5,192.168.1.25,Samsung Tab A7,Tablet,VIIT-Guest,AP-CAFE-01,piratebay.org,Blocked,98.61,454.05,Blocked
+2024-11-05 12:20:23,ec030,8D:05:61:2B:7B:D0,192.168.4.178,iPhone 13,Smartphone,VIIT-Guest,AP-SEMHALL-01,facebook.com,Social Media,103.54,14.4,Allowed
+2024-11-05 12:30:00,it059,8E:73:DB:0D:88:0E,192.168.5.237,Lenovo IdeaPad,Laptop,VIIT-Student,AP-CAFE-01,youtube.com,Streaming,45.98,372.31,Allowed
+2024-11-05 12:30:00,ce016,64:BA:DC:23:A9:A0,192.168.5.131,iPad Air,Tablet,VIIT-Student,AP-CAFE-01,youtube.com,Streaming,44.56,271.96,Allowed
+2024-11-05 12:30:00,ec012,42:86:52:E2:DA:04,192.168.3.141,Dell Inspiron,Laptop,VIIT-Student,AP-CAFE-01,youtube.com,Streaming,49.66,379.24,Allowed
+2024-11-05 12:30:00,cs015,CC:A9:0E:3B:85:5B,192.168.1.29,Samsung Tab A7,Tablet,VIIT-Student,AP-CAFE-01,youtube.com,Streaming,40.38,384.92,Allowed
+2024-11-05 12:30:00,ec029,C2:AC:0E:FD:A6:5D,192.168.6.206,Redmi Note 12,Smartphone,VIIT-Student,AP-CAFE-01,youtube.com,Streaming,4.64,120.53,Allowed
+2024-11-05 12:30:00,ce043,E9:07:49:D1:4F:26,192.168.6.161,OnePlus Nord,Smartphone,VIIT-Student,AP-CAFE-01,youtube.com,Streaming,23.22,380.98,Allowed
+2024-11-05 12:30:00,bt087,42:DD:1C:3F:4E:9B,192.168.6.241,HP Pavilion,Laptop,VIIT-Student,AP-CAFE-01,youtube.com,Streaming,35.63,191.66,Allowed
+2024-11-05 12:30:00,ce005,43:F2:7C:F2:D0:61,192.168.7.92,Dell Inspiron,Laptop,VIIT-Student,AP-CAFE-01,youtube.com,Streaming,5.92,367.3,Allowed
+2024-11-05 12:30:00,ce067,9B:8C:1C:B4:25:9E,192.168.1.16,Realme 10 Pro,Smartphone,VIIT-Student,AP-CAFE-01,youtube.com,Streaming,10.33,301.18,Allowed
+2024-11-05 12:30:00,ch081,2A:D9:28:DC:5C:96,192.168.2.85,Samsung Galaxy A52,Smartphone,VIIT-Student,AP-CAFE-01,youtube.com,Streaming,47.51,332.28,Allowed
+2024-11-05 12:30:00,ec032,A9:B4:E8:8A:9C:80,192.168.4.82,Dell Inspiron,Laptop,VIIT-Student,AP-CAFE-01,youtube.com,Streaming,29.73,442.45,Allowed
+2024-11-05 12:30:00,ec029,C2:AC:0E:FD:A6:5D,192.168.6.206,Redmi Note 12,Smartphone,VIIT-Student,AP-CAFE-01,youtube.com,Streaming,10.59,261.55,Allowed
+2024-11-05 12:30:00,me063,15:DF:09:EB:27:A0,192.168.10.105,Samsung Tab A7,Tablet,VIIT-Student,AP-CAFE-01,youtube.com,Streaming,36.94,177.17,Allowed
+2024-11-05 12:30:00,me026,1A:B3:72:23:14:0F,192.168.1.161,HP Pavilion,Laptop,VIIT-Student,AP-CAFE-01,youtube.com,Streaming,47.59,435.72,Allowed
+2024-11-05 12:30:00,me096,B5:87:F7:62:7E:8E,192.168.4.243,Samsung Tab A7,Tablet,VIIT-Student,AP-CAFE-01,youtube.com,Streaming,1.16,80.27,Allowed
+2024-11-05 12:30:00,ee072,54:E0:16:D2:BA:79,192.168.5.194,iPhone 13,Smartphone,VIIT-Student,AP-CAFE-01,youtube.com,Streaming,35.79,67.47,Allowed
+2024-11-05 12:30:00,ee089,1E:50:E1:D4:F7:ED,192.168.10.38,Lenovo IdeaPad,Laptop,VIIT-Student,AP-CAFE-01,youtube.com,Streaming,31.06,333.96,Allowed
+2024-11-05 12:30:00,bt031,08:2F:96:71:CF:7C,192.168.6.123,iPhone 13,Smartphone,VIIT-Student,AP-CAFE-01,youtube.com,Streaming,24.73,345.62,Allowed
+2024-11-05 12:30:00,ee024,70:F9:70:8B:DF:F8,192.168.6.173,Asus VivoBook,Laptop,VIIT-Student,AP-CAFE-01,youtube.com,Streaming,42.19,443.77,Allowed
+2024-11-05 12:30:00,it086,B8:BC:EF:42:2C:21,192.168.8.136,Realme 10 Pro,Smartphone,VIIT-Student,AP-CAFE-01,youtube.com,Streaming,25.02,333.51,Allowed
+2024-11-05 12:30:00,ee077,5F:2B:B8:22:0A:C7,192.168.7.253,Samsung Galaxy A52,Smartphone,VIIT-Student,AP-CAFE-01,youtube.com,Streaming,27.63,182.94,Allowed
+2024-11-05 12:30:00,ec029,EB:4E:DE:5A:8A:F7,192.168.10.70,Realme 10 Pro,Smartphone,VIIT-Student,AP-CAFE-01,youtube.com,Streaming,48.18,453.57,Allowed
+2024-11-05 12:30:00,bt098,67:8A:8B:46:37:7A,192.168.9.59,Dell Inspiron,Laptop,VIIT-Student,AP-CAFE-01,youtube.com,Streaming,21.56,251.23,Allowed
+2024-11-05 12:30:00,ec032,90:33:63:97:74:B8,192.168.1.183,Lenovo IdeaPad,Laptop,VIIT-Student,AP-CAFE-01,youtube.com,Streaming,21.82,129.29,Allowed
+2024-11-05 12:30:00,it041,9F:07:D0:2F:73:3A,192.168.3.129,Samsung Galaxy A52,Smartphone,VIIT-Student,AP-CAFE-01,youtube.com,Streaming,18.03,229.14,Allowed
+2024-11-05 12:30:00,bt017,97:41:62:D7:C2:59,192.168.5.105,Lenovo Tab P11,Tablet,VIIT-Student,AP-CAFE-01,youtube.com,Streaming,42.17,438.8,Allowed
+2024-11-05 12:30:00,ee077,5F:2B:B8:22:0A:C7,192.168.7.253,Samsung Galaxy A52,Smartphone,VIIT-Student,AP-CAFE-01,youtube.com,Streaming,34.67,63.03,Allowed
+2024-11-05 12:30:00,it035,50:7A:58:26:50:01,192.168.10.122,Realme 10 Pro,Smartphone,VIIT-Student,AP-CAFE-01,youtube.com,Streaming,44.6,402.27,Allowed
+2024-11-05 12:30:00,ec008,1F:A0:1D:19:F4:50,192.168.2.219,Acer Aspire,Laptop,VIIT-Student,AP-CAFE-01,youtube.com,Streaming,13.82,192.93,Allowed
+2024-11-05 12:30:00,bt051,47:17:13:9B:FC:3B,192.168.9.36,HP Pavilion,Laptop,VIIT-Student,AP-CAFE-01,youtube.com,Streaming,21.83,167.31,Allowed
+2024-11-05 12:30:00,ec007,C2:01:C7:87:E8:92,192.168.8.41,iPhone 13,Smartphone,VIIT-Student,AP-CAFE-01,youtube.com,Streaming,24.79,148.53,Allowed
+2024-11-05 12:30:00,me082,DA:55:E3:B3:E4:15,192.168.10.113,Samsung Tab A7,Tablet,VIIT-Student,AP-CAFE-01,youtube.com,Streaming,16.12,234.42,Allowed
+2024-11-05 12:30:00,it074,8B:E6:4B:DF:2E:71,192.168.1.108,OnePlus Nord,Smartphone,VIIT-Student,AP-CAFE-01,youtube.com,Streaming,27.26,400.8,Allowed
+2024-11-05 12:30:00,cs015,CC:A9:0E:3B:85:5B,192.168.1.29,Samsung Tab A7,Tablet,VIIT-Student,AP-CAFE-01,youtube.com,Streaming,7.33,292.9,Allowed
+2024-11-05 12:30:00,ec093,13:46:AA:F2:E9:4C,192.168.3.85,Lenovo Tab P11,Tablet,VIIT-Student,AP-CAFE-01,youtube.com,Streaming,40.32,90.61,Allowed
+2024-11-05 12:40:37,it066,4B:78:34:4A:83:65,192.168.3.196,Acer Aspire,Laptop,VIIT-Student,AP-LIB-01,youtube.com,Streaming,54.0,445.98,Allowed
+2024-11-05 12:43:36,ce085,3E:45:25:E7:58:E3,192.168.6.183,Lenovo IdeaPad,Laptop,VIIT-Guest,AP-LIB-02,github.com,Education,116.27,482.75,Allowed
+2024-11-05 12:48:04,ch053,40:69:23:6A:6E:77,192.168.10.2,Redmi Note 12,Smartphone,VIIT-Student,AP-ADMIN-01,twitter.com,Social Media,57.7,544.97,Allowed
+2024-11-05 13:22:48,cs021,A2:E2:DA:E4:51:F3,192.168.4.217,OnePlus Nord,Smartphone,VIIT-Faculty,AP-GYM-01,snapchat.com,Social Media,51.01,710.94,Allowed
+2024-11-05 13:28:05,me063,15:DF:09:EB:27:A0,192.168.10.105,Samsung Tab A7,Tablet,VIIT-Guest,AP-SEMHALL-01,1337x.to,Blocked,37.32,445.99,Blocked
+2024-11-05 13:43:53,ec075,46:13:92:F1:47:F0,192.168.1.233,iPhone 13,Smartphone,VIIT-Student,AP-LIB-02,mail.google.com,Communication,101.91,790.84,Allowed
+2024-11-05 13:48:09,ee057,30:A0:DA:A0:82:BF,192.168.2.25,Asus VivoBook,Laptop,VIIT-Student,AP-LIB-02,onedrive.live.com,Cloud Storage,77.79,351.44,Allowed
+2024-11-05 14:11:26,bt031,08:2F:96:71:CF:7C,192.168.6.123,iPhone 13,Smartphone,VIIT-Guest,AP-HOSTEL-01,outlook.com,Communication,22.3,767.52,Allowed
+2024-11-05 14:14:24,ce085,3E:45:25:E7:58:E3,192.168.6.183,Lenovo IdeaPad,Laptop,VIIT-Guest,AP-LIB-02,twitter.com,Social Media,128.03,236.08,Allowed
+2024-11-05 14:16:07,cs069,AB:21:A8:30:C5:91,192.168.3.87,iPhone 13,Smartphone,VIIT-Faculty,AP-HOSTEL-01,stackoverflow.com,Education,57.48,598.04,Allowed
+2024-11-05 14:19:00,ec007,2F:79:55:D0:F8:F6,192.168.1.44,Asus VivoBook,Laptop,VIIT-Faculty,AP-CSE-02,whatsapp.com,Communication,93.94,477.08,Allowed
+2024-11-05 14:30:58,cs045,28:C3:7B:FE:49:76,192.168.8.67,OnePlus Nord,Smartphone,VIIT-Student,AP-HOSTEL-01,ktu.edu.in,Education,138.76,34.32,Allowed
+2024-11-05 14:36:46,ec038,D1:AA:A4:35:52:A8,192.168.5.171,Realme 10 Pro,Smartphone,VIIT-Guest,AP-CAFE-01,moodle.viit.ac.in,Education,1386.14,49.87,Allowed
+2024-11-05 14:53:54,ee054,59:38:0D:43:07:B7,192.168.6.6,Acer Aspire,Laptop,VIIT-Faculty,AP-CSE-01,onedrive.live.com,Cloud Storage,1169.09,194.19,Allowed
+2024-11-05 14:57:39,cs069,29:48:B3:9E:C8:42,192.168.2.81,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-HOSTEL-01,teams.microsoft.com,Communication,58.97,659.63,Allowed
+2024-11-05 15:02:20,me096,B5:87:F7:62:7E:8E,192.168.4.243,Samsung Tab A7,Tablet,VIIT-Faculty,AP-LIB-01,outlook.com,Communication,121.99,65.91,Allowed
+2024-11-05 15:07:50,ce085,3E:45:25:E7:58:E3,192.168.6.183,Lenovo IdeaPad,Laptop,VIIT-Guest,AP-LIB-02,vpngate.net,Blocked,2.62,717.72,Blocked
+2024-11-05 15:08:39,ec093,13:46:AA:F2:E9:4C,192.168.3.85,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-CAFE-01,classroom.google.com,Education,92.47,245.4,Allowed
+2024-11-05 15:14:52,it003,6C:66:9F:CC:BF:E0,192.168.2.65,Samsung Tab A7,Tablet,VIIT-Student,AP-CSE-02,ktu.edu.in,Education,113.28,621.97,Allowed
+2024-11-05 15:38:36,ce027,6F:EE:83:BC:55:3A,192.168.2.150,Lenovo IdeaPad,Laptop,VIIT-Faculty,AP-SEMHALL-01,snapchat.com,Social Media,22.46,137.24,Allowed
+2024-11-05 15:38:51,cs069,29:48:B3:9E:C8:42,192.168.2.81,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-HOSTEL-01,reddit.com,Social Media,69.11,165.35,Allowed
+2024-11-05 15:45:18,it052,D6:4F:D4:32:FA:D0,192.168.6.57,Samsung Galaxy A52,Smartphone,VIIT-Student,AP-LIB-01,netflix.com,Streaming,18.98,92.7,Allowed
+2024-11-05 15:46:29,cs071,27:97:33:13:AC:43,192.168.3.43,Samsung Tab A7,Tablet,VIIT-Guest,AP-CSE-01,github.com,Education,124.77,745.79,Allowed
+2024-11-05 15:50:01,bt087,42:DD:1C:3F:4E:9B,192.168.6.241,HP Pavilion,Laptop,VIIT-Student,AP-SEMHALL-01,mail.google.com,Communication,12.07,676.48,Allowed
+2024-11-05 15:52:45,it041,95:8B:D4:F7:F1:7C,192.168.3.100,iPhone 13,Smartphone,VIIT-Guest,AP-CSE-02,teams.microsoft.com,Communication,115.31,485.53,Allowed
+2024-11-05 15:52:54,bt051,47:17:13:9B:FC:3B,192.168.9.36,HP Pavilion,Laptop,VIIT-Faculty,AP-CAFE-01,dropbox.com,Cloud Storage,114.82,481.02,Allowed
+2024-11-05 15:52:55,ce027,0D:9F:C0:CB:65:26,192.168.4.28,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-SEMHALL-01,mail.google.com,Communication,77.74,304.18,Allowed
+2024-11-05 15:53:56,ee056,4B:21:40:8C:A6:C3,192.168.5.118,Lenovo Tab P11,Tablet,VIIT-Guest,AP-HOSTEL-01,teams.microsoft.com,Communication,30.2,334.52,Allowed
+2024-11-05 15:54:31,me022,7A:8C:E1:27:92:78,192.168.6.230,OnePlus Nord,Smartphone,VIIT-Student,AP-HOSTEL-01,meet.google.com,Communication,8.66,516.5,Allowed
+2024-11-05 15:58:38,cs036,FC:E0:29:14:DD:A5,192.168.1.25,Samsung Tab A7,Tablet,VIIT-Guest,AP-HOSTEL-02,whatsapp.com,Communication,34.5,196.09,Allowed
+2024-11-05 16:02:08,ce046,93:50:25:E2:B0:99,192.168.5.118,Samsung Tab A7,Tablet,VIIT-Student,AP-ECE-01,w3schools.com,Education,25.62,299.09,Allowed
+2024-11-05 16:11:43,ec007,C2:01:C7:87:E8:92,192.168.8.41,iPhone 13,Smartphone,VIIT-Faculty,AP-CSE-02,zoom.us,Communication,55.07,745.99,Allowed
+2024-11-05 16:21:01,ch064,0A:A6:57:EB:B9:2D,192.168.4.113,Samsung Galaxy A52,Smartphone,VIIT-Faculty,AP-SEMHALL-01,hotstar.com,Streaming,99.51,260.7,Allowed
+2024-11-05 16:21:59,ec095,F1:1F:46:6A:A6:F4,192.168.6.246,Samsung Tab A7,Tablet,VIIT-Faculty,AP-CSE-01,geeksforgeeks.org,Education,133.26,52.22,Allowed
+2024-11-05 16:24:33,it020,63:C4:FD:CC:7C:4B,192.168.1.230,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-LIB-02,snapchat.com,Social Media,141.67,61.62,Allowed
+2024-11-05 16:37:14,it074,8B:E6:4B:DF:2E:71,192.168.1.108,OnePlus Nord,Smartphone,VIIT-Guest,AP-CAFE-01,netflix.com,Streaming,119.73,747.47,Allowed
+2024-11-05 16:41:34,bt031,08:2F:96:71:CF:7C,192.168.6.123,iPhone 13,Smartphone,VIIT-Guest,AP-HOSTEL-01,netflix.com,Streaming,130.17,770.68,Allowed
+2024-11-05 16:43:41,me022,7A:8C:E1:27:92:78,192.168.6.230,OnePlus Nord,Smartphone,VIIT-Student,AP-HOSTEL-01,snapchat.com,Social Media,14.74,531.06,Allowed
+2024-11-05 16:44:00,ch079,66:15:A1:9E:CB:F2,192.168.4.75,Samsung Galaxy A52,Smartphone,VIIT-Student,AP-MECH-01,spotify.com,Streaming,41.09,151.33,Allowed
+2024-11-05 16:45:31,ch064,0A:A6:57:EB:B9:2D,192.168.4.113,Samsung Galaxy A52,Smartphone,VIIT-Faculty,AP-HOSTEL-02,stackoverflow.com,Education,1.14,12.61,Allowed
+2024-11-05 16:57:28,bt080,3F:BC:DF:CC:E1:C5,192.168.8.179,Redmi Note 12,Smartphone,VIIT-Faculty,AP-LIB-02,facebook.com,Social Media,127.98,72.55,Allowed
+2024-11-05 16:58:03,ch037,0A:89:14:59:F0:E2,192.168.10.113,Redmi Note 12,Smartphone,VIIT-Faculty,AP-GYM-01,netflix.com,Streaming,116.16,232.3,Allowed
+2024-11-05 17:00:07,bt039,81:A5:3B:CE:00:EC,192.168.4.134,Samsung Galaxy A52,Smartphone,VIIT-Guest,AP-MECH-01,linkedin.com,Social Media,121.29,707.51,Allowed
+2024-11-05 17:05:17,ec029,C2:AC:0E:FD:A6:5D,192.168.6.206,Redmi Note 12,Smartphone,VIIT-Faculty,AP-ECE-01,snapchat.com,Social Media,25.84,33.67,Allowed
+2024-11-05 17:09:57,ec099,F1:33:46:02:50:D0,192.168.8.168,Samsung Tab A7,Tablet,VIIT-Faculty,AP-GYM-01,primevideo.com,Streaming,43.75,384.3,Allowed
+2024-11-05 17:14:56,ce070,41:2F:D8:B9:09:B9,192.168.4.89,Redmi Note 12,Smartphone,VIIT-Student,AP-ADMIN-01,nptel.ac.in,Education,148.4,273.01,Allowed
+2024-11-05 17:24:02,ee024,0A:C2:F4:03:B4:98,192.168.9.193,Realme 10 Pro,Smartphone,VIIT-Faculty,AP-CSE-02,classroom.google.com,Education,147.53,64.2,Allowed
+2024-11-05 17:50:04,it066,4B:78:34:4A:83:65,192.168.3.196,Acer Aspire,Laptop,VIIT-Student,AP-GYM-01,mail.google.com,Communication,63.6,160.35,Allowed
+2024-11-05 17:51:20,ec029,C2:AC:0E:FD:A6:5D,192.168.6.206,Redmi Note 12,Smartphone,VIIT-Faculty,AP-ADMIN-01,coursera.org,Education,57.71,631.98,Allowed
+2024-11-05 18:07:57,ee057,30:A0:DA:A0:82:BF,192.168.2.25,Asus VivoBook,Laptop,VIIT-Student,AP-LIB-02,ktu.edu.in,Education,27.88,378.85,Allowed
+2024-11-05 18:14:42,cs015,74:72:0C:62:CC:A8,192.168.5.91,Samsung Galaxy A52,Smartphone,VIIT-Faculty,AP-SEMHALL-01,whatsapp.com,Communication,144.12,521.1,Allowed
+2024-11-05 18:23:24,ec050,BE:37:77:F1:0C:A7,192.168.2.164,iPad Air,Tablet,VIIT-Guest,AP-ADMIN-01,instagram.com,Social Media,136.31,292.05,Allowed
+2024-11-05 18:26:12,it047,46:31:14:9E:E1:11,192.168.3.25,Samsung Tab A7,Tablet,VIIT-Faculty,AP-ECE-01,wetransfer.com,Cloud Storage,77.48,61.33,Allowed
+2024-11-05 18:26:23,ee028,3D:15:B1:DB:BD:23,192.168.6.5,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-CAFE-01,instagram.com,Social Media,78.2,303.15,Allowed
+2024-11-05 18:31:30,it059,8E:73:DB:0D:88:0E,192.168.5.237,Lenovo IdeaPad,Laptop,VIIT-Faculty,AP-MECH-01,dropbox.com,Cloud Storage,3.76,137.05,Allowed
+2024-11-05 18:49:16,bt087,42:DD:1C:3F:4E:9B,192.168.6.241,HP Pavilion,Laptop,VIIT-Student,AP-SEMHALL-01,twitter.com,Social Media,44.89,430.66,Allowed
+2024-11-05 18:49:44,ec075,28:09:83:6E:4C:D8,192.168.4.79,Lenovo IdeaPad,Laptop,VIIT-Student,AP-LIB-02,w3schools.com,Education,73.55,551.95,Allowed
+2024-11-05 18:59:29,ee028,3D:15:B1:DB:BD:23,192.168.6.5,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-CAFE-01,outlook.com,Communication,93.67,411.09,Allowed
+2024-11-05 19:04:17,me084,5F:FF:C6:3C:86:85,192.168.4.158,Samsung Tab A7,Tablet,VIIT-Guest,AP-ECE-01,1337x.to,Blocked,75.09,366.57,Blocked
+2024-11-05 19:07:03,ce090,E6:7E:48:31:19:94,192.168.7.65,iPhone 13,Smartphone,VIIT-Faculty,AP-ECE-01,stackoverflow.com,Education,16.82,44.65,Allowed
+2024-11-05 19:16:20,ch037,0A:89:14:59:F0:E2,192.168.10.113,Redmi Note 12,Smartphone,VIIT-Faculty,AP-GYM-01,hotstar.com,Streaming,68.33,717.81,Allowed
+2024-11-05 19:17:00,ce076,EA:20:38:FF:08:7B,192.168.5.111,iPad Air,Tablet,VIIT-Guest,AP-LIB-01,facebook.com,Social Media,136.43,623.57,Allowed
+2024-11-05 19:34:36,ec095,F1:1F:46:6A:A6:F4,192.168.6.246,Samsung Tab A7,Tablet,VIIT-Faculty,AP-ECE-01,teams.microsoft.com,Communication,58.87,289.53,Allowed
+2024-11-05 19:54:46,it074,8B:E6:4B:DF:2E:71,192.168.1.108,OnePlus Nord,Smartphone,VIIT-Guest,AP-LIB-02,wetransfer.com,Cloud Storage,9.29,649.12,Allowed
+2024-11-05 20:00:58,me055,16:9A:EA:0F:1F:F5,192.168.2.127,Realme 10 Pro,Smartphone,VIIT-Faculty,AP-SEMHALL-01,vpngate.net,Blocked,102.94,430.25,Blocked
+2024-11-05 20:03:01,ce014,79:53:5A:D3:0C:5B,192.168.7.207,Samsung Tab A7,Tablet,VIIT-Faculty,AP-ADMIN-01,ktu.edu.in,Education,121.06,275.9,Allowed
+2024-11-05 20:09:49,ec030,8D:05:61:2B:7B:D0,192.168.4.178,iPhone 13,Smartphone,VIIT-Guest,AP-ADMIN-01,moodle.viit.ac.in,Education,31.41,166.2,Allowed
+2024-11-05 20:17:28,ce014,7F:88:51:37:C3:13,192.168.4.211,Redmi Note 12,Smartphone,VIIT-Faculty,AP-CAFE-01,primevideo.com,Streaming,102.64,142.38,Allowed
+2024-11-05 20:18:47,ee056,4B:21:40:8C:A6:C3,192.168.5.118,Lenovo Tab P11,Tablet,VIIT-Guest,AP-ADMIN-01,zoom.us,Communication,18.22,572.28,Allowed
+2024-11-05 20:23:51,me022,7A:8C:E1:27:92:78,192.168.6.230,OnePlus Nord,Smartphone,VIIT-Student,AP-HOSTEL-01,pokerstar.com,Blocked,69.91,84.35,Blocked
+2024-11-05 20:27:40,ec095,F1:1F:46:6A:A6:F4,192.168.6.246,Samsung Tab A7,Tablet,VIIT-Faculty,AP-CSE-01,netflix.com,Streaming,53.79,720.31,Allowed
+2024-11-05 20:35:12,it035,50:7A:58:26:50:01,192.168.10.122,Realme 10 Pro,Smartphone,VIIT-Guest,AP-GYM-01,w3schools.com,Education,75.52,620.19,Allowed
+2024-11-05 20:35:49,bt023,4E:6D:20:D4:D0:A9,192.168.7.17,Samsung Tab A7,Tablet,VIIT-Faculty,AP-CSE-02,netflix.com,Streaming,54.82,48.15,Allowed
+2024-11-05 20:40:06,me091,EA:7B:6E:B4:18:19,192.168.10.227,Realme 10 Pro,Smartphone,VIIT-Faculty,AP-HOSTEL-01,linkedin.com,Social Media,54.23,596.77,Allowed
+2024-11-05 20:41:05,ch019,78:9E:73:65:4B:0C,192.168.8.158,HP Pavilion,Laptop,VIIT-Faculty,AP-LIB-02,jiocinema.com,Streaming,39.17,647.63,Allowed
+2024-11-05 20:44:45,cs036,9D:93:E0:3F:EF:9B,192.168.5.130,Samsung Tab A7,Tablet,VIIT-Guest,AP-CSE-02,classroom.google.com,Education,87.36,548.82,Allowed
+2024-11-05 20:50:11,bt088,2F:56:4E:57:AC:15,192.168.1.244,Dell Inspiron,Laptop,VIIT-Faculty,AP-GYM-01,meet.google.com,Communication,53.16,28.8,Allowed
+2024-11-05 20:58:16,bt100,2D:76:13:59:D5:5A,192.168.8.49,Asus VivoBook,Laptop,VIIT-Faculty,AP-SEMHALL-01,coursera.org,Education,43.53,391.88,Allowed
+2024-11-05 21:00:50,bt080,3F:BC:DF:CC:E1:C5,192.168.8.179,Redmi Note 12,Smartphone,VIIT-Faculty,AP-GYM-01,outlook.com,Communication,37.63,71.46,Allowed
+2024-11-05 21:07:25,ee033,95:40:FB:34:06:91,192.168.8.89,Realme 10 Pro,Smartphone,VIIT-Guest,AP-CSE-02,bet365.com,Blocked,95.12,262.99,Blocked
+2024-11-05 21:07:47,ce004,75:70:03:24:1E:75,192.168.6.20,Dell Inspiron,Laptop,VIIT-Student,AP-HOSTEL-01,teams.microsoft.com,Communication,45.83,727.65,Allowed
+2024-11-05 21:09:58,it047,19:FE:92:75:B4:70,192.168.10.66,iPad Air,Tablet,VIIT-Faculty,AP-ECE-01,dropbox.com,Cloud Storage,37.55,350.23,Allowed
+2024-11-05 21:11:11,ec008,1F:A0:1D:19:F4:50,192.168.2.219,Acer Aspire,Laptop,VIIT-Student,AP-CSE-01,facebook.com,Social Media,84.2,766.98,Allowed
+2024-11-05 21:11:21,ce046,93:50:25:E2:B0:99,192.168.5.118,Samsung Tab A7,Tablet,VIIT-Student,AP-ECE-01,snapchat.com,Social Media,21.03,669.96,Allowed
+2024-11-05 21:18:12,ee028,3D:15:B1:DB:BD:23,192.168.6.5,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-CAFE-01,outlook.com,Communication,96.22,353.98,Allowed
+2024-11-05 21:20:56,ee056,4B:21:40:8C:A6:C3,192.168.5.118,Lenovo Tab P11,Tablet,VIIT-Guest,AP-HOSTEL-01,outlook.com,Communication,44.96,688.24,Allowed
+2024-11-05 21:25:07,ch064,0A:A6:57:EB:B9:2D,192.168.4.113,Samsung Galaxy A52,Smartphone,VIIT-Faculty,AP-HOSTEL-02,jiocinema.com,Streaming,106.19,171.22,Allowed
+2024-11-05 21:25:42,ch019,78:9E:73:65:4B:0C,192.168.8.158,HP Pavilion,Laptop,VIIT-Faculty,AP-LIB-02,onedrive.live.com,Cloud Storage,28.66,416.25,Allowed
+2024-11-05 21:38:53,me082,DA:55:E3:B3:E4:15,192.168.10.113,Samsung Tab A7,Tablet,VIIT-Guest,AP-CSE-01,wetransfer.com,Cloud Storage,93.05,179.03,Allowed
+2024-11-05 21:39:44,bt051,47:17:13:9B:FC:3B,192.168.9.36,HP Pavilion,Laptop,VIIT-Faculty,AP-CAFE-01,outlook.com,Communication,15.81,127.87,Allowed
+2024-11-05 21:39:57,it047,19:FE:92:75:B4:70,192.168.10.66,iPad Air,Tablet,VIIT-Faculty,AP-ECE-01,geeksforgeeks.org,Education,33.37,239.65,Allowed
+2024-11-05 21:41:26,cs002,86:5B:36:98:65:4E,192.168.9.246,Redmi Note 12,Smartphone,VIIT-Guest,AP-LIB-02,fmovies.io,Blocked,5.24,330.05,Blocked
+2024-11-05 21:46:26,bt023,4E:6D:20:D4:D0:A9,192.168.7.17,Samsung Tab A7,Tablet,VIIT-Faculty,AP-CSE-02,youtube.com,Streaming,7.34,135.5,Allowed
+2024-11-05 21:48:07,it003,6C:66:9F:CC:BF:E0,192.168.2.65,Samsung Tab A7,Tablet,VIIT-Student,AP-CSE-02,outlook.com,Communication,69.36,128.32,Allowed
+2024-11-05 21:50:18,ee024,0A:C2:F4:03:B4:98,192.168.9.193,Realme 10 Pro,Smartphone,VIIT-Faculty,AP-GYM-01,classroom.google.com,Education,147.54,548.3,Allowed
+2024-11-05 21:54:09,ec093,13:46:AA:F2:E9:4C,192.168.3.85,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-HOSTEL-02,snapchat.com,Social Media,111.19,398.77,Allowed
+2024-11-05 21:57:42,ce049,CB:BB:2E:CA:07:87,192.168.8.96,iPad Air,Tablet,VIIT-Guest,AP-GYM-01,classroom.google.com,Education,106.92,231.77,Allowed
+2024-11-06 08:13:18,ch092,3C:41:31:C9:BF:AD,192.168.3.52,Samsung Tab A7,Tablet,VIIT-Guest,AP-HOSTEL-02,facebook.com,Social Media,73.28,56.37,Allowed
+2024-11-06 08:18:52,ce016,DF:3B:C5:61:82:16,192.168.1.135,Samsung Tab A7,Tablet,VIIT-Guest,AP-ECE-01,spotify.com,Streaming,126.06,127.1,Allowed
+2024-11-06 08:42:55,me022,7A:8C:E1:27:92:78,192.168.6.230,OnePlus Nord,Smartphone,VIIT-Student,AP-LIB-02,zoom.us,Communication,7.37,212.98,Allowed
+2024-11-06 09:01:25,ce013,41:15:9D:BA:14:B7,192.168.2.92,HP Pavilion,Laptop,VIIT-Faculty,AP-HOSTEL-01,onedrive.live.com,Cloud Storage,59.74,43.92,Allowed
+2024-11-06 09:19:47,ce067,FC:ED:E5:A5:A1:4D,192.168.8.115,Samsung Galaxy A52,Smartphone,VIIT-Faculty,AP-MECH-01,w3schools.com,Education,1454.95,116.1,Allowed
+2024-11-06 09:33:06,ee034,E6:E2:98:DB:9C:1E,192.168.2.244,Lenovo Tab P11,Tablet,VIIT-Guest,AP-SEMHALL-01,moodle.viit.ac.in,Education,79.59,588.77,Allowed
+2024-11-06 09:36:13,ec075,46:13:92:F1:47:F0,192.168.1.233,iPhone 13,Smartphone,VIIT-Student,AP-LIB-02,twitter.com,Social Media,1.3,360.55,Allowed
+2024-11-06 09:45:47,me026,1A:B3:72:23:14:0F,192.168.1.161,HP Pavilion,Laptop,VIIT-Student,AP-CSE-01,vpngate.net,Blocked,143.82,139.07,Blocked
+2024-11-06 10:03:10,ce014,79:53:5A:D3:0C:5B,192.168.7.207,Samsung Tab A7,Tablet,VIIT-Faculty,AP-ADMIN-01,stackoverflow.com,Education,121.49,78.12,Allowed
+2024-11-06 10:08:14,bt098,67:8A:8B:46:37:7A,192.168.9.59,Dell Inspiron,Laptop,VIIT-Student,AP-GYM-01,facebook.com,Social Media,66.35,210.12,Allowed
+2024-11-06 10:13:26,ec030,8D:05:61:2B:7B:D0,192.168.4.178,iPhone 13,Smartphone,VIIT-Guest,AP-ADMIN-01,moodle.viit.ac.in,Education,70.97,492.4,Allowed
+2024-11-06 10:14:04,me026,1A:B3:72:23:14:0F,192.168.1.161,HP Pavilion,Laptop,VIIT-Student,AP-CSE-01,outlook.com,Communication,110.52,389.39,Allowed
+2024-11-06 10:16:05,cs010,33:25:6D:87:43:B2,192.168.6.74,HP Pavilion,Laptop,VIIT-Faculty,AP-CAFE-01,classroom.google.com,Education,132.38,244.98,Allowed
+2024-11-06 10:29:54,ch019,78:9E:73:65:4B:0C,192.168.8.158,HP Pavilion,Laptop,VIIT-Faculty,AP-LIB-02,onedrive.live.com,Cloud Storage,63.36,710.04,Allowed
+2024-11-06 10:33:40,bt051,47:17:13:9B:FC:3B,192.168.9.36,HP Pavilion,Laptop,VIIT-Faculty,AP-CAFE-01,geeksforgeeks.org,Education,63.22,730.12,Allowed
+2024-11-06 10:38:41,it035,95:10:76:93:90:E8,192.168.5.203,HP Pavilion,Laptop,VIIT-Guest,AP-GYM-01,instagram.com,Social Media,100.93,341.71,Allowed
+2024-11-06 10:42:00,it052,D6:4F:D4:32:FA:D0,192.168.6.57,Samsung Galaxy A52,Smartphone,VIIT-Student,AP-LIB-01,github.com,Education,89.18,377.92,Allowed
+2024-11-06 10:47:07,ec099,F1:33:46:02:50:D0,192.168.8.168,Samsung Tab A7,Tablet,VIIT-Faculty,AP-ECE-01,teams.microsoft.com,Communication,36.84,615.28,Allowed
+2024-11-06 10:50:51,me055,16:9A:EA:0F:1F:F5,192.168.2.127,Realme 10 Pro,Smartphone,VIIT-Faculty,AP-SEMHALL-01,linkedin.com,Social Media,135.9,165.58,Allowed
+2024-11-06 10:55:01,ee042,23:8D:D4:AE:88:01,192.168.10.150,OnePlus Nord,Smartphone,VIIT-Faculty,AP-CAFE-01,instagram.com,Social Media,0.63,450.22,Allowed
+2024-11-06 10:59:22,ch092,3C:41:31:C9:BF:AD,192.168.3.52,Samsung Tab A7,Tablet,VIIT-Guest,AP-SEMHALL-01,ktu.edu.in,Education,65.09,735.02,Allowed
+2024-11-06 11:01:44,ch064,0A:A6:57:EB:B9:2D,192.168.4.113,Samsung Galaxy A52,Smartphone,VIIT-Faculty,AP-HOSTEL-02,ktu.edu.in,Education,132.21,584.47,Allowed
+2024-11-06 11:02:37,ee057,3A:6E:DC:E7:74:D3,192.168.7.108,Realme 10 Pro,Smartphone,VIIT-Student,AP-LIB-02,linkedin.com,Social Media,45.72,318.78,Allowed
+2024-11-06 11:03:58,ce070,41:2F:D8:B9:09:B9,192.168.4.89,Redmi Note 12,Smartphone,VIIT-Student,AP-ADMIN-01,nptel.ac.in,Education,34.74,587.63,Allowed
+2024-11-06 11:07:00,ee056,4B:21:40:8C:A6:C3,192.168.5.118,Lenovo Tab P11,Tablet,VIIT-Guest,AP-HOSTEL-01,snapchat.com,Social Media,39.39,75.8,Allowed
+2024-11-06 11:12:19,ch092,3C:41:31:C9:BF:AD,192.168.3.52,Samsung Tab A7,Tablet,VIIT-Guest,AP-HOSTEL-02,spotify.com,Streaming,21.31,615.29,Allowed
+2024-11-06 11:18:28,bt031,08:2F:96:71:CF:7C,192.168.6.123,iPhone 13,Smartphone,VIIT-Guest,AP-HOSTEL-01,instagram.com,Social Media,98.4,708.95,Allowed
+2024-11-06 11:20:33,ee024,70:F9:70:8B:DF:F8,192.168.6.173,Asus VivoBook,Laptop,VIIT-Faculty,AP-GYM-01,onedrive.live.com,Cloud Storage,73.84,460.28,Allowed
+2024-11-06 11:21:24,me061,F9:9D:17:70:CA:1C,192.168.5.244,HP Pavilion,Laptop,VIIT-Student,AP-CSE-02,whatsapp.com,Communication,60.97,161.85,Allowed
+2024-11-06 11:31:00,ce062,3D:03:FE:DC:59:42,192.168.4.130,iPhone 13,Smartphone,VIIT-Guest,AP-HOSTEL-01,w3schools.com,Education,7.77,715.93,Allowed
+2024-11-06 11:37:31,it025,41:0D:C9:0D:2A:DB,192.168.3.14,Asus VivoBook,Laptop,VIIT-Faculty,AP-HOSTEL-01,spotify.com,Streaming,11.44,538.99,Allowed
+2024-11-06 11:39:17,cs036,FC:E0:29:14:DD:A5,192.168.1.25,Samsung Tab A7,Tablet,VIIT-Guest,AP-CSE-02,github.com,Education,7.0,140.4,Allowed
+2024-11-06 11:45:02,ec050,BE:37:77:F1:0C:A7,192.168.2.164,iPad Air,Tablet,VIIT-Guest,AP-ADMIN-01,geeksforgeeks.org,Education,86.39,355.51,Allowed
+2024-11-06 11:56:35,ch079,F5:5D:45:20:EA:12,192.168.1.204,Redmi Note 12,Smartphone,VIIT-Student,AP-MECH-01,geeksforgeeks.org,Education,95.09,777.91,Allowed
+2024-11-06 11:57:03,ec012,42:86:52:E2:DA:04,192.168.3.141,Dell Inspiron,Laptop,VIIT-Faculty,AP-LIB-01,geeksforgeeks.org,Education,41.05,66.92,Allowed
+2024-11-06 11:57:46,it025,41:0D:C9:0D:2A:DB,192.168.3.14,Asus VivoBook,Laptop,VIIT-Faculty,AP-CAFE-01,w3schools.com,Education,80.8,757.85,Allowed
+2024-11-06 12:07:10,ee056,4B:21:40:8C:A6:C3,192.168.5.118,Lenovo Tab P11,Tablet,VIIT-Guest,AP-HOSTEL-01,dropbox.com,Cloud Storage,0.96,164.06,Allowed
+2024-11-06 12:27:42,ec075,46:13:92:F1:47:F0,192.168.1.233,iPhone 13,Smartphone,VIIT-Student,AP-LIB-02,nptel.ac.in,Education,13.15,104.15,Allowed
+2024-11-06 12:33:50,ce070,41:2F:D8:B9:09:B9,192.168.4.89,Redmi Note 12,Smartphone,VIIT-Student,AP-ADMIN-01,stackoverflow.com,Education,111.02,266.31,Allowed
+2024-11-06 12:36:54,cs010,33:25:6D:87:43:B2,192.168.6.74,HP Pavilion,Laptop,VIIT-Faculty,AP-CSE-01,hotstar.com,Streaming,74.46,261.68,Allowed
+2024-11-06 12:39:13,ce070,41:2F:D8:B9:09:B9,192.168.4.89,Redmi Note 12,Smartphone,VIIT-Student,AP-GYM-01,classroom.google.com,Education,7.08,412.44,Allowed
+2024-11-06 13:09:19,ec032,90:33:63:97:74:B8,192.168.1.183,Lenovo IdeaPad,Laptop,VIIT-Student,AP-HOSTEL-01,spotify.com,Streaming,34.46,76.2,Allowed
+2024-11-06 13:09:26,me063,15:DF:09:EB:27:A0,192.168.10.105,Samsung Tab A7,Tablet,VIIT-Guest,AP-SEMHALL-01,geeksforgeeks.org,Education,27.63,572.07,Allowed
+2024-11-06 13:19:18,ce062,3D:03:FE:DC:59:42,192.168.4.130,iPhone 13,Smartphone,VIIT-Guest,AP-HOSTEL-01,netflix.com,Streaming,6.52,126.88,Allowed
+2024-11-06 13:25:03,cs045,28:C3:7B:FE:49:76,192.168.8.67,OnePlus Nord,Smartphone,VIIT-Student,AP-GYM-01,linkedin.com,Social Media,18.62,430.57,Allowed
+2024-11-06 13:32:25,ce018,A4:EE:E2:E2:6D:F2,192.168.2.74,iPad Air,Tablet,VIIT-Guest,AP-CSE-02,nptel.ac.in,Education,137.75,565.18,Allowed
+2024-11-06 13:51:06,ec044,A6:1C:96:B7:BF:DC,192.168.9.107,HP Pavilion,Laptop,VIIT-Guest,AP-HOSTEL-02,pornhub.com,Blocked,91.77,523.39,Blocked
+2024-11-06 13:54:44,ce018,A4:EE:E2:E2:6D:F2,192.168.2.74,iPad Air,Tablet,VIIT-Guest,AP-HOSTEL-01,teams.microsoft.com,Communication,3.52,654.82,Allowed
+2024-11-06 13:58:59,ee042,FA:4C:E4:F7:B0:AA,192.168.7.118,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-CAFE-01,spotify.com,Streaming,67.35,168.5,Allowed
+2024-11-06 14:02:09,ee024,70:F9:70:8B:DF:F8,192.168.6.173,Asus VivoBook,Laptop,VIIT-Faculty,AP-GYM-01,classroom.google.com,Education,87.81,207.74,Allowed
+2024-11-06 14:04:19,ec040,1A:68:88:43:93:E0,192.168.2.9,Samsung Tab A7,Tablet,VIIT-Guest,AP-GYM-01,netflix.com,Streaming,41.02,754.91,Allowed
+2024-11-06 14:04:49,bt065,9E:AD:71:AA:56:27,192.168.2.137,Lenovo Tab P11,Tablet,VIIT-Student,AP-CSE-02,ktu.edu.in,Education,143.84,666.85,Allowed
+2024-11-06 14:09:24,ce070,41:2F:D8:B9:09:B9,192.168.4.89,Redmi Note 12,Smartphone,VIIT-Student,AP-ADMIN-01,dropbox.com,Cloud Storage,93.16,52.64,Allowed
+2024-11-06 14:16:13,cs069,29:48:B3:9E:C8:42,192.168.2.81,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-HOSTEL-01,geeksforgeeks.org,Education,11.94,88.65,Allowed
+2024-11-06 14:35:46,cs071,27:97:33:13:AC:43,192.168.3.43,Samsung Tab A7,Tablet,VIIT-Guest,AP-ADMIN-01,w3schools.com,Education,64.4,71.17,Allowed
+2024-11-06 14:38:15,bt098,67:8A:8B:46:37:7A,192.168.9.59,Dell Inspiron,Laptop,VIIT-Student,AP-GYM-01,onedrive.live.com,Cloud Storage,2.91,676.72,Allowed
+2024-11-06 14:48:03,ee056,4B:21:40:8C:A6:C3,192.168.5.118,Lenovo Tab P11,Tablet,VIIT-Guest,AP-HOSTEL-01,spotify.com,Streaming,109.52,440.44,Allowed
+2024-11-06 15:12:36,ee033,5E:1A:81:F4:3A:21,192.168.2.149,Realme 10 Pro,Smartphone,VIIT-Guest,AP-HOSTEL-02,nptel.ac.in,Education,73.05,352.81,Allowed
+2024-11-06 15:17:56,bt031,08:2F:96:71:CF:7C,192.168.6.123,iPhone 13,Smartphone,VIIT-Guest,AP-HOSTEL-01,netflix.com,Streaming,47.87,236.63,Allowed
+2024-11-06 15:23:43,bt073,52:66:46:80:1A:F6,192.168.2.184,iPhone 13,Smartphone,VIIT-Student,AP-HOSTEL-01,pokerstar.com,Blocked,139.85,381.22,Blocked
+2024-11-06 15:25:47,cs071,27:97:33:13:AC:43,192.168.3.43,Samsung Tab A7,Tablet,VIIT-Guest,AP-CSE-01,nptel.ac.in,Education,129.32,585.64,Allowed
+2024-11-06 15:26:38,bt023,4E:6D:20:D4:D0:A9,192.168.7.17,Samsung Tab A7,Tablet,VIIT-Faculty,AP-CSE-02,w3schools.com,Education,98.8,486.9,Allowed
+2024-11-06 15:27:42,ee054,59:38:0D:43:07:B7,192.168.6.6,Acer Aspire,Laptop,VIIT-Faculty,AP-CSE-01,zoom.us,Communication,52.42,65.95,Allowed
+2024-11-06 15:44:26,me082,DA:55:E3:B3:E4:15,192.168.10.113,Samsung Tab A7,Tablet,VIIT-Guest,AP-ECE-01,hotstar.com,Streaming,27.69,311.09,Allowed
+2024-11-06 15:44:52,bt051,47:17:13:9B:FC:3B,192.168.9.36,HP Pavilion,Laptop,VIIT-Faculty,AP-CAFE-01,vpngate.net,Blocked,87.37,454.63,Blocked
+2024-11-06 15:49:00,bt039,81:A5:3B:CE:00:EC,192.168.4.134,Samsung Galaxy A52,Smartphone,VIIT-Guest,AP-MECH-01,moodle.viit.ac.in,Education,38.54,58.93,Allowed
+2024-11-06 15:49:49,ec012,42:86:52:E2:DA:04,192.168.3.141,Dell Inspiron,Laptop,VIIT-Faculty,AP-LIB-01,moodle.viit.ac.in,Education,111.07,197.85,Allowed
+2024-11-06 15:51:10,bt087,42:DD:1C:3F:4E:9B,192.168.6.241,HP Pavilion,Laptop,VIIT-Student,AP-SEMHALL-01,1337x.to,Blocked,31.94,338.83,Blocked
+2024-11-06 15:54:05,ee077,5F:2B:B8:22:0A:C7,192.168.7.253,Samsung Galaxy A52,Smartphone,VIIT-Faculty,AP-MECH-01,dropbox.com,Cloud Storage,46.13,687.05,Allowed
+2024-11-06 15:54:22,ch019,78:9E:73:65:4B:0C,192.168.8.158,HP Pavilion,Laptop,VIIT-Faculty,AP-LIB-02,facebook.com,Social Media,107.05,568.95,Allowed
+2024-11-06 15:55:37,me055,16:9A:EA:0F:1F:F5,192.168.2.127,Realme 10 Pro,Smartphone,VIIT-Faculty,AP-SEMHALL-01,w3schools.com,Education,802.95,50.68,Allowed
+2024-11-06 16:08:16,ee056,4B:21:40:8C:A6:C3,192.168.5.118,Lenovo Tab P11,Tablet,VIIT-Guest,AP-HOSTEL-01,piratebay.org,Blocked,127.12,550.17,Blocked
+2024-11-06 16:08:56,ee034,E6:E2:98:DB:9C:1E,192.168.2.244,Lenovo Tab P11,Tablet,VIIT-Guest,AP-CSE-02,primevideo.com,Streaming,0.53,32.56,Allowed
+2024-11-06 16:10:01,cs036,9D:93:E0:3F:EF:9B,192.168.5.130,Samsung Tab A7,Tablet,VIIT-Guest,AP-CSE-02,drive.google.com,Cloud Storage,37.49,425.89,Allowed
+2024-11-06 16:12:17,cs071,27:97:33:13:AC:43,192.168.3.43,Samsung Tab A7,Tablet,VIIT-Guest,AP-CSE-01,w3schools.com,Education,26.88,202.93,Allowed
+2024-11-06 16:13:26,me097,CA:B0:4A:94:15:93,192.168.6.238,iPad Air,Tablet,VIIT-Guest,AP-CSE-01,youtube.com,Streaming,66.27,375.82,Allowed
+2024-11-06 16:21:28,me082,DA:55:E3:B3:E4:15,192.168.10.113,Samsung Tab A7,Tablet,VIIT-Guest,AP-ECE-01,classroom.google.com,Education,112.34,560.36,Allowed
+2024-11-06 16:22:37,cs094,99:AC:FA:99:F3:08,192.168.2.252,OnePlus Nord,Smartphone,VIIT-Student,AP-CAFE-01,whatsapp.com,Communication,79.05,107.89,Allowed
+2024-11-06 16:24:27,bt088,91:28:80:64:8C:40,192.168.10.138,Samsung Tab A7,Tablet,VIIT-Faculty,AP-ADMIN-01,primevideo.com,Streaming,63.85,598.93,Allowed
+2024-11-06 16:25:47,ee028,3D:15:B1:DB:BD:23,192.168.6.5,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-CAFE-01,github.com,Education,83.46,206.75,Allowed
+2024-11-06 16:28:47,cs045,28:C3:7B:FE:49:76,192.168.8.67,OnePlus Nord,Smartphone,VIIT-Student,AP-GYM-01,w3schools.com,Education,134.52,506.34,Allowed
+2024-11-06 16:29:05,ee057,3A:6E:DC:E7:74:D3,192.168.7.108,Realme 10 Pro,Smartphone,VIIT-Student,AP-LIB-02,bet365.com,Blocked,92.84,726.33,Blocked
+2024-11-06 16:32:50,bt098,67:8A:8B:46:37:7A,192.168.9.59,Dell Inspiron,Laptop,VIIT-Student,AP-GYM-01,classroom.google.com,Education,4.32,489.19,Allowed
+2024-11-06 16:33:53,ec048,43:BB:8B:54:83:F6,192.168.2.121,OnePlus Nord,Smartphone,VIIT-Student,AP-LIB-02,w3schools.com,Education,41.93,55.38,Allowed
+2024-11-06 16:39:28,bt065,9E:AD:71:AA:56:27,192.168.2.137,Lenovo Tab P11,Tablet,VIIT-Student,AP-HOSTEL-01,meet.google.com,Communication,19.33,409.57,Allowed
+2024-11-06 16:46:09,cs036,9D:93:E0:3F:EF:9B,192.168.5.130,Samsung Tab A7,Tablet,VIIT-Guest,AP-CSE-02,github.com,Education,32.18,439.41,Allowed
+2024-11-06 16:48:53,cs011,04:99:35:44:87:3B,192.168.3.71,Acer Aspire,Laptop,VIIT-Faculty,AP-CAFE-01,spotify.com,Streaming,146.16,128.52,Allowed
+2024-11-06 16:49:11,ec030,8D:05:61:2B:7B:D0,192.168.4.178,iPhone 13,Smartphone,VIIT-Guest,AP-ADMIN-01,wetransfer.com,Cloud Storage,140.98,30.89,Allowed
+2024-11-06 17:06:49,ec007,C2:01:C7:87:E8:92,192.168.8.41,iPhone 13,Smartphone,VIIT-Faculty,AP-CSE-02,whatsapp.com,Communication,63.04,34.23,Allowed
+2024-11-06 17:07:19,ce058,BE:42:1E:A8:3E:D2,192.168.1.249,Realme 10 Pro,Smartphone,VIIT-Faculty,AP-CAFE-01,ktu.edu.in,Education,24.86,624.7,Allowed
+2024-11-06 17:07:19,me097,FA:A2:F5:B2:8C:93,192.168.9.99,Acer Aspire,Laptop,VIIT-Guest,AP-ECE-01,primevideo.com,Streaming,6.27,223.04,Allowed
+2024-11-06 17:07:23,me096,B5:87:F7:62:7E:8E,192.168.4.243,Samsung Tab A7,Tablet,VIIT-Faculty,AP-ECE-01,classroom.google.com,Education,126.29,419.19,Allowed
+2024-11-06 17:34:46,ch079,F5:5D:45:20:EA:12,192.168.1.204,Redmi Note 12,Smartphone,VIIT-Student,AP-MECH-01,mail.google.com,Communication,141.3,497.11,Allowed
+2024-11-06 17:35:02,cs045,28:C3:7B:FE:49:76,192.168.8.67,OnePlus Nord,Smartphone,VIIT-Student,AP-GYM-01,teams.microsoft.com,Communication,12.53,370.41,Allowed
+2024-11-06 17:41:54,ce005,43:F2:7C:F2:D0:61,192.168.7.92,Dell Inspiron,Laptop,VIIT-Faculty,AP-CAFE-01,spotify.com,Streaming,36.86,559.3,Allowed
+2024-11-06 17:42:08,bt073,52:66:46:80:1A:F6,192.168.2.184,iPhone 13,Smartphone,VIIT-Student,AP-HOSTEL-01,zoom.us,Communication,115.06,180.2,Allowed
+2024-11-06 17:47:21,ec001,EF:80:05:3A:88:AE,192.168.7.42,Lenovo IdeaPad,Laptop,VIIT-Student,AP-ADMIN-01,teams.microsoft.com,Communication,24.79,369.84,Allowed
+2024-11-06 17:50:43,ec048,43:BB:8B:54:83:F6,192.168.2.121,OnePlus Nord,Smartphone,VIIT-Student,AP-LIB-02,snapchat.com,Social Media,5.39,343.59,Allowed
+2024-11-06 17:52:10,ee056,4B:21:40:8C:A6:C3,192.168.5.118,Lenovo Tab P11,Tablet,VIIT-Guest,AP-ECE-01,zoom.us,Communication,70.93,333.3,Allowed
+2024-11-06 18:00:35,it025,41:0D:C9:0D:2A:DB,192.168.3.14,Asus VivoBook,Laptop,VIIT-Faculty,AP-CAFE-01,spotify.com,Streaming,44.6,509.07,Allowed
+2024-11-06 18:07:17,me091,17:CD:1A:63:B9:93,192.168.9.117,Asus VivoBook,Laptop,VIIT-Faculty,AP-HOSTEL-01,netflix.com,Streaming,69.08,663.06,Allowed
+2024-11-06 18:09:16,ee057,3A:6E:DC:E7:74:D3,192.168.7.108,Realme 10 Pro,Smartphone,VIIT-Student,AP-LIB-02,facebook.com,Social Media,131.75,109.88,Allowed
+2024-11-06 18:15:41,ch079,F5:5D:45:20:EA:12,192.168.1.204,Redmi Note 12,Smartphone,VIIT-Student,AP-MECH-01,dropbox.com,Cloud Storage,50.02,594.33,Allowed
+2024-11-06 18:32:12,ce058,93:9F:B4:35:6C:4F,192.168.4.218,Samsung Tab A7,Tablet,VIIT-Faculty,AP-SEMHALL-01,teams.microsoft.com,Communication,135.61,484.79,Allowed
+2024-11-06 18:35:30,bt023,4E:6D:20:D4:D0:A9,192.168.7.17,Samsung Tab A7,Tablet,VIIT-Faculty,AP-GYM-01,piratebay.org,Blocked,75.83,556.98,Blocked
+2024-11-06 18:54:35,it066,4B:78:34:4A:83:65,192.168.3.196,Acer Aspire,Laptop,VIIT-Student,AP-GYM-01,ktu.edu.in,Education,42.97,179.06,Allowed
+2024-11-06 18:57:05,ce067,9B:8C:1C:B4:25:9E,192.168.1.16,Realme 10 Pro,Smartphone,VIIT-Faculty,AP-MECH-01,teams.microsoft.com,Communication,646.96,93.92,Allowed
+2024-11-06 19:00:29,bt073,52:66:46:80:1A:F6,192.168.2.184,iPhone 13,Smartphone,VIIT-Student,AP-CSE-02,whatsapp.com,Communication,60.07,490.59,Allowed
+2024-11-06 19:09:22,ce049,CB:BB:2E:CA:07:87,192.168.8.96,iPad Air,Tablet,VIIT-Guest,AP-ECE-01,moodle.viit.ac.in,Education,34.4,300.66,Allowed
+2024-11-06 19:22:45,cs021,ED:19:7F:3E:E9:44,192.168.9.154,iPhone 13,Smartphone,VIIT-Faculty,AP-GYM-01,wetransfer.com,Cloud Storage,30.2,163.8,Allowed
+2024-11-06 19:23:30,me055,3A:20:F3:E5:B9:37,192.168.4.244,iPhone 13,Smartphone,VIIT-Faculty,AP-SEMHALL-01,youtube.com,Streaming,1405.18,139.72,Allowed
+2024-11-06 19:24:23,ec048,43:BB:8B:54:83:F6,192.168.2.121,OnePlus Nord,Smartphone,VIIT-Student,AP-LIB-02,youtube.com,Streaming,77.45,728.45,Allowed
+2024-11-06 19:28:19,ce013,41:15:9D:BA:14:B7,192.168.2.92,HP Pavilion,Laptop,VIIT-Faculty,AP-HOSTEL-01,stackoverflow.com,Education,47.45,100.99,Allowed
+2024-11-06 19:29:39,cs045,28:C3:7B:FE:49:76,192.168.8.67,OnePlus Nord,Smartphone,VIIT-Student,AP-GYM-01,instagram.com,Social Media,26.25,44.72,Allowed
+2024-11-06 19:43:48,me091,F0:92:04:37:DC:44,192.168.7.95,OnePlus Nord,Smartphone,VIIT-Faculty,AP-CSE-01,fmovies.io,Blocked,64.47,21.56,Blocked
+2024-11-06 20:00:14,ch064,0A:A6:57:EB:B9:2D,192.168.4.113,Samsung Galaxy A52,Smartphone,VIIT-Faculty,AP-MECH-01,jiocinema.com,Streaming,147.58,104.19,Allowed
+2024-11-06 20:11:28,ce016,64:BA:DC:23:A9:A0,192.168.5.131,iPad Air,Tablet,VIIT-Guest,AP-ECE-01,instagram.com,Social Media,96.46,313.08,Allowed
+2024-11-06 20:13:25,it066,4B:78:34:4A:83:65,192.168.3.196,Acer Aspire,Laptop,VIIT-Student,AP-GYM-01,stackoverflow.com,Education,110.32,762.31,Allowed
+2024-11-06 20:29:34,ce004,75:70:03:24:1E:75,192.168.6.20,Dell Inspiron,Laptop,VIIT-Student,AP-SEMHALL-01,twitter.com,Social Media,59.8,195.27,Allowed
+2024-11-06 20:35:06,me026,1A:B3:72:23:14:0F,192.168.1.161,HP Pavilion,Laptop,VIIT-Student,AP-CSE-01,vpngate.net,Blocked,131.74,372.96,Blocked
+2024-11-06 20:41:59,me084,5F:FF:C6:3C:86:85,192.168.4.158,Samsung Tab A7,Tablet,VIIT-Guest,AP-ECE-01,stackoverflow.com,Education,39.06,381.24,Allowed
+2024-11-06 20:43:10,ec060,50:BD:9F:A6:2B:1A,192.168.10.14,HP Pavilion,Laptop,VIIT-Student,AP-ADMIN-01,hotstar.com,Streaming,83.75,799.41,Allowed
+2024-11-06 20:43:29,ec029,C2:AC:0E:FD:A6:5D,192.168.6.206,Redmi Note 12,Smartphone,VIIT-Faculty,AP-ECE-01,primevideo.com,Streaming,84.69,617.12,Allowed
+2024-11-06 20:43:29,it074,8B:E6:4B:DF:2E:71,192.168.1.108,OnePlus Nord,Smartphone,VIIT-Guest,AP-LIB-02,linkedin.com,Social Media,47.73,653.84,Allowed
+2024-11-06 20:45:29,ce090,E6:7E:48:31:19:94,192.168.7.65,iPhone 13,Smartphone,VIIT-Faculty,AP-CSE-02,netflix.com,Streaming,1721.99,110.25,Allowed
+2024-11-06 20:47:13,ee072,E5:77:7A:9E:F0:63,192.168.8.120,iPhone 13,Smartphone,VIIT-Faculty,AP-SEMHALL-01,mail.google.com,Communication,95.61,622.47,Allowed
+2024-11-06 20:48:13,ee028,3D:15:B1:DB:BD:23,192.168.6.5,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-CAFE-01,github.com,Education,63.82,295.69,Allowed
+2024-11-06 20:50:25,ce005,43:F2:7C:F2:D0:61,192.168.7.92,Dell Inspiron,Laptop,VIIT-Faculty,AP-CAFE-01,classroom.google.com,Education,36.52,497.73,Allowed
+2024-11-06 20:52:16,cs045,28:C3:7B:FE:49:76,192.168.8.67,OnePlus Nord,Smartphone,VIIT-Student,AP-GYM-01,onedrive.live.com,Cloud Storage,116.68,309.33,Allowed
+2024-11-06 20:55:34,bt031,08:2F:96:71:CF:7C,192.168.6.123,iPhone 13,Smartphone,VIIT-Guest,AP-HOSTEL-01,mail.google.com,Communication,5.76,288.69,Allowed
+2024-11-06 21:12:20,it083,26:CF:BA:51:0F:49,192.168.8.10,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-GYM-01,moodle.viit.ac.in,Education,1.77,288.54,Allowed
+2024-11-06 21:18:17,ee077,5F:2B:B8:22:0A:C7,192.168.7.253,Samsung Galaxy A52,Smartphone,VIIT-Faculty,AP-MECH-01,w3schools.com,Education,106.16,150.57,Allowed
+2024-11-06 21:19:11,ch092,3C:41:31:C9:BF:AD,192.168.3.52,Samsung Tab A7,Tablet,VIIT-Guest,AP-GYM-01,primevideo.com,Streaming,145.05,83.02,Allowed
+2024-11-06 21:20:54,ee034,E6:E2:98:DB:9C:1E,192.168.2.244,Lenovo Tab P11,Tablet,VIIT-Guest,AP-CSE-02,snapchat.com,Social Media,149.77,357.19,Allowed
+2024-11-06 21:21:39,it066,4B:78:34:4A:83:65,192.168.3.196,Acer Aspire,Laptop,VIIT-Student,AP-GYM-01,jiocinema.com,Streaming,147.3,481.81,Allowed
+2024-11-06 21:22:03,ee077,5F:2B:B8:22:0A:C7,192.168.7.253,Samsung Galaxy A52,Smartphone,VIIT-Faculty,AP-MECH-01,meet.google.com,Communication,135.62,143.98,Allowed
+2024-11-06 21:24:43,ce070,41:2F:D8:B9:09:B9,192.168.4.89,Redmi Note 12,Smartphone,VIIT-Student,AP-LIB-02,dropbox.com,Cloud Storage,38.17,80.32,Allowed
+2024-11-06 21:25:31,bt009,A1:85:68:A0:7A:87,192.168.5.119,Redmi Note 12,Smartphone,VIIT-Student,AP-ECE-01,outlook.com,Communication,20.34,121.26,Allowed
+2024-11-06 21:26:04,bt098,67:8A:8B:46:37:7A,192.168.9.59,Dell Inspiron,Laptop,VIIT-Student,AP-GYM-01,instagram.com,Social Media,35.93,264.0,Allowed
+2024-11-06 21:27:18,it059,8E:73:DB:0D:88:0E,192.168.5.237,Lenovo IdeaPad,Laptop,VIIT-Faculty,AP-MECH-01,stackoverflow.com,Education,2469.95,140.02,Allowed
+2024-11-06 21:34:01,ch053,40:69:23:6A:6E:77,192.168.10.2,Redmi Note 12,Smartphone,VIIT-Student,AP-CSE-02,stackoverflow.com,Education,73.79,213.02,Allowed
+2024-11-06 21:43:25,ce046,93:50:25:E2:B0:99,192.168.5.118,Samsung Tab A7,Tablet,VIIT-Student,AP-LIB-02,ktu.edu.in,Education,9.93,166.1,Allowed
+2024-11-06 21:50:10,ce018,A4:EE:E2:E2:6D:F2,192.168.2.74,iPad Air,Tablet,VIIT-Guest,AP-HOSTEL-01,whatsapp.com,Communication,72.93,415.62,Allowed
+2024-11-06 21:51:56,ec048,43:BB:8B:54:83:F6,192.168.2.121,OnePlus Nord,Smartphone,VIIT-Student,AP-LIB-02,snapchat.com,Social Media,134.97,364.32,Allowed
+2024-11-06 21:55:29,bt073,52:66:46:80:1A:F6,192.168.2.184,iPhone 13,Smartphone,VIIT-Student,AP-HOSTEL-02,drive.google.com,Cloud Storage,19.62,638.47,Allowed
+2024-11-06 21:55:33,ec040,1A:68:88:43:93:E0,192.168.2.9,Samsung Tab A7,Tablet,VIIT-Guest,AP-GYM-01,stackoverflow.com,Education,135.79,127.49,Allowed
+2024-11-06 21:57:42,ec044,A6:1C:96:B7:BF:DC,192.168.9.107,HP Pavilion,Laptop,VIIT-Guest,AP-HOSTEL-02,coursera.org,Education,96.0,738.54,Allowed
+2024-11-06 21:58:54,it074,8B:E6:4B:DF:2E:71,192.168.1.108,OnePlus Nord,Smartphone,VIIT-Guest,AP-LIB-02,classroom.google.com,Education,128.59,583.28,Allowed
+2024-11-07 08:24:28,me096,B5:87:F7:62:7E:8E,192.168.4.243,Samsung Tab A7,Tablet,VIIT-Faculty,AP-ECE-01,torrent-galaxy.to,Blocked,42.22,489.75,Blocked
+2024-11-07 08:28:29,cs010,33:25:6D:87:43:B2,192.168.6.74,HP Pavilion,Laptop,VIIT-Faculty,AP-GYM-01,drive.google.com,Cloud Storage,15.39,628.19,Allowed
+2024-11-07 08:44:15,ce018,A4:EE:E2:E2:6D:F2,192.168.2.74,iPad Air,Tablet,VIIT-Guest,AP-HOSTEL-01,classroom.google.com,Education,92.93,546.25,Allowed
+2024-11-07 08:52:07,cs010,33:25:6D:87:43:B2,192.168.6.74,HP Pavilion,Laptop,VIIT-Faculty,AP-CSE-01,hotstar.com,Streaming,89.26,417.96,Allowed
+2024-11-07 09:09:16,ec050,BE:37:77:F1:0C:A7,192.168.2.164,iPad Air,Tablet,VIIT-Guest,AP-ADMIN-01,meet.google.com,Communication,45.94,449.63,Allowed
+2024-11-07 09:09:49,me084,5F:FF:C6:3C:86:85,192.168.4.158,Samsung Tab A7,Tablet,VIIT-Guest,AP-ECE-01,1337x.to,Blocked,143.72,455.69,Blocked
+2024-11-07 09:18:42,ee068,2E:C4:EC:15:E6:60,192.168.8.130,iPhone 13,Smartphone,VIIT-Guest,AP-MECH-01,stackoverflow.com,Education,4.51,163.2,Allowed
+2024-11-07 09:20:38,ce014,7F:88:51:37:C3:13,192.168.4.211,Redmi Note 12,Smartphone,VIIT-Faculty,AP-ADMIN-01,onedrive.live.com,Cloud Storage,136.95,404.4,Allowed
+2024-11-07 09:22:35,me006,47:D8:5D:8E:EC:7F,192.168.9.27,Asus VivoBook,Laptop,VIIT-Guest,AP-LIB-01,w3schools.com,Education,67.6,446.02,Allowed
+2024-11-07 09:28:36,ee072,E5:77:7A:9E:F0:63,192.168.8.120,iPhone 13,Smartphone,VIIT-Faculty,AP-ECE-01,geeksforgeeks.org,Education,28.37,111.79,Allowed
+2024-11-07 09:32:41,ce027,0D:9F:C0:CB:65:26,192.168.4.28,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-SEMHALL-01,spotify.com,Streaming,1.49,706.22,Allowed
+2024-11-07 09:35:10,it041,9F:07:D0:2F:73:3A,192.168.3.129,Samsung Galaxy A52,Smartphone,VIIT-Guest,AP-CSE-02,facebook.com,Social Media,80.15,323.65,Allowed
+2024-11-07 09:35:57,ce016,DF:3B:C5:61:82:16,192.168.1.135,Samsung Tab A7,Tablet,VIIT-Guest,AP-ECE-01,youtube.com,Streaming,11.59,140.23,Allowed
+2024-11-07 09:36:48,it020,63:C4:FD:CC:7C:4B,192.168.1.230,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-ADMIN-01,hotstar.com,Streaming,47.36,51.12,Allowed
+2024-11-07 09:38:58,ce070,41:2F:D8:B9:09:B9,192.168.4.89,Redmi Note 12,Smartphone,VIIT-Student,AP-ADMIN-01,reddit.com,Social Media,48.04,681.99,Allowed
+2024-11-07 09:40:14,it066,4B:78:34:4A:83:65,192.168.3.196,Acer Aspire,Laptop,VIIT-Student,AP-GYM-01,stackoverflow.com,Education,131.48,728.88,Allowed
+2024-11-07 09:42:13,ce090,51:A7:A0:61:51:FF,192.168.8.227,Samsung Tab A7,Tablet,VIIT-Faculty,AP-CSE-02,reddit.com,Social Media,104.4,64.74,Allowed
+2024-11-07 09:43:28,ec044,A6:1C:96:B7:BF:DC,192.168.9.107,HP Pavilion,Laptop,VIIT-Guest,AP-MECH-01,reddit.com,Social Media,1.77,59.02,Allowed
+2024-11-07 09:45:30,cs071,27:97:33:13:AC:43,192.168.3.43,Samsung Tab A7,Tablet,VIIT-Guest,AP-CSE-01,primevideo.com,Streaming,42.84,451.9,Allowed
+2024-11-07 09:46:06,ce085,3E:45:25:E7:58:E3,192.168.6.183,Lenovo IdeaPad,Laptop,VIIT-Guest,AP-LIB-02,primevideo.com,Streaming,96.55,720.6,Allowed
+2024-11-07 09:46:46,bt080,3F:BC:DF:CC:E1:C5,192.168.8.179,Redmi Note 12,Smartphone,VIIT-Faculty,AP-CSE-02,hotstar.com,Streaming,87.46,647.15,Allowed
+2024-11-07 09:56:13,ee024,0A:C2:F4:03:B4:98,192.168.9.193,Realme 10 Pro,Smartphone,VIIT-Faculty,AP-HOSTEL-01,github.com,Education,24.33,436.75,Allowed
+2024-11-07 09:59:08,ee089,1E:50:E1:D4:F7:ED,192.168.10.38,Lenovo IdeaPad,Laptop,VIIT-Guest,AP-MECH-01,mail.google.com,Communication,39.93,551.9,Allowed
+2024-11-07 10:00:09,ee077,5F:2B:B8:22:0A:C7,192.168.7.253,Samsung Galaxy A52,Smartphone,VIIT-Faculty,AP-MECH-01,youtube.com,Streaming,79.6,719.32,Allowed
+2024-11-07 10:10:38,bt088,2F:56:4E:57:AC:15,192.168.1.244,Dell Inspiron,Laptop,VIIT-Faculty,AP-GYM-01,stackoverflow.com,Education,75.05,792.26,Allowed
+2024-11-07 10:15:39,ce078,22:B0:7B:35:AA:44,192.168.9.88,Lenovo IdeaPad,Laptop,VIIT-Student,AP-GYM-01,instagram.com,Social Media,65.43,235.13,Allowed
+2024-11-07 10:19:50,ec032,3D:5E:62:6E:F7:8D,192.168.9.154,Lenovo Tab P11,Tablet,VIIT-Student,AP-HOSTEL-01,drive.google.com,Cloud Storage,35.31,124.79,Allowed
+2024-11-07 10:20:48,bt100,2D:76:13:59:D5:5A,192.168.8.49,Asus VivoBook,Laptop,VIIT-Faculty,AP-SEMHALL-01,snapchat.com,Social Media,87.18,676.03,Allowed
+2024-11-07 10:35:32,bt009,A1:85:68:A0:7A:87,192.168.5.119,Redmi Note 12,Smartphone,VIIT-Student,AP-MECH-01,primevideo.com,Streaming,129.9,761.71,Allowed
+2024-11-07 10:35:51,bt039,81:A5:3B:CE:00:EC,192.168.4.134,Samsung Galaxy A52,Smartphone,VIIT-Guest,AP-MECH-01,dropbox.com,Cloud Storage,120.03,799.19,Allowed
+2024-11-07 10:40:58,ec050,BE:37:77:F1:0C:A7,192.168.2.164,iPad Air,Tablet,VIIT-Guest,AP-HOSTEL-01,1337x.to,Blocked,140.01,474.59,Blocked
+2024-11-07 10:44:54,me022,7A:8C:E1:27:92:78,192.168.6.230,OnePlus Nord,Smartphone,VIIT-Student,AP-LIB-02,netflix.com,Streaming,27.84,323.62,Allowed
+2024-11-07 10:46:31,ch053,40:69:23:6A:6E:77,192.168.10.2,Redmi Note 12,Smartphone,VIIT-Student,AP-ECE-01,vpngate.net,Blocked,30.44,676.0,Blocked
+2024-11-07 10:53:43,me063,15:DF:09:EB:27:A0,192.168.10.105,Samsung Tab A7,Tablet,VIIT-Guest,AP-HOSTEL-02,classroom.google.com,Education,0.58,747.14,Allowed
+2024-11-07 11:03:59,it047,36:79:C3:B7:97:97,192.168.5.4,Asus VivoBook,Laptop,VIIT-Faculty,AP-ECE-01,hotstar.com,Streaming,65.48,270.76,Allowed
+2024-11-07 11:04:15,cs015,74:72:0C:62:CC:A8,192.168.5.91,Samsung Galaxy A52,Smartphone,VIIT-Faculty,AP-HOSTEL-02,spotify.com,Streaming,33.52,454.61,Allowed
+2024-11-07 11:05:45,it083,40:22:78:BB:B9:C4,192.168.10.41,iPad Air,Tablet,VIIT-Faculty,AP-GYM-01,mail.google.com,Communication,43.87,125.47,Allowed
+2024-11-07 11:13:21,ee054,59:38:0D:43:07:B7,192.168.6.6,Acer Aspire,Laptop,VIIT-Faculty,AP-CSE-01,pornhub.com,Blocked,48.7,82.69,Blocked
+2024-11-07 11:18:01,it025,41:0D:C9:0D:2A:DB,192.168.3.14,Asus VivoBook,Laptop,VIIT-Faculty,AP-GYM-01,zoom.us,Communication,137.43,756.27,Allowed
+2024-11-07 11:27:12,bt017,97:41:62:D7:C2:59,192.168.5.105,Lenovo Tab P11,Tablet,VIIT-Student,AP-HOSTEL-01,bet365.com,Blocked,121.36,105.32,Blocked
+2024-11-07 11:28:44,ch092,3C:41:31:C9:BF:AD,192.168.3.52,Samsung Tab A7,Tablet,VIIT-Guest,AP-HOSTEL-02,reddit.com,Social Media,69.44,150.78,Allowed
+2024-11-07 11:29:20,it041,9F:07:D0:2F:73:3A,192.168.3.129,Samsung Galaxy A52,Smartphone,VIIT-Guest,AP-CSE-02,reddit.com,Social Media,139.66,461.48,Allowed
+2024-11-07 11:30:07,ce085,3E:45:25:E7:58:E3,192.168.6.183,Lenovo IdeaPad,Laptop,VIIT-Guest,AP-CSE-02,youtube.com,Streaming,47.93,797.17,Allowed
+2024-11-07 11:30:45,ch037,0A:89:14:59:F0:E2,192.168.10.113,Redmi Note 12,Smartphone,VIIT-Faculty,AP-GYM-01,nptel.ac.in,Education,54.21,552.07,Allowed
+2024-11-07 11:31:36,ce018,A4:EE:E2:E2:6D:F2,192.168.2.74,iPad Air,Tablet,VIIT-Guest,AP-HOSTEL-02,onedrive.live.com,Cloud Storage,130.19,704.71,Allowed
+2024-11-07 11:31:49,ee033,5E:1A:81:F4:3A:21,192.168.2.149,Realme 10 Pro,Smartphone,VIIT-Guest,AP-CSE-02,youtube.com,Streaming,98.91,433.47,Allowed
+2024-11-07 11:34:39,cs011,04:99:35:44:87:3B,192.168.3.71,Acer Aspire,Laptop,VIIT-Faculty,AP-CAFE-01,reddit.com,Social Media,115.18,341.74,Allowed
+2024-11-07 11:38:03,ec012,42:86:52:E2:DA:04,192.168.3.141,Dell Inspiron,Laptop,VIIT-Faculty,AP-LIB-01,hotstar.com,Streaming,9.16,73.54,Allowed
+2024-11-07 11:42:33,cs045,28:C3:7B:FE:49:76,192.168.8.67,OnePlus Nord,Smartphone,VIIT-Student,AP-LIB-01,nptel.ac.in,Education,50.99,578.2,Allowed
+2024-11-07 11:44:36,it035,50:7A:58:26:50:01,192.168.10.122,Realme 10 Pro,Smartphone,VIIT-Guest,AP-GYM-01,twitter.com,Social Media,110.27,580.25,Allowed
+2024-11-07 11:49:27,cs045,28:C3:7B:FE:49:76,192.168.8.67,OnePlus Nord,Smartphone,VIIT-Student,AP-GYM-01,hotstar.com,Streaming,91.74,146.86,Allowed
+2024-11-07 11:49:43,me084,5F:FF:C6:3C:86:85,192.168.4.158,Samsung Tab A7,Tablet,VIIT-Guest,AP-ECE-01,moodle.viit.ac.in,Education,54.37,685.48,Allowed
+2024-11-07 11:55:02,ec044,C2:A2:F9:12:23:78,192.168.5.60,Lenovo Tab P11,Tablet,VIIT-Guest,AP-HOSTEL-02,hotstar.com,Streaming,39.56,562.12,Allowed
+2024-11-07 12:00:42,cs021,A2:E2:DA:E4:51:F3,192.168.4.217,OnePlus Nord,Smartphone,VIIT-Faculty,AP-GYM-01,stackoverflow.com,Education,136.6,552.12,Allowed
+2024-11-07 12:05:17,ec060,CD:23:48:0F:2E:6E,192.168.8.89,Realme 10 Pro,Smartphone,VIIT-Student,AP-HOSTEL-01,w3schools.com,Education,115.5,10.24,Allowed
+2024-11-07 12:11:27,ee042,A4:60:7A:C4:77:D2,192.168.8.182,Lenovo IdeaPad,Laptop,VIIT-Faculty,AP-CAFE-01,hotstar.com,Streaming,68.43,342.18,Allowed
+2024-11-07 12:25:06,bt031,08:2F:96:71:CF:7C,192.168.6.123,iPhone 13,Smartphone,VIIT-Guest,AP-HOSTEL-01,whatsapp.com,Communication,77.79,577.85,Allowed
+2024-11-07 12:30:10,it025,85:C2:A7:6C:E8:A7,192.168.5.194,Realme 10 Pro,Smartphone,VIIT-Faculty,AP-LIB-02,moodle.viit.ac.in,Education,91.18,228.81,Allowed
+2024-11-07 12:34:27,it086,B8:BC:EF:42:2C:21,192.168.8.136,Realme 10 Pro,Smartphone,VIIT-Guest,AP-CAFE-01,facebook.com,Social Media,17.45,144.77,Allowed
+2024-11-07 12:40:13,me055,3A:20:F3:E5:B9:37,192.168.4.244,iPhone 13,Smartphone,VIIT-Faculty,AP-SEMHALL-01,classroom.google.com,Education,114.95,676.08,Allowed
+2024-11-07 12:42:37,me082,DA:55:E3:B3:E4:15,192.168.10.113,Samsung Tab A7,Tablet,VIIT-Guest,AP-ECE-01,twitter.com,Social Media,56.93,25.95,Allowed
+2024-11-07 12:42:56,ce062,3D:03:FE:DC:59:42,192.168.4.130,iPhone 13,Smartphone,VIIT-Guest,AP-HOSTEL-01,snapchat.com,Social Media,61.74,190.09,Allowed
+2024-11-07 12:50:57,cs011,90:6B:AF:68:87:FA,192.168.2.164,Samsung Galaxy A52,Smartphone,VIIT-Faculty,AP-SEMHALL-01,moodle.viit.ac.in,Education,1753.16,45.84,Allowed
+2024-11-07 13:07:06,ce078,22:B0:7B:35:AA:44,192.168.9.88,Lenovo IdeaPad,Laptop,VIIT-Student,AP-GYM-01,spotify.com,Streaming,15.56,151.95,Allowed
+2024-11-07 13:08:52,bt051,47:17:13:9B:FC:3B,192.168.9.36,HP Pavilion,Laptop,VIIT-Faculty,AP-CAFE-01,mail.google.com,Communication,122.92,739.11,Allowed
+2024-11-07 13:35:03,ee024,70:F9:70:8B:DF:F8,192.168.6.173,Asus VivoBook,Laptop,VIIT-Faculty,AP-GYM-01,onedrive.live.com,Cloud Storage,104.09,42.35,Allowed
+2024-11-07 13:44:37,me026,1A:B3:72:23:14:0F,192.168.1.161,HP Pavilion,Laptop,VIIT-Student,AP-CSE-01,coursera.org,Education,135.07,257.64,Allowed
+2024-11-07 13:47:41,me022,7A:8C:E1:27:92:78,192.168.6.230,OnePlus Nord,Smartphone,VIIT-Student,AP-HOSTEL-01,spotify.com,Streaming,67.49,685.99,Allowed
+2024-11-07 14:08:34,ee068,7E:E0:E0:51:BA:BE,192.168.7.200,Realme 10 Pro,Smartphone,VIIT-Guest,AP-MECH-01,github.com,Education,2.15,264.78,Allowed
+2024-11-07 14:09:55,it041,9F:07:D0:2F:73:3A,192.168.3.129,Samsung Galaxy A52,Smartphone,VIIT-Guest,AP-SEMHALL-01,primevideo.com,Streaming,46.9,517.31,Allowed
+2024-11-07 14:12:54,it086,D2:D1:25:40:A2:25,192.168.9.90,Realme 10 Pro,Smartphone,VIIT-Guest,AP-CSE-01,moodle.viit.ac.in,Education,127.83,173.44,Allowed
+2024-11-07 14:19:03,it074,8B:E6:4B:DF:2E:71,192.168.1.108,OnePlus Nord,Smartphone,VIIT-Guest,AP-LIB-02,geeksforgeeks.org,Education,19.55,254.13,Allowed
+2024-11-07 14:19:25,ec093,13:46:AA:F2:E9:4C,192.168.3.85,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-HOSTEL-02,coursera.org,Education,71.32,667.02,Allowed
+2024-11-07 14:22:41,it003,6C:66:9F:CC:BF:E0,192.168.2.65,Samsung Tab A7,Tablet,VIIT-Student,AP-CSE-02,reddit.com,Social Media,136.78,502.66,Allowed
+2024-11-07 14:30:07,it041,95:8B:D4:F7:F1:7C,192.168.3.100,iPhone 13,Smartphone,VIIT-Guest,AP-CAFE-01,geeksforgeeks.org,Education,118.42,706.51,Allowed
+2024-11-07 14:33:55,ec044,2E:DE:32:33:E3:55,192.168.1.13,Samsung Tab A7,Tablet,VIIT-Guest,AP-HOSTEL-02,meet.google.com,Communication,35.43,548.39,Allowed
+2024-11-07 14:36:31,ec099,F1:33:46:02:50:D0,192.168.8.168,Samsung Tab A7,Tablet,VIIT-Faculty,AP-CSE-02,onedrive.live.com,Cloud Storage,47.42,69.8,Allowed
+2024-11-07 14:36:38,bt039,81:A5:3B:CE:00:EC,192.168.4.134,Samsung Galaxy A52,Smartphone,VIIT-Guest,AP-MECH-01,classroom.google.com,Education,42.43,29.78,Allowed
+2024-11-07 14:42:11,ee042,23:8D:D4:AE:88:01,192.168.10.150,OnePlus Nord,Smartphone,VIIT-Faculty,AP-CAFE-01,reddit.com,Social Media,48.06,309.32,Allowed
+2024-11-07 14:42:59,it047,36:79:C3:B7:97:97,192.168.5.4,Asus VivoBook,Laptop,VIIT-Faculty,AP-ECE-01,classroom.google.com,Education,102.94,775.02,Allowed
+2024-11-07 14:56:34,me061,F9:9D:17:70:CA:1C,192.168.5.244,HP Pavilion,Laptop,VIIT-Student,AP-LIB-01,meet.google.com,Communication,91.75,121.76,Allowed
+2024-11-07 15:03:58,ee077,5F:2B:B8:22:0A:C7,192.168.7.253,Samsung Galaxy A52,Smartphone,VIIT-Faculty,AP-MECH-01,reddit.com,Social Media,23.75,105.46,Allowed
+2024-11-07 15:05:10,ee068,4D:1F:E6:34:AF:2B,192.168.3.12,Lenovo Tab P11,Tablet,VIIT-Guest,AP-MECH-01,primevideo.com,Streaming,16.74,457.76,Allowed
+2024-11-07 15:05:38,ec038,D1:AA:A4:35:52:A8,192.168.5.171,Realme 10 Pro,Smartphone,VIIT-Guest,AP-HOSTEL-01,meet.google.com,Communication,36.06,473.15,Allowed
+2024-11-07 15:17:01,ee054,59:38:0D:43:07:B7,192.168.6.6,Acer Aspire,Laptop,VIIT-Faculty,AP-LIB-02,youtube.com,Streaming,6.09,527.93,Allowed
+2024-11-07 15:19:20,cs015,74:72:0C:62:CC:A8,192.168.5.91,Samsung Galaxy A52,Smartphone,VIIT-Faculty,AP-HOSTEL-01,mail.google.com,Communication,56.35,753.83,Allowed
+2024-11-07 15:20:01,it025,41:0D:C9:0D:2A:DB,192.168.3.14,Asus VivoBook,Laptop,VIIT-Faculty,AP-HOSTEL-01,ktu.edu.in,Education,136.69,329.07,Allowed
+2024-11-07 15:22:10,ch019,78:9E:73:65:4B:0C,192.168.8.158,HP Pavilion,Laptop,VIIT-Faculty,AP-LIB-02,stackoverflow.com,Education,89.31,146.18,Allowed
+2024-11-07 15:24:00,it020,63:C4:FD:CC:7C:4B,192.168.1.230,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-LIB-02,drive.google.com,Cloud Storage,19.85,349.8,Allowed
+2024-11-07 15:34:44,it041,95:8B:D4:F7:F1:7C,192.168.3.100,iPhone 13,Smartphone,VIIT-Guest,AP-CSE-02,jiocinema.com,Streaming,88.85,628.53,Allowed
+2024-11-07 15:49:18,ee054,59:38:0D:43:07:B7,192.168.6.6,Acer Aspire,Laptop,VIIT-Faculty,AP-CSE-01,meet.google.com,Communication,1100.44,122.3,Allowed
+2024-11-07 15:59:12,bt087,42:DD:1C:3F:4E:9B,192.168.6.241,HP Pavilion,Laptop,VIIT-Student,AP-MECH-01,onedrive.live.com,Cloud Storage,70.32,648.16,Allowed
+2024-11-07 16:02:37,ch019,78:9E:73:65:4B:0C,192.168.8.158,HP Pavilion,Laptop,VIIT-Faculty,AP-LIB-02,wetransfer.com,Cloud Storage,149.62,211.24,Allowed
+2024-11-07 16:06:55,bt073,52:66:46:80:1A:F6,192.168.2.184,iPhone 13,Smartphone,VIIT-Student,AP-HOSTEL-01,classroom.google.com,Education,121.47,157.55,Allowed
+2024-11-07 16:07:33,ee089,1E:50:E1:D4:F7:ED,192.168.10.38,Lenovo IdeaPad,Laptop,VIIT-Guest,AP-MECH-01,hotstar.com,Streaming,113.08,710.8,Allowed
+2024-11-07 16:20:54,bt017,97:41:62:D7:C2:59,192.168.5.105,Lenovo Tab P11,Tablet,VIIT-Student,AP-ECE-01,jiocinema.com,Streaming,137.17,58.27,Allowed
+2024-11-07 16:25:54,bt031,08:2F:96:71:CF:7C,192.168.6.123,iPhone 13,Smartphone,VIIT-Guest,AP-HOSTEL-01,classroom.google.com,Education,96.27,743.21,Allowed
+2024-11-07 16:27:48,cs071,27:97:33:13:AC:43,192.168.3.43,Samsung Tab A7,Tablet,VIIT-Guest,AP-CSE-01,pornhub.com,Blocked,56.97,379.22,Blocked
+2024-11-07 16:32:08,bt023,4E:6D:20:D4:D0:A9,192.168.7.17,Samsung Tab A7,Tablet,VIIT-Faculty,AP-LIB-01,whatsapp.com,Communication,88.53,618.86,Allowed
+2024-11-07 16:32:19,bt023,4E:6D:20:D4:D0:A9,192.168.7.17,Samsung Tab A7,Tablet,VIIT-Faculty,AP-CSE-02,pokerstar.com,Blocked,68.2,111.03,Blocked
+2024-11-07 16:33:05,it059,8E:73:DB:0D:88:0E,192.168.5.237,Lenovo IdeaPad,Laptop,VIIT-Faculty,AP-MECH-01,linkedin.com,Social Media,97.32,572.34,Allowed
+2024-11-07 16:41:02,ce067,9B:8C:1C:B4:25:9E,192.168.1.16,Realme 10 Pro,Smartphone,VIIT-Faculty,AP-MECH-01,wetransfer.com,Cloud Storage,74.47,218.33,Allowed
+2024-11-07 16:45:51,ec008,1F:A0:1D:19:F4:50,192.168.2.219,Acer Aspire,Laptop,VIIT-Student,AP-CSE-01,snapchat.com,Social Media,17.58,284.83,Allowed
+2024-11-07 16:46:18,it074,8B:E6:4B:DF:2E:71,192.168.1.108,OnePlus Nord,Smartphone,VIIT-Guest,AP-HOSTEL-01,primevideo.com,Streaming,101.85,792.3,Allowed
+2024-11-07 16:53:52,ce078,22:B0:7B:35:AA:44,192.168.9.88,Lenovo IdeaPad,Laptop,VIIT-Student,AP-GYM-01,dropbox.com,Cloud Storage,49.07,612.69,Allowed
+2024-11-07 16:56:39,bt100,2D:76:13:59:D5:5A,192.168.8.49,Asus VivoBook,Laptop,VIIT-Faculty,AP-LIB-01,whatsapp.com,Communication,132.42,586.13,Allowed
+2024-11-07 16:57:16,ce085,3E:45:25:E7:58:E3,192.168.6.183,Lenovo IdeaPad,Laptop,VIIT-Guest,AP-LIB-02,coursera.org,Education,45.1,571.2,Allowed
+2024-11-07 16:59:05,me096,B5:87:F7:62:7E:8E,192.168.4.243,Samsung Tab A7,Tablet,VIIT-Faculty,AP-ECE-01,nptel.ac.in,Education,52.2,61.26,Allowed
+2024-11-07 17:10:28,ch079,66:15:A1:9E:CB:F2,192.168.4.75,Samsung Galaxy A52,Smartphone,VIIT-Student,AP-MECH-01,reddit.com,Social Media,28.93,652.55,Allowed
+2024-11-07 17:12:47,cs094,57:C2:4B:7C:10:38,192.168.8.82,Dell Inspiron,Laptop,VIIT-Student,AP-CAFE-01,github.com,Education,30.36,205.73,Allowed
+2024-11-07 17:15:18,ce013,41:15:9D:BA:14:B7,192.168.2.92,HP Pavilion,Laptop,VIIT-Faculty,AP-HOSTEL-01,linkedin.com,Social Media,11.69,456.42,Allowed
+2024-11-07 17:24:13,ce070,41:2F:D8:B9:09:B9,192.168.4.89,Redmi Note 12,Smartphone,VIIT-Student,AP-LIB-02,coursera.org,Education,53.81,143.03,Allowed
+2024-11-07 17:44:24,ee033,95:40:FB:34:06:91,192.168.8.89,Realme 10 Pro,Smartphone,VIIT-Guest,AP-HOSTEL-02,reddit.com,Social Media,113.63,645.39,Allowed
+2024-11-07 17:46:24,cs036,9D:93:E0:3F:EF:9B,192.168.5.130,Samsung Tab A7,Tablet,VIIT-Guest,AP-LIB-01,teams.microsoft.com,Communication,34.22,276.72,Allowed
+2024-11-07 17:47:59,ch053,40:69:23:6A:6E:77,192.168.10.2,Redmi Note 12,Smartphone,VIIT-Student,AP-ECE-01,reddit.com,Social Media,13.21,118.98,Allowed
+2024-11-07 17:48:15,cs002,86:5B:36:98:65:4E,192.168.9.246,Redmi Note 12,Smartphone,VIIT-Guest,AP-ADMIN-01,geeksforgeeks.org,Education,62.67,441.64,Allowed
+2024-11-07 17:55:46,ce062,3D:03:FE:DC:59:42,192.168.4.130,iPhone 13,Smartphone,VIIT-Guest,AP-HOSTEL-02,classroom.google.com,Education,75.96,371.44,Allowed
+2024-11-07 17:57:07,ec044,C2:A2:F9:12:23:78,192.168.5.60,Lenovo Tab P11,Tablet,VIIT-Guest,AP-GYM-01,coursera.org,Education,13.41,485.73,Allowed
+2024-11-07 17:57:49,ee028,3D:15:B1:DB:BD:23,192.168.6.5,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-CAFE-01,github.com,Education,75.75,98.43,Allowed
+2024-11-07 17:57:58,it086,50:59:B9:72:3E:66,192.168.8.8,HP Pavilion,Laptop,VIIT-Guest,AP-CSE-01,moodle.viit.ac.in,Education,46.46,722.63,Allowed
+2024-11-07 18:03:23,ee034,E6:E2:98:DB:9C:1E,192.168.2.244,Lenovo Tab P11,Tablet,VIIT-Guest,AP-CSE-02,youtube.com,Streaming,5.26,515.19,Allowed
+2024-11-07 18:04:06,ee057,3A:6E:DC:E7:74:D3,192.168.7.108,Realme 10 Pro,Smartphone,VIIT-Student,AP-LIB-02,whatsapp.com,Communication,59.93,173.71,Allowed
+2024-11-07 18:20:52,bt088,2F:56:4E:57:AC:15,192.168.1.244,Dell Inspiron,Laptop,VIIT-Faculty,AP-GYM-01,whatsapp.com,Communication,11.69,714.67,Allowed
+2024-11-07 18:21:50,ce067,9B:8C:1C:B4:25:9E,192.168.1.16,Realme 10 Pro,Smartphone,VIIT-Faculty,AP-MECH-01,dropbox.com,Cloud Storage,77.62,629.85,Allowed
+2024-11-07 18:31:33,ce067,9B:8C:1C:B4:25:9E,192.168.1.16,Realme 10 Pro,Smartphone,VIIT-Faculty,AP-MECH-01,stackoverflow.com,Education,92.43,138.11,Allowed
+2024-11-07 18:38:27,it066,4B:78:34:4A:83:65,192.168.3.196,Acer Aspire,Laptop,VIIT-Student,AP-LIB-02,classroom.google.com,Education,119.34,157.39,Allowed
+2024-11-07 18:49:35,me096,B5:87:F7:62:7E:8E,192.168.4.243,Samsung Tab A7,Tablet,VIIT-Faculty,AP-ECE-01,onedrive.live.com,Cloud Storage,134.7,687.71,Allowed
+2024-11-07 18:59:04,cs094,99:AC:FA:99:F3:08,192.168.2.252,OnePlus Nord,Smartphone,VIIT-Student,AP-SEMHALL-01,drive.google.com,Cloud Storage,135.02,143.33,Allowed
+2024-11-07 19:02:41,ce027,0D:9F:C0:CB:65:26,192.168.4.28,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-SEMHALL-01,snapchat.com,Social Media,136.21,292.19,Allowed
+2024-11-07 19:08:08,it059,8E:73:DB:0D:88:0E,192.168.5.237,Lenovo IdeaPad,Laptop,VIIT-Faculty,AP-MECH-01,meet.google.com,Communication,1880.23,141.16,Allowed
+2024-11-07 19:23:58,ce070,41:2F:D8:B9:09:B9,192.168.4.89,Redmi Note 12,Smartphone,VIIT-Student,AP-ADMIN-01,youtube.com,Streaming,89.93,43.69,Allowed
+2024-11-07 19:29:43,me091,F0:92:04:37:DC:44,192.168.7.95,OnePlus Nord,Smartphone,VIIT-Faculty,AP-HOSTEL-01,onedrive.live.com,Cloud Storage,43.62,775.73,Allowed
+2024-11-07 19:34:13,ce076,EA:20:38:FF:08:7B,192.168.5.111,iPad Air,Tablet,VIIT-Guest,AP-LIB-01,stackoverflow.com,Education,12.95,207.07,Allowed
+2024-11-07 19:36:27,ch081,2A:D9:28:DC:5C:96,192.168.2.85,Samsung Galaxy A52,Smartphone,VIIT-Faculty,AP-CSE-01,primevideo.com,Streaming,67.28,638.5,Allowed
+2024-11-07 19:37:30,it047,36:79:C3:B7:97:97,192.168.5.4,Asus VivoBook,Laptop,VIIT-Faculty,AP-ECE-01,twitter.com,Social Media,13.43,686.29,Allowed
+2024-11-07 19:42:28,ec044,2E:DE:32:33:E3:55,192.168.1.13,Samsung Tab A7,Tablet,VIIT-Guest,AP-CSE-01,twitter.com,Social Media,125.72,603.45,Allowed
+2024-11-07 19:43:18,ec038,D1:AA:A4:35:52:A8,192.168.5.171,Realme 10 Pro,Smartphone,VIIT-Guest,AP-GYM-01,snapchat.com,Social Media,2348.73,19.32,Allowed
+2024-11-07 19:43:35,ec050,BE:37:77:F1:0C:A7,192.168.2.164,iPad Air,Tablet,VIIT-Guest,AP-SEMHALL-01,zoom.us,Communication,51.13,94.29,Allowed
+2024-11-07 19:45:21,bt023,4E:6D:20:D4:D0:A9,192.168.7.17,Samsung Tab A7,Tablet,VIIT-Faculty,AP-CSE-02,coursera.org,Education,139.57,317.35,Allowed
+2024-11-07 19:50:11,ee034,E6:E2:98:DB:9C:1E,192.168.2.244,Lenovo Tab P11,Tablet,VIIT-Guest,AP-CSE-02,onedrive.live.com,Cloud Storage,101.34,563.53,Allowed
+2024-11-07 19:58:02,me026,1A:B3:72:23:14:0F,192.168.1.161,HP Pavilion,Laptop,VIIT-Student,AP-CSE-01,whatsapp.com,Communication,5.16,467.6,Allowed
+2024-11-07 20:01:58,ch092,3C:41:31:C9:BF:AD,192.168.3.52,Samsung Tab A7,Tablet,VIIT-Guest,AP-HOSTEL-02,facebook.com,Social Media,70.52,345.0,Allowed
+2024-11-07 20:05:33,me082,DA:55:E3:B3:E4:15,192.168.10.113,Samsung Tab A7,Tablet,VIIT-Guest,AP-ECE-01,meet.google.com,Communication,75.53,568.94,Allowed
+2024-11-07 20:07:26,ce078,22:B0:7B:35:AA:44,192.168.9.88,Lenovo IdeaPad,Laptop,VIIT-Student,AP-GYM-01,drive.google.com,Cloud Storage,24.47,163.2,Allowed
+2024-11-07 20:08:25,ec099,F1:33:46:02:50:D0,192.168.8.168,Samsung Tab A7,Tablet,VIIT-Faculty,AP-LIB-01,instagram.com,Social Media,20.29,694.17,Allowed
+2024-11-07 20:09:20,it020,63:C4:FD:CC:7C:4B,192.168.1.230,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-LIB-02,outlook.com,Communication,21.04,164.24,Allowed
+2024-11-07 20:20:05,ec012,42:86:52:E2:DA:04,192.168.3.141,Dell Inspiron,Laptop,VIIT-Faculty,AP-LIB-01,instagram.com,Social Media,143.13,59.8,Allowed
+2024-11-07 20:20:48,cs094,57:C2:4B:7C:10:38,192.168.8.82,Dell Inspiron,Laptop,VIIT-Student,AP-LIB-02,classroom.google.com,Education,35.14,533.88,Allowed
+2024-11-07 20:22:37,ee028,3D:15:B1:DB:BD:23,192.168.6.5,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-CAFE-01,torrent-galaxy.to,Blocked,104.8,346.02,Blocked
+2024-11-07 20:39:01,bt098,67:8A:8B:46:37:7A,192.168.9.59,Dell Inspiron,Laptop,VIIT-Student,AP-CSE-01,geeksforgeeks.org,Education,1375.46,133.88,Allowed
+2024-11-07 20:39:18,bt031,08:2F:96:71:CF:7C,192.168.6.123,iPhone 13,Smartphone,VIIT-Guest,AP-ECE-01,jiocinema.com,Streaming,76.81,620.92,Allowed
+2024-11-07 20:39:41,ee028,3D:15:B1:DB:BD:23,192.168.6.5,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-CAFE-01,vpngate.net,Blocked,12.47,35.02,Blocked
+2024-11-07 20:44:20,ch037,0A:89:14:59:F0:E2,192.168.10.113,Redmi Note 12,Smartphone,VIIT-Faculty,AP-GYM-01,twitter.com,Social Media,113.79,57.58,Allowed
+2024-11-07 20:50:25,ce016,64:BA:DC:23:A9:A0,192.168.5.131,iPad Air,Tablet,VIIT-Guest,AP-ECE-01,classroom.google.com,Education,95.91,781.76,Allowed
+2024-11-07 20:53:35,ec038,D1:AA:A4:35:52:A8,192.168.5.171,Realme 10 Pro,Smartphone,VIIT-Guest,AP-SEMHALL-01,instagram.com,Social Media,1168.66,80.03,Allowed
+2024-11-07 21:00:16,ec029,C2:AC:0E:FD:A6:5D,192.168.6.206,Redmi Note 12,Smartphone,VIIT-Faculty,AP-HOSTEL-02,netflix.com,Streaming,34.33,770.63,Allowed
+2024-11-07 21:07:27,ec093,13:46:AA:F2:E9:4C,192.168.3.85,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-CSE-02,meet.google.com,Communication,39.41,492.14,Allowed
+2024-11-07 21:11:27,ce058,93:9F:B4:35:6C:4F,192.168.4.218,Samsung Tab A7,Tablet,VIIT-Faculty,AP-LIB-02,netflix.com,Streaming,84.68,341.34,Allowed
+2024-11-07 21:20:05,ec001,EF:80:05:3A:88:AE,192.168.7.42,Lenovo IdeaPad,Laptop,VIIT-Student,AP-ADMIN-01,dropbox.com,Cloud Storage,91.84,512.79,Allowed
+2024-11-07 21:23:02,ee042,A4:60:7A:C4:77:D2,192.168.8.182,Lenovo IdeaPad,Laptop,VIIT-Faculty,AP-CAFE-01,jiocinema.com,Streaming,35.89,403.87,Allowed
+2024-11-07 21:28:02,me063,15:DF:09:EB:27:A0,192.168.10.105,Samsung Tab A7,Tablet,VIIT-Guest,AP-CSE-01,hotstar.com,Streaming,117.41,432.34,Allowed
+2024-11-07 21:30:10,ee068,4D:1F:E6:34:AF:2B,192.168.3.12,Lenovo Tab P11,Tablet,VIIT-Guest,AP-MECH-01,ktu.edu.in,Education,19.92,168.51,Allowed
+2024-11-07 21:31:40,ce062,3D:03:FE:DC:59:42,192.168.4.130,iPhone 13,Smartphone,VIIT-Guest,AP-HOSTEL-01,linkedin.com,Social Media,88.44,417.56,Allowed
+2024-11-07 21:37:01,ec048,43:BB:8B:54:83:F6,192.168.2.121,OnePlus Nord,Smartphone,VIIT-Student,AP-LIB-02,stackoverflow.com,Education,100.52,133.63,Allowed
+2024-11-07 21:39:06,bt065,9E:AD:71:AA:56:27,192.168.2.137,Lenovo Tab P11,Tablet,VIIT-Student,AP-HOSTEL-01,reddit.com,Social Media,93.79,365.46,Allowed
+2024-11-07 21:40:03,ee054,59:38:0D:43:07:B7,192.168.6.6,Acer Aspire,Laptop,VIIT-Faculty,AP-CSE-01,fmovies.io,Blocked,1812.06,163.7,Blocked
+2024-11-07 21:55:59,bt017,97:41:62:D7:C2:59,192.168.5.105,Lenovo Tab P11,Tablet,VIIT-Student,AP-HOSTEL-02,nptel.ac.in,Education,126.2,655.63,Allowed
+2024-11-07 21:59:08,ce049,CB:BB:2E:CA:07:87,192.168.8.96,iPad Air,Tablet,VIIT-Guest,AP-GYM-01,meet.google.com,Communication,142.84,23.04,Allowed
+2024-11-08 08:03:59,ce085,3E:45:25:E7:58:E3,192.168.6.183,Lenovo IdeaPad,Laptop,VIIT-Guest,AP-LIB-02,linkedin.com,Social Media,22.25,174.71,Allowed
+2024-11-08 08:05:08,ce043,E9:07:49:D1:4F:26,192.168.6.161,OnePlus Nord,Smartphone,VIIT-Faculty,AP-SEMHALL-01,reddit.com,Social Media,148.56,648.07,Allowed
+2024-11-08 08:15:47,it003,6C:66:9F:CC:BF:E0,192.168.2.65,Samsung Tab A7,Tablet,VIIT-Student,AP-CAFE-01,instagram.com,Social Media,36.48,58.5,Allowed
+2024-11-08 08:30:51,it047,46:31:14:9E:E1:11,192.168.3.25,Samsung Tab A7,Tablet,VIIT-Faculty,AP-CAFE-01,torrent-galaxy.to,Blocked,148.7,588.11,Blocked
+2024-11-08 08:56:53,ce018,A4:EE:E2:E2:6D:F2,192.168.2.74,iPad Air,Tablet,VIIT-Guest,AP-HOSTEL-01,twitter.com,Social Media,117.19,421.81,Allowed
+2024-11-08 09:01:37,it083,40:22:78:BB:B9:C4,192.168.10.41,iPad Air,Tablet,VIIT-Faculty,AP-GYM-01,1337x.to,Blocked,50.03,717.73,Blocked
+2024-11-08 09:06:11,me091,17:CD:1A:63:B9:93,192.168.9.117,Asus VivoBook,Laptop,VIIT-Faculty,AP-HOSTEL-01,ktu.edu.in,Education,52.47,233.95,Allowed
+2024-11-08 09:06:35,bt088,91:28:80:64:8C:40,192.168.10.138,Samsung Tab A7,Tablet,VIIT-Faculty,AP-GYM-01,dropbox.com,Cloud Storage,84.47,311.54,Allowed
+2024-11-08 09:10:20,ce076,EA:20:38:FF:08:7B,192.168.5.111,iPad Air,Tablet,VIIT-Guest,AP-LIB-01,spotify.com,Streaming,129.88,443.48,Allowed
+2024-11-08 09:14:19,bt100,2D:76:13:59:D5:5A,192.168.8.49,Asus VivoBook,Laptop,VIIT-Faculty,AP-SEMHALL-01,netflix.com,Streaming,66.07,409.39,Allowed
+2024-11-08 09:17:49,bt009,A1:85:68:A0:7A:87,192.168.5.119,Redmi Note 12,Smartphone,VIIT-Student,AP-MECH-01,stackoverflow.com,Education,116.0,398.77,Allowed
+2024-11-08 09:38:00,it083,40:22:78:BB:B9:C4,192.168.10.41,iPad Air,Tablet,VIIT-Faculty,AP-GYM-01,geeksforgeeks.org,Education,4.69,229.35,Allowed
+2024-11-08 09:40:16,cs036,9D:93:E0:3F:EF:9B,192.168.5.130,Samsung Tab A7,Tablet,VIIT-Guest,AP-CSE-02,netflix.com,Streaming,35.81,782.7,Allowed
+2024-11-08 09:48:36,ec030,8D:05:61:2B:7B:D0,192.168.4.178,iPhone 13,Smartphone,VIIT-Guest,AP-ADMIN-01,pokerstar.com,Blocked,73.88,787.59,Blocked
+2024-11-08 10:16:35,ce067,FC:ED:E5:A5:A1:4D,192.168.8.115,Samsung Galaxy A52,Smartphone,VIIT-Faculty,AP-MECH-01,ktu.edu.in,Education,1181.4,178.85,Allowed
+2024-11-08 10:18:18,ec093,13:46:AA:F2:E9:4C,192.168.3.85,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-HOSTEL-02,ktu.edu.in,Education,26.03,594.62,Allowed
+2024-11-08 10:24:58,it074,1B:CA:BF:78:C5:29,192.168.1.83,Redmi Note 12,Smartphone,VIIT-Guest,AP-LIB-02,twitter.com,Social Media,139.8,614.24,Allowed
+2024-11-08 10:25:06,bt065,9E:AD:71:AA:56:27,192.168.2.137,Lenovo Tab P11,Tablet,VIIT-Student,AP-ADMIN-01,w3schools.com,Education,10.34,543.66,Allowed
+2024-11-08 10:32:57,ce062,3D:03:FE:DC:59:42,192.168.4.130,iPhone 13,Smartphone,VIIT-Guest,AP-HOSTEL-01,snapchat.com,Social Media,113.76,766.05,Allowed
+2024-11-08 10:33:48,bt031,08:2F:96:71:CF:7C,192.168.6.123,iPhone 13,Smartphone,VIIT-Guest,AP-HOSTEL-01,youtube.com,Streaming,10.04,703.56,Allowed
+2024-11-08 10:36:08,it041,95:8B:D4:F7:F1:7C,192.168.3.100,iPhone 13,Smartphone,VIIT-Guest,AP-CSE-02,hotstar.com,Streaming,107.08,538.34,Allowed
+2024-11-08 10:41:30,ec099,F1:33:46:02:50:D0,192.168.8.168,Samsung Tab A7,Tablet,VIIT-Faculty,AP-CSE-02,pornhub.com,Blocked,54.6,284.83,Blocked
+2024-11-08 10:43:37,ec099,F1:33:46:02:50:D0,192.168.8.168,Samsung Tab A7,Tablet,VIIT-Faculty,AP-CSE-02,spotify.com,Streaming,124.26,789.46,Allowed
+2024-11-08 10:43:48,bt073,52:66:46:80:1A:F6,192.168.2.184,iPhone 13,Smartphone,VIIT-Student,AP-HOSTEL-01,coursera.org,Education,41.88,277.01,Allowed
+2024-11-08 10:43:57,me006,32:1F:CE:AD:37:7F,192.168.9.116,HP Pavilion,Laptop,VIIT-Guest,AP-HOSTEL-02,w3schools.com,Education,139.37,242.93,Allowed
+2024-11-08 10:44:29,ee089,1E:50:E1:D4:F7:ED,192.168.10.38,Lenovo IdeaPad,Laptop,VIIT-Guest,AP-MECH-01,youtube.com,Streaming,83.69,253.97,Allowed
+2024-11-08 10:51:19,it035,50:7A:58:26:50:01,192.168.10.122,Realme 10 Pro,Smartphone,VIIT-Guest,AP-GYM-01,hotstar.com,Streaming,21.19,296.83,Allowed
+2024-11-08 11:00:40,it020,63:C4:FD:CC:7C:4B,192.168.1.230,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-LIB-02,drive.google.com,Cloud Storage,133.85,606.69,Allowed
+2024-11-08 11:01:25,ec075,28:09:83:6E:4C:D8,192.168.4.79,Lenovo IdeaPad,Laptop,VIIT-Student,AP-LIB-02,geeksforgeeks.org,Education,9.99,727.56,Allowed
+2024-11-08 11:09:13,cs021,ED:19:7F:3E:E9:44,192.168.9.154,iPhone 13,Smartphone,VIIT-Faculty,AP-GYM-01,coursera.org,Education,62.81,307.3,Allowed
+2024-11-08 11:09:28,ee033,95:40:FB:34:06:91,192.168.8.89,Realme 10 Pro,Smartphone,VIIT-Guest,AP-HOSTEL-02,primevideo.com,Streaming,41.66,665.92,Allowed
+2024-11-08 11:24:25,me022,7A:8C:E1:27:92:78,192.168.6.230,OnePlus Nord,Smartphone,VIIT-Student,AP-HOSTEL-01,hotstar.com,Streaming,49.97,226.13,Allowed
+2024-11-08 11:42:53,ch019,78:9E:73:65:4B:0C,192.168.8.158,HP Pavilion,Laptop,VIIT-Faculty,AP-LIB-02,jiocinema.com,Streaming,78.34,500.77,Allowed
+2024-11-08 11:48:52,bt073,52:66:46:80:1A:F6,192.168.2.184,iPhone 13,Smartphone,VIIT-Student,AP-HOSTEL-01,outlook.com,Communication,4.34,102.7,Allowed
+2024-11-08 11:56:40,me026,1A:B3:72:23:14:0F,192.168.1.161,HP Pavilion,Laptop,VIIT-Student,AP-CSE-01,pokerstar.com,Blocked,128.88,116.3,Blocked
+2024-11-08 11:57:32,cs002,28:2B:F8:23:40:41,192.168.9.44,Samsung Tab A7,Tablet,VIIT-Guest,AP-LIB-02,snapchat.com,Social Media,105.71,67.09,Allowed
+2024-11-08 11:59:47,ee034,E6:E2:98:DB:9C:1E,192.168.2.244,Lenovo Tab P11,Tablet,VIIT-Guest,AP-CSE-02,reddit.com,Social Media,48.86,196.37,Allowed
+2024-11-08 12:01:01,me061,F9:9D:17:70:CA:1C,192.168.5.244,HP Pavilion,Laptop,VIIT-Student,AP-CSE-02,twitter.com,Social Media,14.38,443.67,Allowed
+2024-11-08 12:10:06,ce014,79:53:5A:D3:0C:5B,192.168.7.207,Samsung Tab A7,Tablet,VIIT-Faculty,AP-ADMIN-01,teams.microsoft.com,Communication,9.26,793.27,Allowed
+2024-11-08 12:52:02,it020,63:C4:FD:CC:7C:4B,192.168.1.230,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-LIB-02,teams.microsoft.com,Communication,19.78,309.92,Allowed
+2024-11-08 12:53:42,ch019,78:9E:73:65:4B:0C,192.168.8.158,HP Pavilion,Laptop,VIIT-Faculty,AP-LIB-02,wetransfer.com,Cloud Storage,136.03,539.14,Allowed
+2024-11-08 13:16:11,ce058,BE:42:1E:A8:3E:D2,192.168.1.249,Realme 10 Pro,Smartphone,VIIT-Faculty,AP-ECE-01,youtube.com,Streaming,111.7,439.99,Allowed
+2024-11-08 13:56:35,ec032,3D:5E:62:6E:F7:8D,192.168.9.154,Lenovo Tab P11,Tablet,VIIT-Student,AP-HOSTEL-01,netflix.com,Streaming,89.75,638.43,Allowed
+2024-11-08 14:05:03,ec093,13:46:AA:F2:E9:4C,192.168.3.85,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-HOSTEL-02,outlook.com,Communication,60.74,9.73,Allowed
+2024-11-08 14:08:51,ec060,50:BD:9F:A6:2B:1A,192.168.10.14,HP Pavilion,Laptop,VIIT-Student,AP-HOSTEL-01,jiocinema.com,Streaming,99.92,125.53,Allowed
+2024-11-08 14:12:32,cs036,FC:E0:29:14:DD:A5,192.168.1.25,Samsung Tab A7,Tablet,VIIT-Guest,AP-CSE-02,1337x.to,Blocked,135.63,390.31,Blocked
+2024-11-08 14:12:51,ce004,75:70:03:24:1E:75,192.168.6.20,Dell Inspiron,Laptop,VIIT-Student,AP-HOSTEL-01,dropbox.com,Cloud Storage,8.2,304.85,Allowed
+2024-11-08 14:13:19,ec050,BE:37:77:F1:0C:A7,192.168.2.164,iPad Air,Tablet,VIIT-Guest,AP-ADMIN-01,zoom.us,Communication,109.43,334.28,Allowed
+2024-11-08 14:17:24,ce014,79:53:5A:D3:0C:5B,192.168.7.207,Samsung Tab A7,Tablet,VIIT-Faculty,AP-ADMIN-01,twitter.com,Social Media,97.27,401.62,Allowed
+2024-11-08 14:19:07,ce078,22:B0:7B:35:AA:44,192.168.9.88,Lenovo IdeaPad,Laptop,VIIT-Student,AP-GYM-01,bet365.com,Blocked,50.76,385.96,Blocked
+2024-11-08 14:19:54,it003,6C:66:9F:CC:BF:E0,192.168.2.65,Samsung Tab A7,Tablet,VIIT-Student,AP-MECH-01,linkedin.com,Social Media,22.81,304.29,Allowed
+2024-11-08 14:35:47,ee034,E6:E2:98:DB:9C:1E,192.168.2.244,Lenovo Tab P11,Tablet,VIIT-Guest,AP-CSE-02,twitter.com,Social Media,29.37,527.22,Allowed
+2024-11-08 14:36:43,bt039,81:A5:3B:CE:00:EC,192.168.4.134,Samsung Galaxy A52,Smartphone,VIIT-Guest,AP-LIB-01,teams.microsoft.com,Communication,84.96,544.17,Allowed
+2024-11-08 14:45:03,ec060,50:BD:9F:A6:2B:1A,192.168.10.14,HP Pavilion,Laptop,VIIT-Student,AP-LIB-01,onedrive.live.com,Cloud Storage,134.5,683.46,Allowed
+2024-11-08 14:54:18,ee042,FA:4C:E4:F7:B0:AA,192.168.7.118,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-CAFE-01,mail.google.com,Communication,87.62,491.14,Allowed
+2024-11-08 14:54:32,ec001,EF:80:05:3A:88:AE,192.168.7.42,Lenovo IdeaPad,Laptop,VIIT-Student,AP-ADMIN-01,geeksforgeeks.org,Education,43.04,791.33,Allowed
+2024-11-08 15:05:25,me063,15:DF:09:EB:27:A0,192.168.10.105,Samsung Tab A7,Tablet,VIIT-Guest,AP-GYM-01,github.com,Education,42.56,133.33,Allowed
+2024-11-08 15:12:04,ce090,51:A7:A0:61:51:FF,192.168.8.227,Samsung Tab A7,Tablet,VIIT-Faculty,AP-ECE-01,twitter.com,Social Media,1290.92,195.26,Allowed
+2024-11-08 15:23:08,it047,36:79:C3:B7:97:97,192.168.5.4,Asus VivoBook,Laptop,VIIT-Faculty,AP-ECE-01,instagram.com,Social Media,133.63,120.23,Allowed
+2024-11-08 15:24:13,ee068,7E:E0:E0:51:BA:BE,192.168.7.200,Realme 10 Pro,Smartphone,VIIT-Guest,AP-CSE-01,geeksforgeeks.org,Education,85.44,640.32,Allowed
+2024-11-08 15:28:29,ce067,FC:ED:E5:A5:A1:4D,192.168.8.115,Samsung Galaxy A52,Smartphone,VIIT-Faculty,AP-MECH-01,stackoverflow.com,Education,34.91,37.71,Allowed
+2024-11-08 15:32:48,me063,15:DF:09:EB:27:A0,192.168.10.105,Samsung Tab A7,Tablet,VIIT-Guest,AP-SEMHALL-01,mail.google.com,Communication,8.26,195.5,Allowed
+2024-11-08 15:33:08,bt100,2D:76:13:59:D5:5A,192.168.8.49,Asus VivoBook,Laptop,VIIT-Faculty,AP-SEMHALL-01,mail.google.com,Communication,55.75,229.06,Allowed
+2024-11-08 15:41:24,ce027,0D:9F:C0:CB:65:26,192.168.4.28,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-SEMHALL-01,pokerstar.com,Blocked,125.31,214.34,Blocked
+2024-11-08 15:49:40,ce046,93:50:25:E2:B0:99,192.168.5.118,Samsung Tab A7,Tablet,VIIT-Student,AP-ECE-01,github.com,Education,146.53,497.04,Allowed
+2024-11-08 15:50:24,ce062,3D:03:FE:DC:59:42,192.168.4.130,iPhone 13,Smartphone,VIIT-Guest,AP-HOSTEL-01,nptel.ac.in,Education,62.93,460.58,Allowed
+2024-11-08 16:03:42,cs021,ED:19:7F:3E:E9:44,192.168.9.154,iPhone 13,Smartphone,VIIT-Faculty,AP-GYM-01,drive.google.com,Cloud Storage,56.59,514.06,Allowed
+2024-11-08 16:09:03,it066,4B:78:34:4A:83:65,192.168.3.196,Acer Aspire,Laptop,VIIT-Student,AP-GYM-01,netflix.com,Streaming,44.01,776.37,Allowed
+2024-11-08 16:16:16,ce076,EA:20:38:FF:08:7B,192.168.5.111,iPad Air,Tablet,VIIT-Guest,AP-HOSTEL-02,snapchat.com,Social Media,54.18,107.15,Allowed
+2024-11-08 16:22:59,ec038,D1:AA:A4:35:52:A8,192.168.5.171,Realme 10 Pro,Smartphone,VIIT-Guest,AP-CAFE-01,reddit.com,Social Media,1756.8,70.13,Allowed
+2024-11-08 16:31:44,ec075,46:13:92:F1:47:F0,192.168.1.233,iPhone 13,Smartphone,VIIT-Student,AP-LIB-02,github.com,Education,135.74,238.25,Allowed
+2024-11-08 16:34:52,me082,DA:55:E3:B3:E4:15,192.168.10.113,Samsung Tab A7,Tablet,VIIT-Guest,AP-ECE-01,outlook.com,Communication,57.79,441.72,Allowed
+2024-11-08 16:36:39,ch037,0A:89:14:59:F0:E2,192.168.10.113,Redmi Note 12,Smartphone,VIIT-Faculty,AP-GYM-01,classroom.google.com,Education,28.12,611.15,Allowed
+2024-11-08 16:39:50,bt073,52:66:46:80:1A:F6,192.168.2.184,iPhone 13,Smartphone,VIIT-Student,AP-HOSTEL-01,whatsapp.com,Communication,49.17,358.22,Allowed
+2024-11-08 16:46:36,me097,FA:A2:F5:B2:8C:93,192.168.9.99,Acer Aspire,Laptop,VIIT-Guest,AP-HOSTEL-01,jiocinema.com,Streaming,139.9,233.5,Allowed
+2024-11-08 16:50:30,it083,40:22:78:BB:B9:C4,192.168.10.41,iPad Air,Tablet,VIIT-Faculty,AP-GYM-01,nptel.ac.in,Education,36.43,72.61,Allowed
+2024-11-08 16:59:43,it059,8E:73:DB:0D:88:0E,192.168.5.237,Lenovo IdeaPad,Laptop,VIIT-Faculty,AP-MECH-01,snapchat.com,Social Media,6.03,322.75,Allowed
+2024-11-08 17:04:42,cs069,29:48:B3:9E:C8:42,192.168.2.81,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-CSE-01,meet.google.com,Communication,15.53,238.84,Allowed
+2024-11-08 17:06:58,ec044,2E:DE:32:33:E3:55,192.168.1.13,Samsung Tab A7,Tablet,VIIT-Guest,AP-HOSTEL-02,zoom.us,Communication,57.61,255.97,Allowed
+2024-11-08 17:08:21,ec048,43:BB:8B:54:83:F6,192.168.2.121,OnePlus Nord,Smartphone,VIIT-Student,AP-LIB-02,hotstar.com,Streaming,97.4,565.37,Allowed
+2024-11-08 17:10:28,cs015,CC:A9:0E:3B:85:5B,192.168.1.29,Samsung Tab A7,Tablet,VIIT-Faculty,AP-HOSTEL-02,spotify.com,Streaming,56.61,663.9,Allowed
+2024-11-08 17:27:50,me091,F0:92:04:37:DC:44,192.168.7.95,OnePlus Nord,Smartphone,VIIT-Faculty,AP-HOSTEL-01,netflix.com,Streaming,46.74,37.67,Allowed
+2024-11-08 17:28:10,me026,1A:B3:72:23:14:0F,192.168.1.161,HP Pavilion,Laptop,VIIT-Student,AP-CSE-01,bet365.com,Blocked,127.27,646.2,Blocked
+2024-11-08 17:28:23,ec007,C2:01:C7:87:E8:92,192.168.8.41,iPhone 13,Smartphone,VIIT-Faculty,AP-CSE-02,ktu.edu.in,Education,76.85,417.44,Allowed
+2024-11-08 17:30:24,ec032,3D:5E:62:6E:F7:8D,192.168.9.154,Lenovo Tab P11,Tablet,VIIT-Student,AP-HOSTEL-01,bet365.com,Blocked,69.39,617.94,Blocked
+2024-11-08 17:35:10,ec008,1F:A0:1D:19:F4:50,192.168.2.219,Acer Aspire,Laptop,VIIT-Student,AP-CSE-01,w3schools.com,Education,63.74,391.9,Allowed
+2024-11-08 17:38:06,ee028,3D:15:B1:DB:BD:23,192.168.6.5,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-CAFE-01,1337x.to,Blocked,2.98,420.56,Blocked
+2024-11-08 17:46:17,ec030,8D:05:61:2B:7B:D0,192.168.4.178,iPhone 13,Smartphone,VIIT-Guest,AP-ADMIN-01,primevideo.com,Streaming,27.39,109.26,Allowed
+2024-11-08 17:59:54,ce005,43:F2:7C:F2:D0:61,192.168.7.92,Dell Inspiron,Laptop,VIIT-Faculty,AP-CAFE-01,whatsapp.com,Communication,138.87,719.95,Allowed
+2024-11-08 18:03:40,ce043,E9:07:49:D1:4F:26,192.168.6.161,OnePlus Nord,Smartphone,VIIT-Faculty,AP-SEMHALL-01,pokerstar.com,Blocked,43.74,33.08,Blocked
+2024-11-08 18:08:29,me026,1A:B3:72:23:14:0F,192.168.1.161,HP Pavilion,Laptop,VIIT-Student,AP-CSE-01,hotstar.com,Streaming,55.19,182.53,Allowed
+2024-11-08 18:09:40,ec075,46:13:92:F1:47:F0,192.168.1.233,iPhone 13,Smartphone,VIIT-Student,AP-LIB-02,primevideo.com,Streaming,27.36,46.72,Allowed
+2024-11-08 18:14:35,it052,CB:8D:61:3E:E8:2E,192.168.10.250,iPad Air,Tablet,VIIT-Student,AP-LIB-01,stackoverflow.com,Education,17.8,230.47,Allowed
+2024-11-08 18:16:48,ce004,75:70:03:24:1E:75,192.168.6.20,Dell Inspiron,Laptop,VIIT-Student,AP-HOSTEL-01,primevideo.com,Streaming,85.68,200.36,Allowed
+2024-11-08 18:34:53,cs045,28:C3:7B:FE:49:76,192.168.8.67,OnePlus Nord,Smartphone,VIIT-Student,AP-GYM-01,ktu.edu.in,Education,73.64,55.08,Allowed
+2024-11-08 19:05:51,it086,B8:BC:EF:42:2C:21,192.168.8.136,Realme 10 Pro,Smartphone,VIIT-Guest,AP-CSE-01,reddit.com,Social Media,65.91,230.18,Allowed
+2024-11-08 19:07:11,it025,85:C2:A7:6C:E8:A7,192.168.5.194,Realme 10 Pro,Smartphone,VIIT-Faculty,AP-CAFE-01,meet.google.com,Communication,21.8,151.27,Allowed
+2024-11-08 19:18:19,ee077,5F:2B:B8:22:0A:C7,192.168.7.253,Samsung Galaxy A52,Smartphone,VIIT-Faculty,AP-MECH-01,coursera.org,Education,51.02,544.86,Allowed
+2024-11-08 19:26:09,bt017,97:41:62:D7:C2:59,192.168.5.105,Lenovo Tab P11,Tablet,VIIT-Student,AP-HOSTEL-01,mail.google.com,Communication,118.09,500.33,Allowed
+2024-11-08 19:28:23,me084,5F:FF:C6:3C:86:85,192.168.4.158,Samsung Tab A7,Tablet,VIIT-Guest,AP-HOSTEL-02,netflix.com,Streaming,128.92,323.75,Allowed
+2024-11-08 19:28:42,ce078,22:B0:7B:35:AA:44,192.168.9.88,Lenovo IdeaPad,Laptop,VIIT-Student,AP-GYM-01,netflix.com,Streaming,54.99,714.29,Allowed
+2024-11-08 19:40:28,it086,50:59:B9:72:3E:66,192.168.8.8,HP Pavilion,Laptop,VIIT-Guest,AP-CSE-01,w3schools.com,Education,16.0,601.21,Allowed
+2024-11-08 19:44:37,bt023,4E:6D:20:D4:D0:A9,192.168.7.17,Samsung Tab A7,Tablet,VIIT-Faculty,AP-CSE-02,wetransfer.com,Cloud Storage,125.9,388.93,Allowed
+2024-11-08 19:54:14,ch019,78:9E:73:65:4B:0C,192.168.8.158,HP Pavilion,Laptop,VIIT-Faculty,AP-LIB-02,facebook.com,Social Media,4.6,44.47,Allowed
+2024-11-08 19:54:59,it074,1B:CA:BF:78:C5:29,192.168.1.83,Redmi Note 12,Smartphone,VIIT-Guest,AP-LIB-02,github.com,Education,59.37,109.07,Allowed
+2024-11-08 20:10:14,ce027,6F:EE:83:BC:55:3A,192.168.2.150,Lenovo IdeaPad,Laptop,VIIT-Faculty,AP-SEMHALL-01,facebook.com,Social Media,142.11,177.19,Allowed
+2024-11-08 20:16:12,ee028,3D:15:B1:DB:BD:23,192.168.6.5,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-CAFE-01,bet365.com,Blocked,136.56,71.63,Blocked
+2024-11-08 20:19:37,bt065,9E:AD:71:AA:56:27,192.168.2.137,Lenovo Tab P11,Tablet,VIIT-Student,AP-HOSTEL-01,drive.google.com,Cloud Storage,19.59,469.7,Allowed
+2024-11-08 20:20:31,ee042,23:8D:D4:AE:88:01,192.168.10.150,OnePlus Nord,Smartphone,VIIT-Faculty,AP-CSE-01,primevideo.com,Streaming,10.91,91.45,Allowed
+2024-11-08 20:22:59,ce014,79:53:5A:D3:0C:5B,192.168.7.207,Samsung Tab A7,Tablet,VIIT-Faculty,AP-ADMIN-01,nptel.ac.in,Education,114.73,758.5,Allowed
+2024-11-08 20:23:39,ec030,8D:05:61:2B:7B:D0,192.168.4.178,iPhone 13,Smartphone,VIIT-Guest,AP-ADMIN-01,stackoverflow.com,Education,92.27,612.57,Allowed
+2024-11-08 20:28:40,ch079,F5:5D:45:20:EA:12,192.168.1.204,Redmi Note 12,Smartphone,VIIT-Student,AP-MECH-01,github.com,Education,106.88,713.81,Allowed
+2024-11-08 20:30:37,ee077,5F:2B:B8:22:0A:C7,192.168.7.253,Samsung Galaxy A52,Smartphone,VIIT-Faculty,AP-MECH-01,whatsapp.com,Communication,145.22,427.69,Allowed
+2024-11-08 20:50:45,ce014,79:53:5A:D3:0C:5B,192.168.7.207,Samsung Tab A7,Tablet,VIIT-Faculty,AP-ADMIN-01,snapchat.com,Social Media,37.75,795.3,Allowed
+2024-11-08 20:50:52,bt039,81:A5:3B:CE:00:EC,192.168.4.134,Samsung Galaxy A52,Smartphone,VIIT-Guest,AP-LIB-01,linkedin.com,Social Media,23.73,371.19,Allowed
+2024-11-08 20:56:43,me063,15:DF:09:EB:27:A0,192.168.10.105,Samsung Tab A7,Tablet,VIIT-Guest,AP-SEMHALL-01,facebook.com,Social Media,131.8,172.63,Allowed
+2024-11-08 21:12:04,ce085,3E:45:25:E7:58:E3,192.168.6.183,Lenovo IdeaPad,Laptop,VIIT-Guest,AP-CAFE-01,jiocinema.com,Streaming,85.76,659.3,Allowed
+2024-11-08 21:13:22,cs094,99:AC:FA:99:F3:08,192.168.2.252,OnePlus Nord,Smartphone,VIIT-Student,AP-CAFE-01,onedrive.live.com,Cloud Storage,1.86,130.86,Allowed
+2024-11-08 21:14:44,bt065,9E:AD:71:AA:56:27,192.168.2.137,Lenovo Tab P11,Tablet,VIIT-Student,AP-HOSTEL-01,primevideo.com,Streaming,29.59,70.04,Allowed
+2024-11-08 21:19:10,bt088,91:28:80:64:8C:40,192.168.10.138,Samsung Tab A7,Tablet,VIIT-Faculty,AP-GYM-01,whatsapp.com,Communication,42.52,317.3,Allowed
+2024-11-08 21:19:56,me022,7A:8C:E1:27:92:78,192.168.6.230,OnePlus Nord,Smartphone,VIIT-Student,AP-HOSTEL-01,spotify.com,Streaming,82.59,661.6,Allowed
+2024-11-08 21:20:02,bt098,67:8A:8B:46:37:7A,192.168.9.59,Dell Inspiron,Laptop,VIIT-Student,AP-GYM-01,instagram.com,Social Media,1843.74,45.01,Allowed
+2024-11-08 21:21:43,ec044,2E:DE:32:33:E3:55,192.168.1.13,Samsung Tab A7,Tablet,VIIT-Guest,AP-HOSTEL-02,jiocinema.com,Streaming,112.49,588.78,Allowed
+2024-11-08 21:27:51,ce005,43:F2:7C:F2:D0:61,192.168.7.92,Dell Inspiron,Laptop,VIIT-Faculty,AP-CAFE-01,facebook.com,Social Media,80.59,232.92,Allowed
+2024-11-08 21:31:01,ce004,75:70:03:24:1E:75,192.168.6.20,Dell Inspiron,Laptop,VIIT-Student,AP-HOSTEL-01,facebook.com,Social Media,9.54,511.99,Allowed
+2024-11-08 21:34:08,ch037,0A:89:14:59:F0:E2,192.168.10.113,Redmi Note 12,Smartphone,VIIT-Faculty,AP-GYM-01,instagram.com,Social Media,108.54,94.97,Allowed
+2024-11-08 21:42:29,ec060,50:BD:9F:A6:2B:1A,192.168.10.14,HP Pavilion,Laptop,VIIT-Student,AP-HOSTEL-01,snapchat.com,Social Media,136.41,274.63,Allowed
+2024-11-08 21:46:21,ce043,E9:07:49:D1:4F:26,192.168.6.161,OnePlus Nord,Smartphone,VIIT-Faculty,AP-SEMHALL-01,meet.google.com,Communication,116.89,377.75,Allowed
+2024-11-08 21:46:26,ce004,75:70:03:24:1E:75,192.168.6.20,Dell Inspiron,Laptop,VIIT-Student,AP-HOSTEL-01,ktu.edu.in,Education,111.32,17.89,Allowed
+2024-11-08 21:47:41,ec012,42:86:52:E2:DA:04,192.168.3.141,Dell Inspiron,Laptop,VIIT-Faculty,AP-LIB-01,outlook.com,Communication,139.71,686.7,Allowed
+2024-11-09 08:04:12,ce070,41:2F:D8:B9:09:B9,192.168.4.89,Redmi Note 12,Smartphone,VIIT-Student,AP-SEMHALL-01,wetransfer.com,Cloud Storage,78.46,150.92,Allowed
+2024-11-09 08:07:48,bt017,97:41:62:D7:C2:59,192.168.5.105,Lenovo Tab P11,Tablet,VIIT-Student,AP-HOSTEL-01,moodle.viit.ac.in,Education,12.3,722.71,Allowed
+2024-11-09 08:22:33,ec012,42:86:52:E2:DA:04,192.168.3.141,Dell Inspiron,Laptop,VIIT-Faculty,AP-LIB-01,twitter.com,Social Media,18.36,567.78,Allowed
+2024-11-09 08:28:15,ee024,70:F9:70:8B:DF:F8,192.168.6.173,Asus VivoBook,Laptop,VIIT-Faculty,AP-GYM-01,github.com,Education,71.49,451.26,Allowed
+2024-11-09 08:33:48,ch037,0A:89:14:59:F0:E2,192.168.10.113,Redmi Note 12,Smartphone,VIIT-Faculty,AP-GYM-01,outlook.com,Communication,78.05,319.51,Allowed
+2024-11-09 08:41:11,ch019,78:9E:73:65:4B:0C,192.168.8.158,HP Pavilion,Laptop,VIIT-Faculty,AP-LIB-02,w3schools.com,Education,77.24,692.38,Allowed
+2024-11-09 09:04:16,me096,B5:87:F7:62:7E:8E,192.168.4.243,Samsung Tab A7,Tablet,VIIT-Faculty,AP-ECE-01,teams.microsoft.com,Communication,19.89,321.27,Allowed
+2024-11-09 09:04:41,ee042,FA:4C:E4:F7:B0:AA,192.168.7.118,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-CAFE-01,facebook.com,Social Media,126.07,127.64,Allowed
+2024-11-09 09:10:14,ch079,66:15:A1:9E:CB:F2,192.168.4.75,Samsung Galaxy A52,Smartphone,VIIT-Student,AP-MECH-01,onedrive.live.com,Cloud Storage,45.86,180.17,Allowed
+2024-11-09 09:11:55,ee034,E6:E2:98:DB:9C:1E,192.168.2.244,Lenovo Tab P11,Tablet,VIIT-Guest,AP-CSE-02,jiocinema.com,Streaming,48.64,81.52,Allowed
+2024-11-09 09:15:23,me082,DA:55:E3:B3:E4:15,192.168.10.113,Samsung Tab A7,Tablet,VIIT-Guest,AP-ECE-01,linkedin.com,Social Media,79.28,622.39,Allowed
+2024-11-09 09:18:02,ce078,22:B0:7B:35:AA:44,192.168.9.88,Lenovo IdeaPad,Laptop,VIIT-Student,AP-GYM-01,primevideo.com,Streaming,1.37,707.44,Allowed
+2024-11-09 09:27:53,it059,8E:73:DB:0D:88:0E,192.168.5.237,Lenovo IdeaPad,Laptop,VIIT-Faculty,AP-MECH-01,whatsapp.com,Communication,128.92,171.34,Allowed
+2024-11-09 09:32:46,cs021,ED:19:7F:3E:E9:44,192.168.9.154,iPhone 13,Smartphone,VIIT-Faculty,AP-GYM-01,reddit.com,Social Media,78.29,500.12,Allowed
+2024-11-09 09:35:18,ec029,A5:7D:2C:8E:E6:7C,192.168.10.173,iPhone 13,Smartphone,VIIT-Faculty,AP-ECE-01,spotify.com,Streaming,30.45,17.22,Allowed
+2024-11-09 09:39:54,ee033,5E:1A:81:F4:3A:21,192.168.2.149,Realme 10 Pro,Smartphone,VIIT-Guest,AP-HOSTEL-01,youtube.com,Streaming,116.5,407.24,Allowed
+2024-11-09 09:57:29,ce090,E6:7E:48:31:19:94,192.168.7.65,iPhone 13,Smartphone,VIIT-Faculty,AP-ECE-01,snapchat.com,Social Media,22.52,701.58,Allowed
+2024-11-09 09:58:37,ce043,4D:FD:12:40:A9:33,192.168.9.235,Samsung Galaxy A52,Smartphone,VIIT-Faculty,AP-ECE-01,moodle.viit.ac.in,Education,41.64,209.28,Allowed
+2024-11-09 09:59:14,ec099,F1:33:46:02:50:D0,192.168.8.168,Samsung Tab A7,Tablet,VIIT-Faculty,AP-CAFE-01,mail.google.com,Communication,98.73,124.31,Allowed
+2024-11-09 10:08:30,cs069,AB:21:A8:30:C5:91,192.168.3.87,iPhone 13,Smartphone,VIIT-Faculty,AP-HOSTEL-01,wetransfer.com,Cloud Storage,69.47,70.63,Allowed
+2024-11-09 10:10:03,ce016,DF:3B:C5:61:82:16,192.168.1.135,Samsung Tab A7,Tablet,VIIT-Guest,AP-ECE-01,fmovies.io,Blocked,105.82,347.9,Blocked
+2024-11-09 10:12:30,ce078,22:B0:7B:35:AA:44,192.168.9.88,Lenovo IdeaPad,Laptop,VIIT-Student,AP-GYM-01,moodle.viit.ac.in,Education,115.13,692.01,Allowed
+2024-11-09 10:26:15,ce046,93:50:25:E2:B0:99,192.168.5.118,Samsung Tab A7,Tablet,VIIT-Student,AP-ECE-01,zoom.us,Communication,104.01,168.9,Allowed
+2024-11-09 10:27:54,bt065,9E:AD:71:AA:56:27,192.168.2.137,Lenovo Tab P11,Tablet,VIIT-Student,AP-HOSTEL-01,mail.google.com,Communication,140.71,514.57,Allowed
+2024-11-09 10:40:40,bt087,42:DD:1C:3F:4E:9B,192.168.6.241,HP Pavilion,Laptop,VIIT-Student,AP-SEMHALL-01,drive.google.com,Cloud Storage,85.98,25.11,Allowed
+2024-11-09 10:43:31,ec007,2F:79:55:D0:F8:F6,192.168.1.44,Asus VivoBook,Laptop,VIIT-Faculty,AP-ADMIN-01,outlook.com,Communication,66.05,236.61,Allowed
+2024-11-09 10:46:07,ce027,0D:9F:C0:CB:65:26,192.168.4.28,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-SEMHALL-01,geeksforgeeks.org,Education,90.5,654.48,Allowed
+2024-11-09 10:51:55,ee077,5F:2B:B8:22:0A:C7,192.168.7.253,Samsung Galaxy A52,Smartphone,VIIT-Faculty,AP-MECH-01,coursera.org,Education,25.18,50.64,Allowed
+2024-11-09 10:54:27,ce005,43:F2:7C:F2:D0:61,192.168.7.92,Dell Inspiron,Laptop,VIIT-Faculty,AP-CAFE-01,spotify.com,Streaming,71.66,511.21,Allowed
+2024-11-09 10:57:28,me022,7A:8C:E1:27:92:78,192.168.6.230,OnePlus Nord,Smartphone,VIIT-Student,AP-HOSTEL-01,nptel.ac.in,Education,1.95,115.02,Allowed
+2024-11-09 10:59:27,ee072,E5:77:7A:9E:F0:63,192.168.8.120,iPhone 13,Smartphone,VIIT-Faculty,AP-SEMHALL-01,jiocinema.com,Streaming,73.55,552.35,Allowed
+2024-11-09 11:03:47,me084,5F:FF:C6:3C:86:85,192.168.4.158,Samsung Tab A7,Tablet,VIIT-Guest,AP-ECE-01,snapchat.com,Social Media,67.79,702.54,Allowed
+2024-11-09 11:07:29,ec001,EF:80:05:3A:88:AE,192.168.7.42,Lenovo IdeaPad,Laptop,VIIT-Student,AP-ECE-01,snapchat.com,Social Media,2.21,524.68,Allowed
+2024-11-09 11:31:05,cs002,86:5B:36:98:65:4E,192.168.9.246,Redmi Note 12,Smartphone,VIIT-Guest,AP-ECE-01,geeksforgeeks.org,Education,128.25,356.26,Allowed
+2024-11-09 11:34:51,ce043,4D:FD:12:40:A9:33,192.168.9.235,Samsung Galaxy A52,Smartphone,VIIT-Faculty,AP-SEMHALL-01,twitter.com,Social Media,71.13,594.64,Allowed
+2024-11-09 11:36:30,it074,8B:E6:4B:DF:2E:71,192.168.1.108,OnePlus Nord,Smartphone,VIIT-Guest,AP-LIB-02,nptel.ac.in,Education,90.03,250.57,Allowed
+2024-11-09 11:40:38,bt080,3F:BC:DF:CC:E1:C5,192.168.8.179,Redmi Note 12,Smartphone,VIIT-Faculty,AP-ADMIN-01,coursera.org,Education,108.53,552.05,Allowed
+2024-11-09 11:48:14,ec048,43:BB:8B:54:83:F6,192.168.2.121,OnePlus Nord,Smartphone,VIIT-Student,AP-LIB-02,reddit.com,Social Media,140.9,466.19,Allowed
+2024-11-09 11:50:56,it066,4B:78:34:4A:83:65,192.168.3.196,Acer Aspire,Laptop,VIIT-Student,AP-GYM-01,moodle.viit.ac.in,Education,136.64,21.69,Allowed
+2024-11-09 11:51:39,it066,4B:78:34:4A:83:65,192.168.3.196,Acer Aspire,Laptop,VIIT-Student,AP-GYM-01,stackoverflow.com,Education,36.4,648.54,Allowed
+2024-11-09 11:52:20,bt073,52:66:46:80:1A:F6,192.168.2.184,iPhone 13,Smartphone,VIIT-Student,AP-HOSTEL-01,reddit.com,Social Media,130.54,414.36,Allowed
+2024-11-09 11:56:58,cs069,AB:21:A8:30:C5:91,192.168.3.87,iPhone 13,Smartphone,VIIT-Faculty,AP-HOSTEL-01,zoom.us,Communication,69.3,463.03,Allowed
+2024-11-09 11:58:22,ec099,F1:33:46:02:50:D0,192.168.8.168,Samsung Tab A7,Tablet,VIIT-Faculty,AP-CSE-02,geeksforgeeks.org,Education,88.93,495.22,Allowed
+2024-11-09 12:01:18,cs036,D9:3A:73:4C:88:48,192.168.3.204,Dell Inspiron,Laptop,VIIT-Guest,AP-CSE-02,mail.google.com,Communication,58.6,220.69,Allowed
+2024-11-09 12:04:03,it025,85:C2:A7:6C:E8:A7,192.168.5.194,Realme 10 Pro,Smartphone,VIIT-Faculty,AP-CAFE-01,whatsapp.com,Communication,103.06,23.88,Allowed
+2024-11-09 12:07:47,ec093,13:46:AA:F2:E9:4C,192.168.3.85,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-GYM-01,coursera.org,Education,123.38,454.53,Allowed
+2024-11-09 12:14:31,ch064,0A:A6:57:EB:B9:2D,192.168.4.113,Samsung Galaxy A52,Smartphone,VIIT-Faculty,AP-GYM-01,teams.microsoft.com,Communication,29.13,653.94,Allowed
+2024-11-09 12:33:06,ch037,0A:89:14:59:F0:E2,192.168.10.113,Redmi Note 12,Smartphone,VIIT-Faculty,AP-CAFE-01,youtube.com,Streaming,91.39,660.34,Allowed
+2024-11-09 12:38:28,ee077,5F:2B:B8:22:0A:C7,192.168.7.253,Samsung Galaxy A52,Smartphone,VIIT-Faculty,AP-MECH-01,nptel.ac.in,Education,107.27,563.56,Allowed
+2024-11-09 12:41:35,ce062,3D:03:FE:DC:59:42,192.168.4.130,iPhone 13,Smartphone,VIIT-Guest,AP-HOSTEL-01,twitter.com,Social Media,106.23,459.74,Allowed
+2024-11-09 12:43:31,ch053,40:69:23:6A:6E:77,192.168.10.2,Redmi Note 12,Smartphone,VIIT-Student,AP-CAFE-01,coursera.org,Education,134.27,642.94,Allowed
+2024-11-09 12:58:44,ee054,59:38:0D:43:07:B7,192.168.6.6,Acer Aspire,Laptop,VIIT-Faculty,AP-CSE-01,pornhub.com,Blocked,1856.36,57.05,Blocked
+2024-11-09 13:18:57,ee057,3A:6E:DC:E7:74:D3,192.168.7.108,Realme 10 Pro,Smartphone,VIIT-Student,AP-LIB-02,fmovies.io,Blocked,130.82,668.67,Blocked
+2024-11-09 13:19:50,me096,B5:87:F7:62:7E:8E,192.168.4.243,Samsung Tab A7,Tablet,VIIT-Faculty,AP-ECE-01,drive.google.com,Cloud Storage,5.82,408.55,Allowed
+2024-11-09 13:22:56,ch081,2A:D9:28:DC:5C:96,192.168.2.85,Samsung Galaxy A52,Smartphone,VIIT-Faculty,AP-GYM-01,reddit.com,Social Media,64.07,715.03,Allowed
+2024-11-09 13:23:35,bt031,08:2F:96:71:CF:7C,192.168.6.123,iPhone 13,Smartphone,VIIT-Guest,AP-HOSTEL-01,zoom.us,Communication,125.93,81.56,Allowed
+2024-11-09 13:37:19,ee072,54:E0:16:D2:BA:79,192.168.5.194,iPhone 13,Smartphone,VIIT-Faculty,AP-ECE-01,w3schools.com,Education,25.29,344.36,Allowed
+2024-11-09 13:47:22,me091,F0:92:04:37:DC:44,192.168.7.95,OnePlus Nord,Smartphone,VIIT-Faculty,AP-HOSTEL-01,twitter.com,Social Media,116.4,84.49,Allowed
+2024-11-09 13:48:36,ec050,BE:37:77:F1:0C:A7,192.168.2.164,iPad Air,Tablet,VIIT-Guest,AP-MECH-01,github.com,Education,146.35,268.37,Allowed
+2024-11-09 13:51:54,ec060,CD:23:48:0F:2E:6E,192.168.8.89,Realme 10 Pro,Smartphone,VIIT-Student,AP-SEMHALL-01,wetransfer.com,Cloud Storage,125.05,540.12,Allowed
+2024-11-09 13:58:43,bt023,4E:6D:20:D4:D0:A9,192.168.7.17,Samsung Tab A7,Tablet,VIIT-Faculty,AP-CSE-02,whatsapp.com,Communication,32.99,171.72,Allowed
+2024-11-09 14:07:08,ce078,22:B0:7B:35:AA:44,192.168.9.88,Lenovo IdeaPad,Laptop,VIIT-Student,AP-GYM-01,twitter.com,Social Media,28.71,684.62,Allowed
+2024-11-09 14:08:22,it047,46:31:14:9E:E1:11,192.168.3.25,Samsung Tab A7,Tablet,VIIT-Faculty,AP-ADMIN-01,youtube.com,Streaming,83.99,14.88,Allowed
+2024-11-09 14:08:31,ee033,1B:4D:4C:9B:2B:7F,192.168.7.157,Acer Aspire,Laptop,VIIT-Guest,AP-HOSTEL-02,torrent-galaxy.to,Blocked,9.44,517.44,Blocked
+2024-11-09 14:22:52,ch064,0A:A6:57:EB:B9:2D,192.168.4.113,Samsung Galaxy A52,Smartphone,VIIT-Faculty,AP-HOSTEL-02,drive.google.com,Cloud Storage,81.03,714.59,Allowed
+2024-11-09 14:24:57,it047,46:31:14:9E:E1:11,192.168.3.25,Samsung Tab A7,Tablet,VIIT-Faculty,AP-ECE-01,youtube.com,Streaming,49.26,82.96,Allowed
+2024-11-09 14:44:21,cs045,28:C3:7B:FE:49:76,192.168.8.67,OnePlus Nord,Smartphone,VIIT-Student,AP-GYM-01,jiocinema.com,Streaming,96.23,746.65,Allowed
+2024-11-09 14:47:41,ee024,0A:C2:F4:03:B4:98,192.168.9.193,Realme 10 Pro,Smartphone,VIIT-Faculty,AP-LIB-01,primevideo.com,Streaming,15.82,695.09,Allowed
+2024-11-09 14:52:02,bt080,3F:BC:DF:CC:E1:C5,192.168.8.179,Redmi Note 12,Smartphone,VIIT-Faculty,AP-ADMIN-01,hotstar.com,Streaming,8.85,555.17,Allowed
+2024-11-09 14:59:29,ee077,5F:2B:B8:22:0A:C7,192.168.7.253,Samsung Galaxy A52,Smartphone,VIIT-Faculty,AP-MECH-01,w3schools.com,Education,33.01,247.33,Allowed
+2024-11-09 15:06:14,ce090,B0:CC:42:BD:36:A3,192.168.2.70,Asus VivoBook,Laptop,VIIT-Faculty,AP-ECE-01,github.com,Education,1030.28,127.84,Allowed
+2024-11-09 15:08:07,it047,19:FE:92:75:B4:70,192.168.10.66,iPad Air,Tablet,VIIT-Faculty,AP-ECE-01,facebook.com,Social Media,30.73,106.13,Allowed
+2024-11-09 15:10:36,it086,B8:BC:EF:42:2C:21,192.168.8.136,Realme 10 Pro,Smartphone,VIIT-Guest,AP-CSE-01,geeksforgeeks.org,Education,126.2,417.58,Allowed
+2024-11-09 15:19:17,it003,6C:66:9F:CC:BF:E0,192.168.2.65,Samsung Tab A7,Tablet,VIIT-Student,AP-CSE-02,onedrive.live.com,Cloud Storage,35.92,701.63,Allowed
+2024-11-09 15:20:17,ec099,F1:33:46:02:50:D0,192.168.8.168,Samsung Tab A7,Tablet,VIIT-Faculty,AP-CSE-02,github.com,Education,119.83,487.65,Allowed
+2024-11-09 15:31:32,ch053,40:69:23:6A:6E:77,192.168.10.2,Redmi Note 12,Smartphone,VIIT-Student,AP-HOSTEL-02,reddit.com,Social Media,141.51,288.1,Allowed
+2024-11-09 15:37:01,ee068,4D:1F:E6:34:AF:2B,192.168.3.12,Lenovo Tab P11,Tablet,VIIT-Guest,AP-MECH-01,primevideo.com,Streaming,64.15,603.34,Allowed
+2024-11-09 15:38:42,cs094,99:AC:FA:99:F3:08,192.168.2.252,OnePlus Nord,Smartphone,VIIT-Student,AP-CAFE-01,onedrive.live.com,Cloud Storage,138.56,59.23,Allowed
+2024-11-09 15:40:11,ce085,3E:45:25:E7:58:E3,192.168.6.183,Lenovo IdeaPad,Laptop,VIIT-Guest,AP-ADMIN-01,ktu.edu.in,Education,130.27,762.35,Allowed
+2024-11-09 15:44:03,cs069,AB:21:A8:30:C5:91,192.168.3.87,iPhone 13,Smartphone,VIIT-Faculty,AP-HOSTEL-01,geeksforgeeks.org,Education,27.1,572.96,Allowed
+2024-11-09 15:45:54,cs094,57:C2:4B:7C:10:38,192.168.8.82,Dell Inspiron,Laptop,VIIT-Student,AP-CAFE-01,twitter.com,Social Media,98.56,284.73,Allowed
+2024-11-09 15:46:47,me061,F9:9D:17:70:CA:1C,192.168.5.244,HP Pavilion,Laptop,VIIT-Student,AP-SEMHALL-01,onedrive.live.com,Cloud Storage,63.19,709.2,Allowed
+2024-11-09 15:58:13,ce004,75:70:03:24:1E:75,192.168.6.20,Dell Inspiron,Laptop,VIIT-Student,AP-HOSTEL-01,primevideo.com,Streaming,70.17,643.24,Allowed
+2024-11-09 16:00:33,ce058,BE:42:1E:A8:3E:D2,192.168.1.249,Realme 10 Pro,Smartphone,VIIT-Faculty,AP-CSE-01,whatsapp.com,Communication,76.56,221.87,Allowed
+2024-11-09 16:00:55,ec048,43:BB:8B:54:83:F6,192.168.2.121,OnePlus Nord,Smartphone,VIIT-Student,AP-LIB-02,w3schools.com,Education,28.15,697.88,Allowed
+2024-11-09 16:05:12,ce018,A4:EE:E2:E2:6D:F2,192.168.2.74,iPad Air,Tablet,VIIT-Guest,AP-CSE-02,stackoverflow.com,Education,116.22,260.09,Allowed
+2024-11-09 16:06:02,ce085,3E:45:25:E7:58:E3,192.168.6.183,Lenovo IdeaPad,Laptop,VIIT-Guest,AP-LIB-02,wetransfer.com,Cloud Storage,141.53,686.53,Allowed
+2024-11-09 16:18:19,ce016,DF:3B:C5:61:82:16,192.168.1.135,Samsung Tab A7,Tablet,VIIT-Guest,AP-ECE-01,pornhub.com,Blocked,104.73,579.02,Blocked
+2024-11-09 16:43:34,ch053,40:69:23:6A:6E:77,192.168.10.2,Redmi Note 12,Smartphone,VIIT-Student,AP-ECE-01,w3schools.com,Education,73.37,91.96,Allowed
+2024-11-09 16:47:38,it059,8E:73:DB:0D:88:0E,192.168.5.237,Lenovo IdeaPad,Laptop,VIIT-Faculty,AP-MECH-01,w3schools.com,Education,926.3,100.65,Allowed
+2024-11-09 16:50:15,ec007,2F:79:55:D0:F8:F6,192.168.1.44,Asus VivoBook,Laptop,VIIT-Faculty,AP-CSE-02,w3schools.com,Education,145.32,236.7,Allowed
+2024-11-09 16:54:04,it025,85:C2:A7:6C:E8:A7,192.168.5.194,Realme 10 Pro,Smartphone,VIIT-Faculty,AP-CAFE-01,reddit.com,Social Media,108.18,55.27,Allowed
+2024-11-09 16:59:49,me084,5F:FF:C6:3C:86:85,192.168.4.158,Samsung Tab A7,Tablet,VIIT-Guest,AP-GYM-01,classroom.google.com,Education,149.02,403.79,Allowed
+2024-11-09 17:04:37,ch064,0A:A6:57:EB:B9:2D,192.168.4.113,Samsung Galaxy A52,Smartphone,VIIT-Faculty,AP-HOSTEL-02,spotify.com,Streaming,29.47,592.36,Allowed
+2024-11-09 17:07:48,bt051,47:17:13:9B:FC:3B,192.168.9.36,HP Pavilion,Laptop,VIIT-Faculty,AP-CAFE-01,facebook.com,Social Media,62.86,396.05,Allowed
+2024-11-09 17:13:53,ce013,41:15:9D:BA:14:B7,192.168.2.92,HP Pavilion,Laptop,VIIT-Faculty,AP-HOSTEL-01,classroom.google.com,Education,121.24,246.85,Allowed
+2024-11-09 17:16:38,ee072,54:E0:16:D2:BA:79,192.168.5.194,iPhone 13,Smartphone,VIIT-Faculty,AP-ECE-01,geeksforgeeks.org,Education,94.83,542.76,Allowed
+2024-11-09 17:27:45,bt073,52:66:46:80:1A:F6,192.168.2.184,iPhone 13,Smartphone,VIIT-Student,AP-LIB-02,spotify.com,Streaming,36.51,173.25,Allowed
+2024-11-09 17:35:30,me096,B5:87:F7:62:7E:8E,192.168.4.243,Samsung Tab A7,Tablet,VIIT-Faculty,AP-ECE-01,ktu.edu.in,Education,80.36,688.93,Allowed
+2024-11-09 17:42:22,bt017,97:41:62:D7:C2:59,192.168.5.105,Lenovo Tab P11,Tablet,VIIT-Student,AP-HOSTEL-01,moodle.viit.ac.in,Education,84.85,125.15,Allowed
+2024-11-09 17:58:31,cs069,AB:21:A8:30:C5:91,192.168.3.87,iPhone 13,Smartphone,VIIT-Faculty,AP-HOSTEL-01,facebook.com,Social Media,100.17,58.06,Allowed
+2024-11-09 18:00:49,ce067,9B:8C:1C:B4:25:9E,192.168.1.16,Realme 10 Pro,Smartphone,VIIT-Faculty,AP-MECH-01,onedrive.live.com,Cloud Storage,1747.66,36.19,Allowed
+2024-11-09 18:04:35,ec030,8D:05:61:2B:7B:D0,192.168.4.178,iPhone 13,Smartphone,VIIT-Guest,AP-ADMIN-01,moodle.viit.ac.in,Education,37.61,78.94,Allowed
+2024-11-09 18:11:26,ee057,30:A0:DA:A0:82:BF,192.168.2.25,Asus VivoBook,Laptop,VIIT-Student,AP-LIB-02,meet.google.com,Communication,32.73,660.15,Allowed
+2024-11-09 18:12:53,ec095,F1:1F:46:6A:A6:F4,192.168.6.246,Samsung Tab A7,Tablet,VIIT-Faculty,AP-HOSTEL-02,instagram.com,Social Media,51.44,547.48,Allowed
+2024-11-09 18:22:16,it059,8E:73:DB:0D:88:0E,192.168.5.237,Lenovo IdeaPad,Laptop,VIIT-Faculty,AP-MECH-01,meet.google.com,Communication,1407.34,27.95,Allowed
+2024-11-09 18:25:45,ee072,E5:77:7A:9E:F0:63,192.168.8.120,iPhone 13,Smartphone,VIIT-Faculty,AP-CSE-01,classroom.google.com,Education,2.34,617.92,Allowed
+2024-11-09 18:29:19,ce049,CB:BB:2E:CA:07:87,192.168.8.96,iPad Air,Tablet,VIIT-Guest,AP-GYM-01,jiocinema.com,Streaming,118.13,391.49,Allowed
+2024-11-09 18:29:33,ce043,E9:07:49:D1:4F:26,192.168.6.161,OnePlus Nord,Smartphone,VIIT-Faculty,AP-SEMHALL-01,stackoverflow.com,Education,144.28,68.65,Allowed
+2024-11-09 18:33:40,bt031,08:2F:96:71:CF:7C,192.168.6.123,iPhone 13,Smartphone,VIIT-Guest,AP-HOSTEL-01,github.com,Education,26.97,480.08,Allowed
+2024-11-09 18:40:17,ce058,93:9F:B4:35:6C:4F,192.168.4.218,Samsung Tab A7,Tablet,VIIT-Faculty,AP-LIB-02,vpngate.net,Blocked,23.49,69.45,Blocked
+2024-11-09 18:41:05,cs010,33:25:6D:87:43:B2,192.168.6.74,HP Pavilion,Laptop,VIIT-Faculty,AP-CSE-01,instagram.com,Social Media,59.75,247.88,Allowed
+2024-11-09 18:48:21,ec007,2F:79:55:D0:F8:F6,192.168.1.44,Asus VivoBook,Laptop,VIIT-Faculty,AP-CSE-02,jiocinema.com,Streaming,92.1,452.76,Allowed
+2024-11-09 18:48:37,ee024,0A:C2:F4:03:B4:98,192.168.9.193,Realme 10 Pro,Smartphone,VIIT-Faculty,AP-GYM-01,stackoverflow.com,Education,124.58,729.63,Allowed
+2024-11-09 18:54:04,cs010,33:25:6D:87:43:B2,192.168.6.74,HP Pavilion,Laptop,VIIT-Faculty,AP-MECH-01,reddit.com,Social Media,14.42,777.86,Allowed
+2024-11-09 18:55:02,bt009,A1:85:68:A0:7A:87,192.168.5.119,Redmi Note 12,Smartphone,VIIT-Student,AP-MECH-01,wetransfer.com,Cloud Storage,148.47,86.42,Allowed
+2024-11-09 19:06:47,ch053,40:69:23:6A:6E:77,192.168.10.2,Redmi Note 12,Smartphone,VIIT-Student,AP-ECE-01,youtube.com,Streaming,37.98,400.33,Allowed
+2024-11-09 19:18:12,ce090,51:A7:A0:61:51:FF,192.168.8.227,Samsung Tab A7,Tablet,VIIT-Faculty,AP-ECE-01,primevideo.com,Streaming,785.84,133.24,Allowed
+2024-11-09 19:19:20,ec007,C2:01:C7:87:E8:92,192.168.8.41,iPhone 13,Smartphone,VIIT-Faculty,AP-CSE-02,facebook.com,Social Media,66.31,347.34,Allowed
+2024-11-09 19:20:06,cs094,99:AC:FA:99:F3:08,192.168.2.252,OnePlus Nord,Smartphone,VIIT-Student,AP-CAFE-01,coursera.org,Education,66.51,302.59,Allowed
+2024-11-09 19:21:29,ec040,1A:68:88:43:93:E0,192.168.2.9,Samsung Tab A7,Tablet,VIIT-Guest,AP-GYM-01,mail.google.com,Communication,1.11,746.21,Allowed
+2024-11-09 19:22:05,ce058,BE:42:1E:A8:3E:D2,192.168.1.249,Realme 10 Pro,Smartphone,VIIT-Faculty,AP-LIB-02,fmovies.io,Blocked,68.94,94.43,Blocked
+2024-11-09 19:31:47,ec030,8D:05:61:2B:7B:D0,192.168.4.178,iPhone 13,Smartphone,VIIT-Guest,AP-ADMIN-01,spotify.com,Streaming,40.73,757.96,Allowed
+2024-11-09 19:34:14,cs045,28:C3:7B:FE:49:76,192.168.8.67,OnePlus Nord,Smartphone,VIIT-Student,AP-GYM-01,linkedin.com,Social Media,71.98,326.11,Allowed
+2024-11-09 19:37:21,ee054,59:38:0D:43:07:B7,192.168.6.6,Acer Aspire,Laptop,VIIT-Faculty,AP-CSE-01,w3schools.com,Education,93.87,766.56,Allowed
+2024-11-09 19:41:55,cs002,00:A5:FA:09:39:B9,192.168.1.63,Redmi Note 12,Smartphone,VIIT-Guest,AP-CAFE-01,primevideo.com,Streaming,56.66,547.77,Allowed
+2024-11-09 19:42:09,ee042,A4:60:7A:C4:77:D2,192.168.8.182,Lenovo IdeaPad,Laptop,VIIT-Faculty,AP-CAFE-01,classroom.google.com,Education,133.15,723.09,Allowed
+2024-11-09 19:46:02,ec040,1A:68:88:43:93:E0,192.168.2.9,Samsung Tab A7,Tablet,VIIT-Guest,AP-CSE-01,drive.google.com,Cloud Storage,123.41,750.73,Allowed
+2024-11-09 19:48:50,bt009,78:CE:3D:7E:14:29,192.168.10.135,iPhone 13,Smartphone,VIIT-Student,AP-MECH-01,onedrive.live.com,Cloud Storage,142.88,413.96,Allowed
+2024-11-09 19:54:32,ce067,FC:ED:E5:A5:A1:4D,192.168.8.115,Samsung Galaxy A52,Smartphone,VIIT-Faculty,AP-HOSTEL-02,snapchat.com,Social Media,882.28,56.96,Allowed
+2024-11-09 19:55:09,ch037,0A:89:14:59:F0:E2,192.168.10.113,Redmi Note 12,Smartphone,VIIT-Faculty,AP-GYM-01,hotstar.com,Streaming,136.88,454.57,Allowed
+2024-11-09 19:55:59,ch081,2A:D9:28:DC:5C:96,192.168.2.85,Samsung Galaxy A52,Smartphone,VIIT-Faculty,AP-GYM-01,netflix.com,Streaming,139.97,649.52,Allowed
+2024-11-09 19:56:55,cs069,29:48:B3:9E:C8:42,192.168.2.81,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-HOSTEL-01,outlook.com,Communication,104.93,80.95,Allowed
+2024-11-09 19:57:36,me061,F9:9D:17:70:CA:1C,192.168.5.244,HP Pavilion,Laptop,VIIT-Student,AP-CSE-02,wetransfer.com,Cloud Storage,9.69,608.56,Allowed
+2024-11-09 20:00:16,cs015,CC:A9:0E:3B:85:5B,192.168.1.29,Samsung Tab A7,Tablet,VIIT-Faculty,AP-CSE-01,instagram.com,Social Media,123.34,537.67,Allowed
+2024-11-09 20:00:23,it086,B8:BC:EF:42:2C:21,192.168.8.136,Realme 10 Pro,Smartphone,VIIT-Guest,AP-MECH-01,fmovies.io,Blocked,62.23,657.23,Blocked
+2024-11-09 20:12:12,ec040,1A:68:88:43:93:E0,192.168.2.9,Samsung Tab A7,Tablet,VIIT-Guest,AP-GYM-01,onedrive.live.com,Cloud Storage,3.86,608.0,Allowed
+2024-11-09 20:14:46,ch079,66:15:A1:9E:CB:F2,192.168.4.75,Samsung Galaxy A52,Smartphone,VIIT-Student,AP-MECH-01,spotify.com,Streaming,44.59,788.28,Allowed
+2024-11-09 20:17:30,bt087,42:DD:1C:3F:4E:9B,192.168.6.241,HP Pavilion,Laptop,VIIT-Student,AP-SEMHALL-01,geeksforgeeks.org,Education,21.22,71.34,Allowed
+2024-11-09 20:23:39,ec001,EF:80:05:3A:88:AE,192.168.7.42,Lenovo IdeaPad,Laptop,VIIT-Student,AP-ADMIN-01,reddit.com,Social Media,115.59,553.78,Allowed
+2024-11-09 20:31:01,me091,17:CD:1A:63:B9:93,192.168.9.117,Asus VivoBook,Laptop,VIIT-Faculty,AP-HOSTEL-01,twitter.com,Social Media,146.81,685.73,Allowed
+2024-11-09 20:47:05,ce013,41:15:9D:BA:14:B7,192.168.2.92,HP Pavilion,Laptop,VIIT-Faculty,AP-HOSTEL-01,ktu.edu.in,Education,134.64,418.21,Allowed
+2024-11-09 20:54:49,cs015,74:72:0C:62:CC:A8,192.168.5.91,Samsung Galaxy A52,Smartphone,VIIT-Faculty,AP-HOSTEL-02,onedrive.live.com,Cloud Storage,19.54,584.42,Allowed
+2024-11-09 20:55:27,me097,CA:B0:4A:94:15:93,192.168.6.238,iPad Air,Tablet,VIIT-Guest,AP-ECE-01,meet.google.com,Communication,32.87,26.74,Allowed
+2024-11-09 21:06:08,ec099,F1:33:46:02:50:D0,192.168.8.168,Samsung Tab A7,Tablet,VIIT-Faculty,AP-ADMIN-01,coursera.org,Education,63.08,613.58,Allowed
+2024-11-09 21:08:13,ce058,BE:42:1E:A8:3E:D2,192.168.1.249,Realme 10 Pro,Smartphone,VIIT-Faculty,AP-LIB-02,stackoverflow.com,Education,49.07,586.58,Allowed
+2024-11-09 21:10:26,ce076,EA:20:38:FF:08:7B,192.168.5.111,iPad Air,Tablet,VIIT-Guest,AP-LIB-01,ktu.edu.in,Education,107.31,453.1,Allowed
+2024-11-09 21:25:12,ec050,BE:37:77:F1:0C:A7,192.168.2.164,iPad Air,Tablet,VIIT-Guest,AP-ECE-01,coursera.org,Education,80.99,359.14,Allowed
+2024-11-09 21:28:02,ec093,13:46:AA:F2:E9:4C,192.168.3.85,Lenovo Tab P11,Tablet,VIIT-Faculty,AP-HOSTEL-02,instagram.com,Social Media,87.29,32.1,Allowed
+2024-11-09 21:32:35,ee034,E6:E2:98:DB:9C:1E,192.168.2.244,Lenovo Tab P11,Tablet,VIIT-Guest,AP-CSE-02,bet365.com,Blocked,128.43,22.25,Blocked
+2024-11-09 21:44:07,ee077,5F:2B:B8:22:0A:C7,192.168.7.253,Samsung Galaxy A52,Smartphone,VIIT-Faculty,AP-CAFE-01,reddit.com,Social Media,20.9,400.76,Allowed
+2024-11-09 21:45:47,ee057,3A:6E:DC:E7:74:D3,192.168.7.108,Realme 10 Pro,Smartphone,VIIT-Student,AP-LIB-02,zoom.us,Communication,136.28,797.41,Allowed
+2024-11-09 21:59:47,ch037,0A:89:14:59:F0:E2,192.168.10.113,Redmi Note 12,Smartphone,VIIT-Faculty,AP-GYM-01,wetransfer.com,Cloud Storage,144.2,246.16,Allowed
