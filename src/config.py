@@ -80,49 +80,63 @@ STATUS_BLOCKED = "Blocked"
 
 
 # -------------------------------------------------------------
-# Alert Thresholds
+# Alert Thresholds (Defaults)
 # -------------------------------------------------------------
-# Rule-based thresholds used in alerts.py / analysis.py.
-# Administrators can tune these values for their network.
+# Baseline rule-based thresholds used in analysis.py.
+# Administrators can tune these interactively in the UI or save
+# persistent preferences to USER_SETTINGS_FILE.
 
-# Flag a user if their upload in a single session exceeds this (MB)
-ALERT_HIGH_UPLOAD_MB = 500
+DEFAULT_ALERT_HIGH_UPLOAD_MB       = 500
+DEFAULT_ALERT_MAX_DEVICES_PER_USER = 3
+DEFAULT_ALERT_BLOCKED_ATTEMPTS     = 3
+DEFAULT_ALERT_AP_MAX_USERS         = 30
 
-# Flag a user if they are connected to more than this many devices
-ALERT_MAX_DEVICES_PER_USER = 3
+# Backwards-compatible aliases
+ALERT_HIGH_UPLOAD_MB       = DEFAULT_ALERT_HIGH_UPLOAD_MB
+ALERT_MAX_DEVICES_PER_USER = DEFAULT_ALERT_MAX_DEVICES_PER_USER
+ALERT_BLOCKED_ATTEMPTS     = DEFAULT_ALERT_BLOCKED_ATTEMPTS
+ALERT_AP_MAX_USERS         = DEFAULT_ALERT_AP_MAX_USERS
 
-# Flag a user if they have attempted blocked sites more than this many times
-ALERT_BLOCKED_ATTEMPTS = 3
-
-# Flag an access point if it has more than this many users at the same time
-ALERT_AP_MAX_USERS = 30
+# Persistence file for user custom thresholds
+USER_SETTINGS_FILE = "user_settings.json"
 
 
 # -------------------------------------------------------------
-# UI Colors
+# UI Colors — Professional Dark Cyber / NOC Palette
 # -------------------------------------------------------------
-# Centralized color palette used by ui.py.
-# Change values here to restyle the entire application.
+# Deep obsidian, slate-900 surfaces, crisp white typography,
+# and high-contrast glowing neon accents.
 
-COLOR_SIDEBAR_BG      = "#1E3A5F"   # Dark navy — sidebar background
-COLOR_SIDEBAR_BTN     = "#2C4C72"   # Medium navy — nav button
-COLOR_SIDEBAR_HOVER   = "#3B628F"   # Lighter navy — nav button hover
-COLOR_SIDEBAR_ACTIVE  = "#4A7AAD"   # Active/selected nav button
+COLOR_PAGE_BG         = "#0B0F19"   # Obsidian dark — main content background
+COLOR_SIDEBAR_BG      = "#0A0D18"   # Deepest slate dark — sidebar background
+COLOR_SIDEBAR_BTN     = "#131C2E"   # Sidebar nav button background
+COLOR_SIDEBAR_HOVER   = "#1E2C48"   # Nav button hover
+COLOR_SIDEBAR_ACTIVE  = "#2563EB"   # Electric Cobalt Blue — active nav item
 
-COLOR_PAGE_BG         = "#F4F6F8"   # Light grey — main content background
-COLOR_CARD_BG         = "#FFFFFF"   # White — stat cards
-COLOR_CARD_BORDER     = "#E2E8F0"   # Light border for cards
+COLOR_CARD_BG         = "#111827"   # Dark card surface (Zinc/Slate-900)
+COLOR_CARD_BORDER     = "#1F293D"   # Subtle card outline border
+COLOR_CARD_INNER      = "#0F172A"   # Recessed container / chart background
+COLOR_INPUT_BG        = "#0B1120"   # Recessed input / spinbox background
+COLOR_INPUT_BORDER    = "#334155"   # Input field border
 
-COLOR_TEXT_PRIMARY    = "#1E293B"   # Near-black — headings
-COLOR_TEXT_SECONDARY  = "#64748B"   # Grey — subtext / labels
-COLOR_TEXT_SUCCESS    = "#16A34A"   # Green — positive status
-COLOR_TEXT_WARNING    = "#D97706"   # Amber — warning status
-COLOR_TEXT_DANGER     = "#DC2626"   # Red — alert / danger
+COLOR_TEXT_PRIMARY    = "#F8FAFC"   # Bright crisp white — headings & key values
+COLOR_TEXT_SECONDARY  = "#94A3B8"   # Slate muted gray — labels & subtext
+COLOR_TEXT_MUTED      = "#64748B"   # Dim gray — hints & notes
+COLOR_TEXT_SUCCESS    = "#34D399"   # Emerald green status
+COLOR_TEXT_WARNING    = "#FBBF24"   # Amber yellow status
+COLOR_TEXT_DANGER     = "#F87171"   # Coral red alert
 
-COLOR_ACCENT_PRIMARY  = "#1E3A5F"   # Primary accent (matches sidebar)
-COLOR_ACCENT_BLUE     = "#3B82F6"   # Bright blue — chart accent
-COLOR_ACCENT_GREEN    = "#22C55E"   # Green — upload/download
-COLOR_ACCENT_ORANGE   = "#F97316"   # Orange — warnings
+# Access Point Capacity Status Colors
+COLOR_STATUS_NORMAL   = "#10B981"   # Emerald green (< 75% load)
+COLOR_STATUS_WARNING  = "#F59E0B"   # Amber yellow (75% - 99% load)
+COLOR_STATUS_OVERLOAD = "#EF4444"   # Crimson red (>= 100% load)
+
+COLOR_ACCENT_PRIMARY  = "#2563EB"   # Cobalt Blue
+COLOR_ACCENT_HOVER    = "#1D4ED8"   # Darker Cobalt for button active/hover
+COLOR_ACCENT_BLUE     = "#38BDF8"   # Neon Cyan / Sky Blue
+COLOR_ACCENT_GREEN    = "#34D399"   # Emerald Mint
+COLOR_ACCENT_ORANGE   = "#FB923C"   # Vibrant Orange
+COLOR_ACCENT_PURPLE   = "#A78BFA"   # Purple Accent
 
 
 # -------------------------------------------------------------
@@ -130,12 +144,12 @@ COLOR_ACCENT_ORANGE   = "#F97316"   # Orange — warnings
 # -------------------------------------------------------------
 
 FONT_FAMILY   = "Segoe UI"
-FONT_HEADING  = (FONT_FAMILY, 24, "bold")
-FONT_SUBHEAD  = (FONT_FAMILY, 14, "bold")
-FONT_BODY     = (FONT_FAMILY, 11)
+FONT_HEADING  = (FONT_FAMILY, 22, "bold")
+FONT_SUBHEAD  = (FONT_FAMILY, 13, "bold")
+FONT_BODY     = (FONT_FAMILY, 10)
 FONT_SMALL    = (FONT_FAMILY, 9)
 FONT_CARD_VAL = (FONT_FAMILY, 20, "bold")
-FONT_CARD_LBL = (FONT_FAMILY, 10)
+FONT_CARD_LBL = (FONT_FAMILY, 9)
 
 
 # -------------------------------------------------------------

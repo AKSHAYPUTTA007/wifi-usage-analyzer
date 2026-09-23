@@ -13,3 +13,6 @@ env/
 .vscode/
 .idea/
 .DS_Store
+
+# Local user configurations
+user_settings.json

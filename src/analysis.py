@@ -432,20 +432,86 @@ def get_ap_utilization_over_time(df: pd.DataFrame) -> pd.DataFrame:
     return grouped.sort_values(["Hour", COL_ACCESS_POINT]).reset_index(drop=True)
 
 
-def get_most_overloaded_ap(df: pd.DataFrame) -> str:
+def get_ap_overload_status(
+    df: pd.DataFrame,
+    ap_capacities: dict = None,
+    default_capacity: int = None,
+) -> pd.DataFrame:
+    """
+    Evaluate load and overload status for each Access Point.
+
+    Parameters:
+        df: Dataset.
+        ap_capacities: Optional dict of {ap_name: capacity_int} per-AP overrides.
+        default_capacity: Optional default capacity per AP (falls back to ALERT_AP_MAX_USERS).
+
+    Returns:
+        pd.DataFrame with columns:
+            Access_Point, Peak_Users, Peak_Timestamp, Max_Capacity,
+            Utilization_Pct, Excess_Users, Status
+        Sorted descending by Utilization_Pct then Peak_Users.
+    """
+    peak_df = get_ap_peak_users(df)
+    if peak_df.empty:
+        return pd.DataFrame()
+
+    if default_capacity is None:
+        default_capacity = ALERT_AP_MAX_USERS
+
+    caps = ap_capacities if isinstance(ap_capacities, dict) else {}
+
+    result = peak_df.copy()
+    result["Max_Capacity"] = result[COL_ACCESS_POINT].apply(
+        lambda ap: int(caps.get(ap, default_capacity))
+    )
+
+    # Avoid zero division
+    result["Max_Capacity"] = result["Max_Capacity"].apply(lambda c: max(1, c))
+    result["Utilization_Pct"] = (
+        (result["Peak_Users"] / result["Max_Capacity"]) * 100
+    ).round(1)
+
+    result["Excess_Users"] = (result["Peak_Users"] - result["Max_Capacity"]).apply(
+        lambda x: max(0, int(x))
+    )
+
+    def determine_status(row):
+        if row["Peak_Users"] >= row["Max_Capacity"]:
+            return "Overloaded"
+        elif row["Utilization_Pct"] >= 75.0:
+            return "Warning"
+        return "Normal"
+
+    result["Status"] = result.apply(determine_status, axis=1)
+
+    # Sort primarily by Utilization_Pct descending, then Peak_Users descending
+    result = result.sort_values(
+        ["Utilization_Pct", "Peak_Users"], ascending=[False, False]
+    ).reset_index(drop=True)
+
+    return result
+
+
+def get_most_overloaded_ap(
+    df: pd.DataFrame,
+    ap_capacities: dict = None,
+    default_capacity: int = None,
+) -> str:
     """
     Return the name of the single most overloaded AP
-    (the one with the highest peak simultaneous users).
+    (highest utilization percentage; if tied, highest peak users).
 
     Returns:
         str: AP name, or "N/A" if data is unavailable.
     """
-    peak_df = get_ap_peak_users(df)
+    status_df = get_ap_overload_status(
+        df, ap_capacities=ap_capacities, default_capacity=default_capacity
+    )
 
-    if peak_df.empty:
+    if status_df.empty:
         return "N/A"
 
-    return peak_df.iloc[0][COL_ACCESS_POINT]
+    return status_df.iloc[0][COL_ACCESS_POINT]
 
 
 def get_least_utilized_ap(df: pd.DataFrame) -> str:
@@ -548,12 +614,15 @@ def get_blocked_sites(df: pd.DataFrame) -> pd.DataFrame:
 # SECTION 5 — Alerts
 # =============================================================
 
-def alert_high_upload(df: pd.DataFrame) -> pd.DataFrame:
+def alert_high_upload(
+    df: pd.DataFrame,
+    threshold_mb: float = None,
+) -> pd.DataFrame:
     """
     ALERT: Unusually High Upload Activity.
 
-    Flags users whose total Upload_MB across the dataset
-    exceeds ALERT_HIGH_UPLOAD_MB (defined in config.py).
+    Flags individual sessions where Upload_MB exceeds threshold_mb.
+    Defaults to ALERT_HIGH_UPLOAD_MB if threshold_mb is None.
 
     Administrator action:
         Investigate possible cloud backup, large project uploads,
@@ -561,30 +630,34 @@ def alert_high_upload(df: pd.DataFrame) -> pd.DataFrame:
 
     Returns:
         pd.DataFrame with columns:
-            Username, Total_Upload_MB, Threshold_MB
-        Sorted descending by Total_Upload_MB.
+            Username, Upload_MB, Threshold_MB
+        Sorted descending by Upload_MB.
         Empty DataFrame if no violations found.
     """
-    # Flag individual log entries (sessions) where upload > threshold.
-    # A single anomalous upload session is more meaningful than a total.
-    flagged = df[df[COL_UPLOAD_MB] > ALERT_HIGH_UPLOAD_MB][
+    if threshold_mb is None:
+        threshold_mb = ALERT_HIGH_UPLOAD_MB
+
+    flagged = df[df[COL_UPLOAD_MB] > threshold_mb][
         [COL_USERNAME, COL_UPLOAD_MB]
     ].copy()
 
     flagged = flagged.rename(columns={COL_UPLOAD_MB: "Upload_MB"})
-    flagged["Upload_MB"]   = flagged["Upload_MB"].round(2)
-    flagged["Threshold_MB"] = ALERT_HIGH_UPLOAD_MB
+    flagged["Upload_MB"]    = flagged["Upload_MB"].round(2)
+    flagged["Threshold_MB"] = float(threshold_mb)
     flagged = flagged.sort_values("Upload_MB", ascending=False)
 
     return flagged.reset_index(drop=True)
 
 
-def alert_multiple_devices(df: pd.DataFrame) -> pd.DataFrame:
+def alert_multiple_devices(
+    df: pd.DataFrame,
+    max_devices: int = None,
+) -> pd.DataFrame:
     """
     ALERT: Multiple Devices Per User.
 
-    Flags users who are connected from more than
-    ALERT_MAX_DEVICES_PER_USER unique devices (defined in config.py).
+    Flags users who are connected from max_devices or more unique devices.
+    Defaults to ALERT_MAX_DEVICES_PER_USER if max_devices is None.
 
     Requires: MAC_Address column (falls back to Device_Name).
 
@@ -598,6 +671,9 @@ def alert_multiple_devices(df: pd.DataFrame) -> pd.DataFrame:
         Sorted descending by Device_Count.
         Empty DataFrame if no violations found or column missing.
     """
+    if max_devices is None:
+        max_devices = ALERT_MAX_DEVICES_PER_USER
+
     if has_column(df, COL_MAC_ADDRESS):
         device_col = COL_MAC_ADDRESS
     elif has_column(df, COL_DEVICE_NAME):
@@ -610,21 +686,24 @@ def alert_multiple_devices(df: pd.DataFrame) -> pd.DataFrame:
     )
 
     flagged = device_counts[
-        device_counts["Device_Count"] >= ALERT_MAX_DEVICES_PER_USER
+        device_counts["Device_Count"] >= max_devices
     ].copy()
 
-    flagged["Max_Allowed"] = ALERT_MAX_DEVICES_PER_USER
+    flagged["Max_Allowed"] = int(max_devices)
     flagged = flagged.sort_values("Device_Count", ascending=False)
 
     return flagged.reset_index(drop=True)
 
 
-def alert_blocked_repeat(df: pd.DataFrame) -> pd.DataFrame:
+def alert_blocked_repeat(
+    df: pd.DataFrame,
+    max_attempts: int = None,
+) -> pd.DataFrame:
     """
     ALERT: Repeated Blocked Website Access.
 
-    Flags users who have been blocked more than
-    ALERT_BLOCKED_ATTEMPTS times (defined in config.py).
+    Flags users who have been blocked more than max_attempts times.
+    Defaults to ALERT_BLOCKED_ATTEMPTS if max_attempts is None.
 
     Requires: Status column.
 
@@ -638,6 +717,9 @@ def alert_blocked_repeat(df: pd.DataFrame) -> pd.DataFrame:
         Sorted descending by Blocked_Attempts.
         Empty DataFrame if no violations found or column missing.
     """
+    if max_attempts is None:
+        max_attempts = ALERT_BLOCKED_ATTEMPTS
+
     if not has_column(df, COL_STATUS):
         return pd.DataFrame()
 
@@ -651,21 +733,25 @@ def alert_blocked_repeat(df: pd.DataFrame) -> pd.DataFrame:
     ).agg(Blocked_Attempts=(COL_STATUS, "count"))
 
     flagged = attempt_counts[
-        attempt_counts["Blocked_Attempts"] > ALERT_BLOCKED_ATTEMPTS
+        attempt_counts["Blocked_Attempts"] > max_attempts
     ].copy()
 
-    flagged["Threshold"] = ALERT_BLOCKED_ATTEMPTS
+    flagged["Threshold"] = int(max_attempts)
     flagged = flagged.sort_values("Blocked_Attempts", ascending=False)
 
     return flagged.reset_index(drop=True)
 
 
-def alert_overloaded_ap(df: pd.DataFrame) -> pd.DataFrame:
+def alert_overloaded_ap(
+    df: pd.DataFrame,
+    ap_capacities: dict = None,
+    default_capacity: int = None,
+) -> pd.DataFrame:
     """
     ALERT: Overloaded Access Point.
 
-    Flags access points where the peak simultaneous user count
-    exceeds ALERT_AP_MAX_USERS (defined in config.py).
+    Flags access points where peak simultaneous users reached or
+    exceeded the configured capacity (either per-AP or default capacity).
 
     Requires: Access_Point, Timestamp columns.
 
@@ -675,29 +761,44 @@ def alert_overloaded_ap(df: pd.DataFrame) -> pd.DataFrame:
 
     Returns:
         pd.DataFrame with columns:
-            Access_Point, Peak_Users, Peak_Timestamp, Max_Allowed
-        Sorted descending by Peak_Users.
+            Access_Point, Peak_Users, Peak_Timestamp, Max_Allowed,
+            Utilization_Pct, Excess_Users
+        Sorted descending by Utilization_Pct then Peak_Users.
         Empty DataFrame if no violations found or columns missing.
     """
-    peak_df = get_ap_peak_users(df)
+    status_df = get_ap_overload_status(
+        df, ap_capacities=ap_capacities, default_capacity=default_capacity
+    )
 
-    if peak_df.empty:
+    if status_df.empty:
         return pd.DataFrame()
 
-    flagged = peak_df[
-        peak_df["Peak_Users"] >= ALERT_AP_MAX_USERS
-    ].copy()
+    flagged = status_df[status_df["Status"] == "Overloaded"].copy()
+    flagged = flagged.rename(columns={"Max_Capacity": "Max_Allowed"})
 
-    flagged["Max_Allowed"] = ALERT_AP_MAX_USERS
-    flagged = flagged.sort_values("Peak_Users", ascending=False)
+    cols = [
+        COL_ACCESS_POINT,
+        "Peak_Users",
+        "Peak_Timestamp",
+        "Max_Allowed",
+        "Utilization_Pct",
+        "Excess_Users",
+    ]
+    return flagged[cols].reset_index(drop=True)
 
-    return flagged.reset_index(drop=True)
 
-
-def get_all_alerts(df: pd.DataFrame) -> dict:
+def get_all_alerts(
+    df: pd.DataFrame,
+    thresholds: dict = None,
+) -> dict:
     """
     Run all four alert checks and return results together.
-    Used by the Alerts page to display all alerts at once.
+    Accepts an optional thresholds dictionary to override default values:
+        - high_upload_mb (float)
+        - max_devices_user (int)
+        - blocked_attempts (int)
+        - default_ap_capacity (int)
+        - ap_capacities (dict)
 
     Returns:
         dict with keys:
@@ -706,11 +807,22 @@ def get_all_alerts(df: pd.DataFrame) -> dict:
             blocked_repeat  (pd.DataFrame)
             overloaded_ap   (pd.DataFrame)
             total_alerts    (int) — total flagged entries across all checks
+            thresholds_used (dict) — parameters used in calculation
     """
-    high_upload    = alert_high_upload(df)
-    multi_device   = alert_multiple_devices(df)
-    blocked_repeat = alert_blocked_repeat(df)
-    overloaded_ap  = alert_overloaded_ap(df)
+    t = thresholds if isinstance(thresholds, dict) else {}
+
+    upload_mb   = t.get("high_upload_mb", ALERT_HIGH_UPLOAD_MB)
+    max_dev     = t.get("max_devices_user", ALERT_MAX_DEVICES_PER_USER)
+    blocked_att = t.get("blocked_attempts", ALERT_BLOCKED_ATTEMPTS)
+    def_ap_cap  = t.get("default_ap_capacity", ALERT_AP_MAX_USERS)
+    ap_caps     = t.get("ap_capacities", None)
+
+    high_upload    = alert_high_upload(df, threshold_mb=upload_mb)
+    multi_device   = alert_multiple_devices(df, max_devices=max_dev)
+    blocked_repeat = alert_blocked_repeat(df, max_attempts=blocked_att)
+    overloaded_ap  = alert_overloaded_ap(
+        df, ap_capacities=ap_caps, default_capacity=def_ap_cap
+    )
 
     total_alerts = (
         len(high_upload) +
@@ -720,9 +832,16 @@ def get_all_alerts(df: pd.DataFrame) -> dict:
     )
 
     return {
-        "high_upload":    high_upload,
-        "multi_device":   multi_device,
-        "blocked_repeat": blocked_repeat,
-        "overloaded_ap":  overloaded_ap,
-        "total_alerts":   total_alerts,
+        "high_upload":     high_upload,
+        "multi_device":    multi_device,
+        "blocked_repeat":  blocked_repeat,
+        "overloaded_ap":   overloaded_ap,
+        "total_alerts":    total_alerts,
+        "thresholds_used": {
+            "high_upload_mb":      upload_mb,
+            "max_devices_user":    max_dev,
+            "blocked_attempts":    blocked_att,
+            "default_ap_capacity": def_ap_cap,
+            "ap_capacities":       ap_caps or {},
+        },
     }
