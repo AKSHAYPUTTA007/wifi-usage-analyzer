@@ -978,24 +978,47 @@ class WiFiUsageAnalyzer(tk.Tk):
             sessions = hourly_df["Sessions"].tolist()
             peak_idx = sessions.index(max(sessions)) if sessions else 0
 
-            bar_colors = [
-                COLOR_STATUS_OVERLOAD if i == peak_idx else COLOR_ACCENT_BLUE
-                for i in range(24)
-            ]
+            # ── Line + filled area ────────────────────────────
+            ax.plot(
+                hours, sessions,
+                color=COLOR_ACCENT_BLUE, linewidth=2.2,
+                marker="o", markersize=4.5, markerfacecolor=COLOR_ACCENT_BLUE,
+                markeredgecolor=COLOR_CARD_BG, markeredgewidth=1.2,
+                zorder=3,
+            )
+            ax.fill_between(hours, sessions, alpha=0.18, color=COLOR_ACCENT_BLUE)
 
-            ax.bar(hours, sessions, color=bar_colors, alpha=0.88,
-                   width=0.75, edgecolor=COLOR_CARD_BG)
-            ax.set_xlabel("Hour of Day", fontsize=10, color=COLOR_TEXT_SECONDARY)
-            ax.set_ylabel("Sessions",    fontsize=10, color=COLOR_TEXT_SECONDARY)
+            # ── Highlight peak with a red dot + annotation ────
+            ax.plot(
+                hours[peak_idx], sessions[peak_idx],
+                marker="o", markersize=9,
+                color=COLOR_STATUS_OVERLOAD,
+                markeredgecolor=COLOR_CARD_BG, markeredgewidth=1.5,
+                zorder=4, label=f"Peak: {hours[peak_idx]:02d}:00  ({sessions[peak_idx]} sessions)",
+            )
+            ax.annotate(
+                f"  Peak\n  {hours[peak_idx]:02d}:00",
+                xy=(hours[peak_idx], sessions[peak_idx]),
+                xytext=(hours[peak_idx] + 0.5, sessions[peak_idx] + max(sessions) * 0.06),
+                color=COLOR_STATUS_OVERLOAD,
+                fontsize=8, fontweight="bold",
+            )
+
+            ax.set_xlabel("Hour of Day",  fontsize=10, color=COLOR_TEXT_SECONDARY)
+            ax.set_ylabel("Sessions",     fontsize=10, color=COLOR_TEXT_SECONDARY)
             ax.set_title("Network Sessions by Hour  (red = peak activity)",
                          fontsize=12, fontweight="bold",
                          color=COLOR_TEXT_PRIMARY, pad=10)
             ax.set_xticks(range(24))
+            ax.set_xlim(-0.5, 23.5)
             ax.tick_params(colors=COLOR_TEXT_SECONDARY, labelsize=8)
             ax.spines[["top", "right"]].set_visible(False)
             ax.spines["left"].set_color(COLOR_CARD_BORDER)
             ax.spines["bottom"].set_color(COLOR_CARD_BORDER)
             ax.grid(axis="y", linestyle="--", alpha=0.25, color="#334155")
+            ax.grid(axis="x", linestyle=":",  alpha=0.12, color="#334155")
+            ax.legend(fontsize=8, facecolor=COLOR_CARD_BG,
+                      labelcolor=COLOR_TEXT_PRIMARY, framealpha=0.6)
             fig.tight_layout(pad=1.5)
             self._embed_chart(cf, fig)
 
