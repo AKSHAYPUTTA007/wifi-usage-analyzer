@@ -445,7 +445,6 @@ class WiFiUsageAnalyzer(tk.Tk):
             ("🏠  Dashboard",      "Dashboard"),
             ("👤  Users",          "Users"),
             ("📡  Access Points",  "Access Points"),
-            ("🌐  Websites",       "Websites"),
             ("🔔  Alerts",         "Alerts"),
             ("📄  Reports",        "Reports"),
             ("⚙️  Settings",       "Settings"),
@@ -455,7 +454,6 @@ class WiFiUsageAnalyzer(tk.Tk):
             self.show_dashboard,
             self.show_users,
             self.show_access_points,
-            self.show_websites,
             self.show_alerts,
             self.show_reports,
             self.show_settings,
@@ -1423,108 +1421,8 @@ class WiFiUsageAnalyzer(tk.Tk):
         tk.Frame(self.content, bg=COLOR_PAGE_BG, height=30).pack()
 
     # ==========================================================
-    # PAGE 4 — WEBSITES
+    # PAGE 4 — ALERTS  (Websites page removed)
     # ==========================================================
-
-    def show_websites(self):
-        """
-        Websites page.
-
-        Displays:
-            - Browsing category distribution (pie chart)
-            - Top visited websites table
-            - Blocked access attempts table (if Status column present)
-        """
-
-        self._page_header(
-            "Websites",
-            "Browsing category analysis, top domains, and blocked access attempts"
-        )
-
-        if self.data is None:
-            self._no_data_banner()
-            return
-
-        df = self.data
-
-        # ── Category Pie Chart ─────────────────────────────────
-        cat_df = an.get_category_breakdown(df)
-
-        if cat_df.empty:
-            self._unavailable_notice("Website_Category")
-        else:
-            self._section_label("Browsing Category Breakdown")
-
-            cf = tk.Frame(
-                self.content, bg=COLOR_CARD_BG,
-                highlightbackground=COLOR_CARD_BORDER,
-                highlightthickness=1,
-            )
-            cf.pack(padx=30, pady=5, anchor="w")
-
-            fig, ax = plt.subplots(figsize=(6.5, 4.5), dpi=CHART_DPI)
-            fig.patch.set_facecolor(COLOR_CARD_BG)
-
-            labels  = cat_df["Website_Category"].tolist()
-            sizes   = cat_df["Sessions"].tolist()
-            palette = ["#3B82F6", "#22C55E", "#F97316",
-                       "#8B5CF6", "#EC4899", "#EF4444"]
-
-            wedges, texts, autotexts = ax.pie(
-                sizes, labels=labels,
-                colors=palette[:len(labels)],
-                autopct="%1.1f%%", startangle=130,
-                wedgeprops={"edgecolor": COLOR_CARD_BG, "linewidth": 2},
-                pctdistance=0.80,
-            )
-            for t in texts:
-                t.set_fontsize(9)
-                t.set_color(COLOR_TEXT_PRIMARY)
-            for at in autotexts:
-                at.set_fontsize(8)
-                at.set_color("white")
-
-            ax.set_title("Sessions by Website Category",
-                         fontsize=12, fontweight="bold",
-                         color=COLOR_TEXT_PRIMARY, pad=8)
-            fig.tight_layout(pad=1.5)
-            self._embed_chart(cf, fig)
-
-        # ── Top Websites Table ─────────────────────────────────
-        top_web = an.get_top_websites(df, n=15)
-
-        if top_web.empty:
-            self._unavailable_notice("Website")
-        else:
-            self._section_label("Top 15 Most Visited Websites")
-            cols = ["Website", "Sessions", "Download_MB"]
-            rows = [tuple(r) for _, r in top_web[cols].iterrows()]
-            tbl  = self._treeview(
-                self.content, cols, rows,
-                col_widths={"Website": 240, "Sessions": 130, "Download_MB": 150},
-                height=15,
-            )
-            tbl.pack(fill="x", padx=30, pady=5)
-
-        # ── Blocked Access Table ───────────────────────────────
-        blocked_df = an.get_blocked_sites(df)
-
-        if not blocked_df.empty:
-            self._section_label(
-                f"Blocked Access Attempts  ({len(blocked_df)} total)"
-            )
-            want = ["Username", "Website", "Website_Category", "Timestamp"]
-            avail = [c for c in want if c in blocked_df.columns]
-            rows  = [tuple(r) for _, r in blocked_df[avail].iterrows()]
-            tbl2  = self._treeview(
-                self.content, avail, rows,
-                col_widths={"Username": 150, "Website": 220,
-                            "Website_Category": 160, "Timestamp": 190},
-                height=8,
-            )
-            tbl2.pack(fill="x", padx=30, pady=5)
-
-        tk.Frame(self.content, bg=COLOR_PAGE_BG, height=30).pack()
 
     # ==========================================================
     # PAGE 5 — ALERTS
@@ -1646,22 +1544,22 @@ class WiFiUsageAnalyzer(tk.Tk):
         spin_dev.pack(side="left", padx=(5, 15))
 
         tk.Label(
-            row2, text="Blocked Attempts:",
+            row2, text="After-Hours End:",
             bg=COLOR_CARD_BG, fg=COLOR_TEXT_SECONDARY,
             font=(FONT_FAMILY, 9, "bold"), anchor="w"
         ).pack(side="left")
 
-        spin_blk = tk.Spinbox(
-            row2, from_=1, to=100, width=4, font=(FONT_FAMILY, 10),
+        spin_ah = tk.Spinbox(
+            row2, from_=0, to=23, width=4, font=(FONT_FAMILY, 10),
             bg=COLOR_INPUT_BG, fg=COLOR_TEXT_PRIMARY,
             buttonbackground=COLOR_SIDEBAR_BTN,
             insertbackground="white",
             relief="flat", highlightthickness=1,
             highlightbackground=COLOR_INPUT_BORDER
         )
-        spin_blk.delete(0, "end")
-        spin_blk.insert(0, str(self.thresholds.get("blocked_attempts", DEFAULT_ALERT_BLOCKED_ATTEMPTS)))
-        spin_blk.pack(side="left", padx=(5, 15))
+        spin_ah.delete(0, "end")
+        spin_ah.insert(0, str(self.thresholds.get("after_hours_end", 20)))
+        spin_ah.pack(side="left", padx=(5, 15))
 
         tk.Label(
             row2, text="AP Capacity:",
@@ -1683,15 +1581,15 @@ class WiFiUsageAnalyzer(tk.Tk):
 
         def apply_all_thresholds():
             try:
-                up_val = float(spin_upload.get().strip())
+                up_val  = float(spin_upload.get().strip())
                 dev_val = int(spin_dev.get().strip())
-                blk_val = int(spin_blk.get().strip())
-                ap_val = int(spin_ap.get().strip())
+                ah_val  = int(spin_ah.get().strip())
+                ap_val  = int(spin_ap.get().strip())
 
-                if up_val > 0 and dev_val > 0 and blk_val > 0 and ap_val > 0:
-                    self.thresholds["high_upload_mb"] = up_val
-                    self.thresholds["max_devices_user"] = dev_val
-                    self.thresholds["blocked_attempts"] = blk_val
+                if up_val > 0 and dev_val > 0 and ap_val > 0 and 0 <= ah_val <= 23:
+                    self.thresholds["high_upload_mb"]    = up_val
+                    self.thresholds["max_devices_user"]  = dev_val
+                    self.thresholds["after_hours_end"]   = ah_val
                     self.thresholds["default_ap_capacity"] = ap_val
                     self._save_user_settings()
                     self.show_alerts()
@@ -1723,17 +1621,17 @@ class WiFiUsageAnalyzer(tk.Tk):
         btn_reset.pack(side="left")
 
         # ── Compute Alerts dynamically ─────────────────────────
-        alerts = an.get_all_alerts(df, self.thresholds)
-        total  = alerts["total_alerts"]
+        alerts    = an.get_all_alerts(df, self.thresholds)
+        total     = alerts["total_alerts"]
 
-        up_limit = self.thresholds.get("high_upload_mb", DEFAULT_ALERT_HIGH_UPLOAD_MB)
-        dev_limit = self.thresholds.get("max_devices_user", DEFAULT_ALERT_MAX_DEVICES_PER_USER)
-        blk_limit = self.thresholds.get("blocked_attempts", DEFAULT_ALERT_BLOCKED_ATTEMPTS)
-        ap_limit = self.thresholds.get("default_ap_capacity", DEFAULT_ALERT_AP_MAX_USERS)
+        up_limit  = self.thresholds.get("high_upload_mb",     DEFAULT_ALERT_HIGH_UPLOAD_MB)
+        dev_limit = self.thresholds.get("max_devices_user",   DEFAULT_ALERT_MAX_DEVICES_PER_USER)
+        ap_limit  = self.thresholds.get("default_ap_capacity",DEFAULT_ALERT_AP_MAX_USERS)
+        ah_end    = self.thresholds.get("after_hours_end",    20)
 
         self._page_header(
             f"Alerts  —  {total} flagged entries",
-            f"Active Limits: Upload > {up_limit} MB | Devices ≥ {dev_limit} | Blocked > {blk_limit} | AP Cap ≥ {ap_limit}"
+            f"Upload > {up_limit} MB | Devices ≥ {dev_limit} | AP Cap ≥ {ap_limit} | After-Hours: 20:00–{ah_end:02d}:00"
         )
 
         # ── Disclaimer ─────────────────────────────────────────
@@ -1774,36 +1672,36 @@ class WiFiUsageAnalyzer(tk.Tk):
             title="🟠  Multiple Devices Per User",
             severity="medium",
             description=(
-                f"Users connected from {dev_limit} or more "
-                "unique devices simultaneously. Possible causes: legitimate "
-                "multi-device use or credential sharing. Verify with the user."
+                f"Users connected from {dev_limit} or more unique MAC addresses. "
+                "This may indicate credential sharing or an unauthorized device "
+                "using someone else's login. Verify with the user."
             ),
             df_alert=alerts["multi_device"],
         )
 
-        # ── Alert 3: Blocked Site Repeats ──────────────────────
-        self._alert_section(
-            title="🔴  Repeated Blocked Site Access",
-            severity="high",
-            description=(
-                f"Users who attempted to access blocked websites more than "
-                f"{blk_limit} times. May indicate intentional "
-                "policy bypass attempts. Consider issuing a policy reminder "
-                "or escalating for review."
-            ),
-            df_alert=alerts["blocked_repeat"],
-        )
-
-        # ── Alert 4: Overloaded AP ─────────────────────────────
+        # ── Alert 3: Overloaded AP ─────────────────────────────
         self._alert_section(
             title="🟠  Overloaded Access Point",
             severity="medium",
             description=(
-                f"Access points where peak simultaneous users reached or exceeded capacity "
-                f"(Default: {ap_limit} devices, plus custom AP overrides). Consider load balancing, "
-                "adding more APs, or setting connection limits per AP."
+                f"Access points where peak simultaneous connected devices reached or "
+                f"exceeded configured capacity (Default: {ap_limit} devices). "
+                "Consider load balancing or adding more APs in that zone."
             ),
             df_alert=alerts["overloaded_ap"],
+        )
+
+        # ── Alert 4: After-Hours Connections ───────────────────
+        self._alert_section(
+            title="🔵  After-Hours Network Activity",
+            severity="low",
+            description=(
+                f"Devices that connected to the network outside normal operating hours "
+                f"(flagged after {ah_end:02d}:00 and before 08:00). "
+                "Unexpected after-hours activity may indicate unauthorized access, "
+                "rogue devices, or compromised credentials being used remotely."
+            ),
+            df_alert=alerts["after_hours"],
         )
 
         tk.Frame(self.content, bg=COLOR_PAGE_BG, height=30).pack()

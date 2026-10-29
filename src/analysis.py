@@ -787,18 +787,75 @@ def alert_overloaded_ap(
     return flagged[cols].reset_index(drop=True)
 
 
+def alert_after_hours(
+    df: pd.DataFrame,
+    start_hour: int = 8,
+    end_hour: int = 20,
+) -> pd.DataFrame:
+    """
+    ALERT: After-Hours Network Connection.
+
+    Flags any connection event that occurs outside normal operating hours.
+    Default: flags connections before 08:00 or at/after 20:00.
+
+    This is a real security check — unexpected device activity late at night
+    or early morning can indicate unauthorized access, rogue devices,
+    or compromised credentials being used remotely.
+
+    Parameters:
+        df         (pd.DataFrame): Dataset with Timestamp column.
+        start_hour (int): First allowed hour (inclusive). Default 8.
+        end_hour   (int): Last allowed hour (exclusive). Default 20.
+
+    Returns:
+        pd.DataFrame with columns:
+            Username, MAC_Address (if present), Timestamp, Hour, Access_Point (if present)
+        Sorted by Timestamp.
+        Empty DataFrame if Timestamp column is missing or no violations found.
+    """
+    if not has_column(df, COL_TIMESTAMP):
+        return pd.DataFrame()
+
+    df_parsed = parse_timestamps(df)
+    flagged   = df_parsed[
+        (df_parsed["Hour"] < start_hour) | (df_parsed["Hour"] >= end_hour)
+    ].copy()
+
+    if flagged.empty:
+        return pd.DataFrame()
+
+    keep_cols = [COL_USERNAME, COL_TIMESTAMP, "Hour"]
+    if has_column(df, COL_MAC_ADDRESS):
+        keep_cols.insert(1, COL_MAC_ADDRESS)
+    if has_column(df, COL_ACCESS_POINT):
+        keep_cols.append(COL_ACCESS_POINT)
+
+    flagged = flagged[keep_cols].rename(columns={COL_TIMESTAMP: "Timestamp"})
+    flagged["Timestamp"] = flagged["Timestamp"].astype(str)
+    flagged = flagged.sort_values("Timestamp")
+
+    return flagged.reset_index(drop=True)
+
+
+def get_high_upload_alerts(df: pd.DataFrame, threshold_mb: float = None) -> pd.DataFrame:
+    """Alias kept for backward compatibility."""
+    return alert_high_upload(df, threshold_mb=threshold_mb)
+
+
 def get_all_alerts(
     df: pd.DataFrame,
     thresholds: dict = None,
 ) -> dict:
     """
-    Run all four alert checks and return results together.
+    Run all five alert checks and return results together.
     Accepts an optional thresholds dictionary to override default values:
         - high_upload_mb (float)
         - max_devices_user (int)
         - blocked_attempts (int)
         - default_ap_capacity (int)
         - ap_capacities (dict)
+        - after_hours_start (int)  — hour to start flagging (default 8)
+        - after_hours_end (int)    — hour to stop allowing (default 20)
 
     Returns:
         dict with keys:
@@ -806,16 +863,19 @@ def get_all_alerts(
             multi_device    (pd.DataFrame)
             blocked_repeat  (pd.DataFrame)
             overloaded_ap   (pd.DataFrame)
+            after_hours     (pd.DataFrame)
             total_alerts    (int) — total flagged entries across all checks
             thresholds_used (dict) — parameters used in calculation
     """
     t = thresholds if isinstance(thresholds, dict) else {}
 
-    upload_mb   = t.get("high_upload_mb", ALERT_HIGH_UPLOAD_MB)
-    max_dev     = t.get("max_devices_user", ALERT_MAX_DEVICES_PER_USER)
-    blocked_att = t.get("blocked_attempts", ALERT_BLOCKED_ATTEMPTS)
-    def_ap_cap  = t.get("default_ap_capacity", ALERT_AP_MAX_USERS)
-    ap_caps     = t.get("ap_capacities", None)
+    upload_mb    = t.get("high_upload_mb",       ALERT_HIGH_UPLOAD_MB)
+    max_dev      = t.get("max_devices_user",      ALERT_MAX_DEVICES_PER_USER)
+    blocked_att  = t.get("blocked_attempts",      ALERT_BLOCKED_ATTEMPTS)
+    def_ap_cap   = t.get("default_ap_capacity",   ALERT_AP_MAX_USERS)
+    ap_caps      = t.get("ap_capacities",         None)
+    ah_start     = int(t.get("after_hours_start", 8))
+    ah_end       = int(t.get("after_hours_end",   20))
 
     high_upload    = alert_high_upload(df, threshold_mb=upload_mb)
     multi_device   = alert_multiple_devices(df, max_devices=max_dev)
@@ -823,12 +883,14 @@ def get_all_alerts(
     overloaded_ap  = alert_overloaded_ap(
         df, ap_capacities=ap_caps, default_capacity=def_ap_cap
     )
+    after_hours    = alert_after_hours(df, start_hour=ah_start, end_hour=ah_end)
 
     total_alerts = (
         len(high_upload) +
         len(multi_device) +
         len(blocked_repeat) +
-        len(overloaded_ap)
+        len(overloaded_ap) +
+        len(after_hours)
     )
 
     return {
@@ -836,6 +898,7 @@ def get_all_alerts(
         "multi_device":    multi_device,
         "blocked_repeat":  blocked_repeat,
         "overloaded_ap":   overloaded_ap,
+        "after_hours":     after_hours,
         "total_alerts":    total_alerts,
         "thresholds_used": {
             "high_upload_mb":      upload_mb,
@@ -843,5 +906,7 @@ def get_all_alerts(
             "blocked_attempts":    blocked_att,
             "default_ap_capacity": def_ap_cap,
             "ap_capacities":       ap_caps or {},
+            "after_hours_start":   ah_start,
+            "after_hours_end":     ah_end,
         },
     }

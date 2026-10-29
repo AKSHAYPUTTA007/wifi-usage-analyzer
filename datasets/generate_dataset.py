@@ -90,38 +90,6 @@ ACCESS_POINTS = [
 SSIDS = ["VIIT-Student", "VIIT-Faculty", "VIIT-Guest"]
 
 # ---------------------------
-# Websites and Categories
-# ---------------------------
-WEBSITES = {
-    "Education": [
-        "nptel.ac.in", "coursera.org", "classroom.google.com",
-        "ktu.edu.in", "moodle.viit.ac.in", "geeksforgeeks.org",
-        "w3schools.com", "stackoverflow.com", "github.com"
-    ],
-    "Streaming": [
-        "youtube.com", "hotstar.com", "netflix.com",
-        "primevideo.com", "spotify.com", "jiocinema.com"
-    ],
-    "Social Media": [
-        "instagram.com", "twitter.com", "facebook.com",
-        "linkedin.com", "snapchat.com", "reddit.com"
-    ],
-    "Cloud Storage": [
-        "drive.google.com", "dropbox.com", "onedrive.live.com",
-        "wetransfer.com"
-    ],
-    "Communication": [
-        "mail.google.com", "outlook.com", "teams.microsoft.com",
-        "zoom.us", "meet.google.com", "whatsapp.com"
-    ],
-    "Blocked": [
-        "torrent-galaxy.to", "1337x.to", "piratebay.org",
-        "bet365.com", "pokerstar.com", "vpngate.net",
-        "pornhub.com", "fmovies.io"
-    ]
-}
-
-# ---------------------------
 # Timestamp Range (one full week, Mon–Sat, university hours)
 # ---------------------------
 START_DATE = datetime(2024, 11, 4, 8, 0, 0)   # Monday 08:00
@@ -223,12 +191,10 @@ for username in STUDENTS:
     preferred_ap   = random.choice(ACCESS_POINTS)
     preferred_ssid = random.choice(SSIDS)
 
-    # Assign anomaly role to ~15% of students
+    # Assign anomaly role to ~8% of students
     anomaly_roll = random.random()
     if anomaly_roll < 0.08:
         anomaly = "high_upload"       # Will generate >500 MB upload entries
-    elif anomaly_roll < 0.13:
-        anomaly = "blocked_repeater"  # Will repeatedly access blocked sites
     else:
         anomaly = "normal"
 
@@ -264,18 +230,7 @@ for username, profile in student_profiles.items():
 
         ssid = profile["preferred_ssid"]
 
-        # Website and category
-        if anomaly == "blocked_repeater" and random.random() < 0.55:
-            category = "Blocked"
-        else:
-            category = random.choices(
-                population=list(WEBSITES.keys()),
-                weights=[30, 20, 20, 10, 15, 5],
-                k=1
-            )[0]
-
-        website = random.choice(WEBSITES[category])
-        status  = "Blocked" if category == "Blocked" else "Allowed"
+        # Website and category — REMOVED (not in real Wi-Fi logs)
 
         # Upload / Download
         if anomaly == "high_upload" and random.random() < 0.4:
@@ -288,20 +243,24 @@ for username, profile in student_profiles.items():
         # Timestamp
         ts = random_timestamp()
 
+        # Inject after-hours entries for ~20% of high_upload anomaly sessions
+        if anomaly == "high_upload" and random.random() < 0.2:
+            # Override timestamp to a late-night hour (21:00–23:59)
+            ts = ts.replace(hour=random.randint(21, 23),
+                            minute=random.randint(0, 59),
+                            second=random.randint(0, 59))
+
         rows.append({
-            "Timestamp":        ts.strftime("%Y-%m-%d %H:%M:%S"),
-            "Username":         username,
-            "MAC_Address":      device["mac"],
-            "IP_Address":       device["ip"],
-            "Device_Name":      device["device_name"],
-            "Device_Type":      device["device_type"],
-            "SSID":             ssid,
-            "Access_Point":     ap,
-            "Website":          website,
-            "Website_Category": category,
-            "Upload_MB":        upload_mb,
-            "Download_MB":      download_mb,
-            "Status":           status,
+            "Timestamp":    ts.strftime("%Y-%m-%d %H:%M:%S"),
+            "Username":     username,
+            "MAC_Address":  device["mac"],
+            "IP_Address":   device["ip"],
+            "Device_Name":  device["device_name"],
+            "Device_Type":  device["device_type"],
+            "SSID":         ssid,
+            "Access_Point": ap,
+            "Upload_MB":    upload_mb,
+            "Download_MB":  download_mb,
         })
 
 # ------------------------------------------------------------------
@@ -319,19 +278,16 @@ for i in range(35):
     profile = student_profiles[user]
     device = random.choice(profile["devices"])
     rows.append({
-        "Timestamp":        overload_ts.strftime("%Y-%m-%d %H:%M:%S"),
-        "Username":         user,
-        "MAC_Address":      device["mac"],
-        "IP_Address":       device["ip"],
-        "Device_Name":      device["device_name"],
-        "Device_Type":      device["device_type"],
-        "SSID":             "VIIT-Student",
-        "Access_Point":     "AP-CAFE-01",
-        "Website":          "youtube.com",
-        "Website_Category": "Streaming",
-        "Upload_MB":        round(random.uniform(1, 50), 2),
-        "Download_MB":      round(random.uniform(50, 500), 2),
-        "Status":           "Allowed",
+        "Timestamp":    overload_ts.strftime("%Y-%m-%d %H:%M:%S"),
+        "Username":     user,
+        "MAC_Address":  device["mac"],
+        "IP_Address":   device["ip"],
+        "Device_Name":  device["device_name"],
+        "Device_Type":  device["device_type"],
+        "SSID":         "VIIT-Student",
+        "Access_Point": "AP-CAFE-01",
+        "Upload_MB":    round(random.uniform(1, 50), 2),
+        "Download_MB":  round(random.uniform(50, 500), 2),
     })
 
 # =============================================================
@@ -343,7 +299,7 @@ rows.sort(key=lambda r: r["Timestamp"])
 FIELDNAMES = [
     "Timestamp", "Username", "MAC_Address", "IP_Address",
     "Device_Name", "Device_Type", "SSID", "Access_Point",
-    "Website", "Website_Category", "Upload_MB", "Download_MB", "Status"
+    "Upload_MB", "Download_MB"
 ]
 
 with open(OUTPUT_FILE, "w", newline="", encoding="utf-8") as f:
@@ -358,9 +314,8 @@ print(f"Columns: {len(FIELDNAMES)}")
 print()
 print("Anomalies embedded:")
 high_upload_users = [u for u, p in student_profiles.items() if p["anomaly"] == "high_upload"]
-blocked_users     = [u for u, p in student_profiles.items() if p["anomaly"] == "blocked_repeater"]
 multi_dev_users   = [u for u, p in student_profiles.items() if len(p["devices"]) >= 3]
-print(f"  High upload users      : {len(high_upload_users)} → {high_upload_users}")
-print(f"  Blocked site repeaters : {len(blocked_users)} → {blocked_users}")
-print(f"  Multi-device users (3+): {len(multi_dev_users)} → {multi_dev_users}")
-print(f"  Overloaded AP scenario : AP-CAFE-01 at 2024-11-05 12:30:00 (35 users)")
+print(f"  High upload users       : {len(high_upload_users)} → {high_upload_users}")
+print(f"  Multi-device users (3+) : {len(multi_dev_users)} → {multi_dev_users}")
+print(f"  After-hours injected    : ~20% of high-upload sessions forced to 21:00-23:59")
+print(f"  Overloaded AP scenario  : AP-CAFE-01 at 2024-11-05 12:30:00 (35 users)")
