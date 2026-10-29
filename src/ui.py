@@ -52,6 +52,8 @@ from config import (
     USER_SETTINGS_FILE,
     DEFAULT_ALERT_HIGH_UPLOAD_MB, DEFAULT_ALERT_MAX_DEVICES_PER_USER,
     DEFAULT_ALERT_BLOCKED_ATTEMPTS, DEFAULT_ALERT_AP_MAX_USERS,
+    DEFAULT_ALERT_AFTER_HOURS_START, DEFAULT_ALERT_AFTER_HOURS_END,
+    DEFAULT_ALERT_AFTER_HOURS_ENABLED,
     ALERT_HIGH_UPLOAD_MB, ALERT_MAX_DEVICES_PER_USER,
     ALERT_BLOCKED_ATTEMPTS, ALERT_AP_MAX_USERS,
     COL_USERNAME, COL_ACCESS_POINT, COL_WEBSITE, COL_WEBSITE_CATEGORY, COL_STATUS,
@@ -147,6 +149,9 @@ class WiFiUsageAnalyzer(tk.Tk):
             "blocked_attempts": DEFAULT_ALERT_BLOCKED_ATTEMPTS,
             "default_ap_capacity": DEFAULT_ALERT_AP_MAX_USERS,
             "ap_capacities": {},
+            "after_hours_start": DEFAULT_ALERT_AFTER_HOURS_START,
+            "after_hours_end": DEFAULT_ALERT_AFTER_HOURS_END,
+            "after_hours_enabled": DEFAULT_ALERT_AFTER_HOURS_ENABLED,
         }
         self._load_user_settings()
 
@@ -155,7 +160,6 @@ class WiFiUsageAnalyzer(tk.Tk):
             "Dashboard":     self.show_dashboard,
             "Users":         self.show_users,
             "Access Points": self.show_access_points,
-            "Websites":      self.show_websites,
             "Alerts":        self.show_alerts,
             "Reports":       self.show_reports,
             "Settings":      self.show_settings,
@@ -195,6 +199,15 @@ class WiFiUsageAnalyzer(tk.Tk):
                         self.thresholds["default_ap_capacity"] = int(
                             data.get("default_ap_capacity", DEFAULT_ALERT_AP_MAX_USERS)
                         )
+                        self.thresholds["after_hours_start"] = int(
+                            data.get("after_hours_start", DEFAULT_ALERT_AFTER_HOURS_START)
+                        )
+                        self.thresholds["after_hours_end"] = int(
+                            data.get("after_hours_end", DEFAULT_ALERT_AFTER_HOURS_END)
+                        )
+                        self.thresholds["after_hours_enabled"] = bool(
+                            data.get("after_hours_enabled", DEFAULT_ALERT_AFTER_HOURS_ENABLED)
+                        )
                         caps = data.get("ap_capacities", {})
                         if isinstance(caps, dict):
                             self.thresholds["ap_capacities"] = {
@@ -220,6 +233,9 @@ class WiFiUsageAnalyzer(tk.Tk):
             "blocked_attempts": DEFAULT_ALERT_BLOCKED_ATTEMPTS,
             "default_ap_capacity": DEFAULT_ALERT_AP_MAX_USERS,
             "ap_capacities": {},
+            "after_hours_start": DEFAULT_ALERT_AFTER_HOURS_START,
+            "after_hours_end": DEFAULT_ALERT_AFTER_HOURS_END,
+            "after_hours_enabled": DEFAULT_ALERT_AFTER_HOURS_ENABLED,
         }
         self._save_user_settings()
 
@@ -1544,13 +1560,61 @@ class WiFiUsageAnalyzer(tk.Tk):
         spin_dev.pack(side="left", padx=(5, 15))
 
         tk.Label(
-            row2, text="After-Hours End:",
+            row2, text="After-Hours Alert:",
             bg=COLOR_CARD_BG, fg=COLOR_TEXT_SECONDARY,
             font=(FONT_FAMILY, 9, "bold"), anchor="w"
         ).pack(side="left")
 
+        # Toggle button: Active / Off (24/7 Office)
+        ah_enabled = bool(self.thresholds.get("after_hours_enabled", DEFAULT_ALERT_AFTER_HOURS_ENABLED))
+
+        def _toggle_after_hours():
+            new_state = not self.thresholds.get("after_hours_enabled", DEFAULT_ALERT_AFTER_HOURS_ENABLED)
+            self.thresholds["after_hours_enabled"] = new_state
+            self._save_user_settings()
+            self.show_alerts()
+
+        btn_ah_toggle = tk.Button(
+            row2,
+            text="🟢 Active" if ah_enabled else "⚪ Off (24/7)",
+            command=_toggle_after_hours,
+            bg="#166534" if ah_enabled else "#334155",
+            fg="#86EFAC" if ah_enabled else "#94A3B8",
+            activebackground="#14532D" if ah_enabled else "#475569",
+            activeforeground="white",
+            relief="flat",
+            font=(FONT_FAMILY, 9, "bold"),
+            padx=8, pady=2,
+            cursor="hand2",
+        )
+        btn_ah_toggle.pack(side="left", padx=(4, 8))
+
+        tk.Label(
+            row2, text="Start:",
+            bg=COLOR_CARD_BG, fg=COLOR_TEXT_SECONDARY,
+            font=(FONT_FAMILY, 9), anchor="w"
+        ).pack(side="left")
+
+        spin_ah_start = tk.Spinbox(
+            row2, from_=0, to=23, width=3, font=(FONT_FAMILY, 10),
+            bg=COLOR_INPUT_BG, fg=COLOR_TEXT_PRIMARY,
+            buttonbackground=COLOR_SIDEBAR_BTN,
+            insertbackground="white",
+            relief="flat", highlightthickness=1,
+            highlightbackground=COLOR_INPUT_BORDER
+        )
+        spin_ah_start.delete(0, "end")
+        spin_ah_start.insert(0, str(self.thresholds.get("after_hours_start", DEFAULT_ALERT_AFTER_HOURS_START)))
+        spin_ah_start.pack(side="left", padx=(3, 0))
+
+        tk.Label(
+            row2, text=":00  End:",
+            bg=COLOR_CARD_BG, fg=COLOR_TEXT_SECONDARY,
+            font=(FONT_FAMILY, 9), anchor="w"
+        ).pack(side="left", padx=(2, 0))
+
         spin_ah = tk.Spinbox(
-            row2, from_=0, to=23, width=4, font=(FONT_FAMILY, 10),
+            row2, from_=0, to=23, width=3, font=(FONT_FAMILY, 10),
             bg=COLOR_INPUT_BG, fg=COLOR_TEXT_PRIMARY,
             buttonbackground=COLOR_SIDEBAR_BTN,
             insertbackground="white",
@@ -1558,8 +1622,14 @@ class WiFiUsageAnalyzer(tk.Tk):
             highlightbackground=COLOR_INPUT_BORDER
         )
         spin_ah.delete(0, "end")
-        spin_ah.insert(0, str(self.thresholds.get("after_hours_end", 20)))
-        spin_ah.pack(side="left", padx=(5, 15))
+        spin_ah.insert(0, str(self.thresholds.get("after_hours_end", DEFAULT_ALERT_AFTER_HOURS_END)))
+        spin_ah.pack(side="left", padx=(3, 0))
+
+        tk.Label(
+            row2, text=":00",
+            bg=COLOR_CARD_BG, fg=COLOR_TEXT_SECONDARY,
+            font=(FONT_FAMILY, 9)
+        ).pack(side="left", padx=(0, 14))
 
         tk.Label(
             row2, text="AP Capacity:",
@@ -1581,15 +1651,17 @@ class WiFiUsageAnalyzer(tk.Tk):
 
         def apply_all_thresholds():
             try:
-                up_val  = float(spin_upload.get().strip())
-                dev_val = int(spin_dev.get().strip())
-                ah_val  = int(spin_ah.get().strip())
-                ap_val  = int(spin_ap.get().strip())
+                up_val       = float(spin_upload.get().strip())
+                dev_val      = int(spin_dev.get().strip())
+                ah_start_val = int(spin_ah_start.get().strip())
+                ah_end_val   = int(spin_ah.get().strip())
+                ap_val       = int(spin_ap.get().strip())
 
-                if up_val > 0 and dev_val > 0 and ap_val > 0 and 0 <= ah_val <= 23:
-                    self.thresholds["high_upload_mb"]    = up_val
-                    self.thresholds["max_devices_user"]  = dev_val
-                    self.thresholds["after_hours_end"]   = ah_val
+                if up_val > 0 and dev_val > 0 and ap_val > 0 and 0 <= ah_start_val <= 23 and 0 <= ah_end_val <= 23:
+                    self.thresholds["high_upload_mb"]      = up_val
+                    self.thresholds["max_devices_user"]    = dev_val
+                    self.thresholds["after_hours_start"]   = ah_start_val
+                    self.thresholds["after_hours_end"]     = ah_end_val
                     self.thresholds["default_ap_capacity"] = ap_val
                     self._save_user_settings()
                     self.show_alerts()
@@ -1624,14 +1696,18 @@ class WiFiUsageAnalyzer(tk.Tk):
         alerts    = an.get_all_alerts(df, self.thresholds)
         total     = alerts["total_alerts"]
 
-        up_limit  = self.thresholds.get("high_upload_mb",     DEFAULT_ALERT_HIGH_UPLOAD_MB)
-        dev_limit = self.thresholds.get("max_devices_user",   DEFAULT_ALERT_MAX_DEVICES_PER_USER)
-        ap_limit  = self.thresholds.get("default_ap_capacity",DEFAULT_ALERT_AP_MAX_USERS)
-        ah_end    = self.thresholds.get("after_hours_end",    20)
+        up_limit  = self.thresholds.get("high_upload_mb",      DEFAULT_ALERT_HIGH_UPLOAD_MB)
+        dev_limit = self.thresholds.get("max_devices_user",    DEFAULT_ALERT_MAX_DEVICES_PER_USER)
+        ap_limit  = self.thresholds.get("default_ap_capacity", DEFAULT_ALERT_AP_MAX_USERS)
+        ah_start  = self.thresholds.get("after_hours_start",   DEFAULT_ALERT_AFTER_HOURS_START)
+        ah_end    = self.thresholds.get("after_hours_end",     DEFAULT_ALERT_AFTER_HOURS_END)
+        ah_on     = bool(self.thresholds.get("after_hours_enabled", DEFAULT_ALERT_AFTER_HOURS_ENABLED))
+
+        ah_status_str = f"{ah_start:02d}:00–{ah_end:02d}:00" if ah_on else "OFF (24/7 Office)"
 
         self._page_header(
             f"Alerts  —  {total} flagged entries",
-            f"Upload > {up_limit} MB | Devices ≥ {dev_limit} | AP Cap ≥ {ap_limit} | After-Hours: 20:00–{ah_end:02d}:00"
+            f"Upload > {up_limit} MB | Devices ≥ {dev_limit} | AP Cap ≥ {ap_limit} | After-Hours: {ah_status_str}"
         )
 
         # ── Disclaimer ─────────────────────────────────────────
@@ -1692,17 +1768,36 @@ class WiFiUsageAnalyzer(tk.Tk):
         )
 
         # ── Alert 4: After-Hours Connections ───────────────────
-        self._alert_section(
-            title="🔵  After-Hours Network Activity",
-            severity="low",
-            description=(
-                f"Devices that connected to the network outside normal operating hours "
-                f"(flagged after {ah_end:02d}:00 and before 08:00). "
-                "Unexpected after-hours activity may indicate unauthorized access, "
-                "rogue devices, or compromised credentials being used remotely."
-            ),
-            df_alert=alerts["after_hours"],
-        )
+        if not ah_on:
+            # Show a greyed-out disabled card instead of results
+            self._section_label("🔵  After-Hours Network Activity")
+            disabled_frame = tk.Frame(
+                self.content, bg=COLOR_CARD_BG,
+                highlightbackground=COLOR_CARD_BORDER,
+                highlightthickness=1,
+            )
+            disabled_frame.pack(fill="x", padx=30, pady=5)
+            tk.Label(
+                disabled_frame,
+                text="⏸️   After-Hours Monitoring is DISABLED (24/7 Office Mode Active).\n"
+                     "     All-hours network activity is permitted without flagging after-hours alerts.\n"
+                     "     To re-enable monitoring, click 'Off (24/7)' in the tuning controls above.",
+                bg=COLOR_CARD_BG, fg=COLOR_TEXT_SECONDARY,
+                font=(FONT_FAMILY, 10, "italic"),
+                padx=16, pady=14, justify="left", anchor="w",
+            ).pack(anchor="w")
+        else:
+            self._alert_section(
+                title="🔵  After-Hours Network Activity",
+                severity="low",
+                description=(
+                    f"Devices that connected outside the defined operating hours "
+                    f"(connections before {ah_start:02d}:00 or at/after {ah_end:02d}:00 are flagged). "
+                    "Unexpected after-hours activity may indicate unauthorized access, "
+                    "rogue devices, or compromised credentials being used remotely."
+                ),
+                df_alert=alerts["after_hours"],
+            )
 
         tk.Frame(self.content, bg=COLOR_PAGE_BG, height=30).pack()
 
@@ -1740,10 +1835,13 @@ class WiFiUsageAnalyzer(tk.Tk):
         )
         fname   = get_filename(self.file_path) if self.file_path else "Unknown"
 
-        up_lim  = self.thresholds.get("high_upload_mb", DEFAULT_ALERT_HIGH_UPLOAD_MB)
-        dev_lim = self.thresholds.get("max_devices_user", DEFAULT_ALERT_MAX_DEVICES_PER_USER)
-        blk_lim = self.thresholds.get("blocked_attempts", DEFAULT_ALERT_BLOCKED_ATTEMPTS)
-        ap_lim  = self.thresholds.get("default_ap_capacity", DEFAULT_ALERT_AP_MAX_USERS)
+        up_lim   = self.thresholds.get("high_upload_mb", DEFAULT_ALERT_HIGH_UPLOAD_MB)
+        dev_lim  = self.thresholds.get("max_devices_user", DEFAULT_ALERT_MAX_DEVICES_PER_USER)
+        blk_lim  = self.thresholds.get("blocked_attempts", DEFAULT_ALERT_BLOCKED_ATTEMPTS)
+        ap_lim   = self.thresholds.get("default_ap_capacity", DEFAULT_ALERT_AP_MAX_USERS)
+        ah_start = self.thresholds.get("after_hours_start", DEFAULT_ALERT_AFTER_HOURS_START)
+        ah_end   = self.thresholds.get("after_hours_end", DEFAULT_ALERT_AFTER_HOURS_END)
+        ah_on    = bool(self.thresholds.get("after_hours_enabled", DEFAULT_ALERT_AFTER_HOURS_ENABLED))
 
         # ── Build report text ──────────────────────────────────
         W = 68
@@ -1773,6 +1871,7 @@ class WiFiUsageAnalyzer(tk.Tk):
             f"  Max Devices Per User  : >= {dev_lim} devices",
             f"  Blocked Site Tolerance: > {blk_lim} attempts",
             f"  Default AP Max Devices: >= {ap_lim} concurrent devices",
+            f"  After-Hours Window    : {f'{ah_start:02d}:00–{ah_end:02d}:00 (Active)' if ah_on else 'Disabled (24/7 Operations)'}",
             f"  Custom AP Capacities  : {len(self.thresholds.get('ap_capacities', {}))} AP(s) customized",
             "",
             sep,
@@ -1805,6 +1904,7 @@ class WiFiUsageAnalyzer(tk.Tk):
             f"  Multi-Device Alerts       : {len(alerts['multi_device'])} user(s)",
             f"  Blocked Site Alerts       : {len(alerts['blocked_repeat'])} user(s)",
             f"  Overloaded AP Alerts      : {len(alerts['overloaded_ap'])} AP(s)",
+            f"  After-Hours Alerts        : {len(alerts['after_hours']) if ah_on else 0} session(s) {'(Monitoring Disabled / 24/7 Office)' if not ah_on else ''}",
             f"  Total Flagged Anomalies   : {alerts['total_alerts']}",
             "",
             sep, "  DISCLAIMER", sep,
@@ -1969,6 +2069,74 @@ class WiFiUsageAnalyzer(tk.Tk):
             bg=COLOR_CARD_BG, fg=COLOR_TEXT_SECONDARY, font=(FONT_FAMILY, 9)
         ).pack(side="left", padx=10)
 
+        # After-Hours Monitoring Toggle (24/7 Office setting)
+        r_ah_toggle = tk.Frame(th_frame, bg=COLOR_CARD_BG)
+        r_ah_toggle.pack(fill="x", pady=6)
+        tk.Label(
+            r_ah_toggle, text="After-Hours Monitoring:",
+            bg=COLOR_CARD_BG, fg=COLOR_TEXT_PRIMARY,
+            font=(FONT_FAMILY, 10, "bold"), width=32, anchor="w"
+        ).pack(side="left")
+
+        var_ah_enabled = tk.BooleanVar(
+            value=bool(self.thresholds.get("after_hours_enabled", DEFAULT_ALERT_AFTER_HOURS_ENABLED))
+        )
+        chk_ah = tk.Checkbutton(
+            r_ah_toggle, text="Enable After-Hours Threat Alert (Uncheck for 24/7 Offices)",
+            variable=var_ah_enabled,
+            bg=COLOR_CARD_BG, fg=COLOR_TEXT_PRIMARY,
+            selectcolor=COLOR_INPUT_BG,
+            activebackground=COLOR_CARD_BG, activeforeground="white",
+            font=(FONT_FAMILY, 10), cursor="hand2"
+        )
+        chk_ah.pack(side="left", padx=5)
+
+        # Operating Shift / Normal Business Hours
+        r_ah_hours = tk.Frame(th_frame, bg=COLOR_CARD_BG)
+        r_ah_hours.pack(fill="x", pady=6)
+        tk.Label(
+            r_ah_hours, text="Operating Hours (Shift Window):",
+            bg=COLOR_CARD_BG, fg=COLOR_TEXT_PRIMARY,
+            font=(FONT_FAMILY, 10, "bold"), width=32, anchor="w"
+        ).pack(side="left")
+
+        tk.Label(
+            r_ah_hours, text="Start:", bg=COLOR_CARD_BG, fg=COLOR_TEXT_SECONDARY,
+            font=(FONT_FAMILY, 9)
+        ).pack(side="left", padx=(5, 2))
+        spin_ah_start = tk.Spinbox(
+            r_ah_hours, from_=0, to=23, width=4, font=(FONT_FAMILY, 10),
+            bg=COLOR_INPUT_BG, fg=COLOR_TEXT_PRIMARY,
+            buttonbackground=COLOR_SIDEBAR_BTN,
+            insertbackground="white",
+            relief="flat", highlightthickness=1,
+            highlightbackground=COLOR_INPUT_BORDER
+        )
+        spin_ah_start.delete(0, "end")
+        spin_ah_start.insert(0, str(self.thresholds.get("after_hours_start", DEFAULT_ALERT_AFTER_HOURS_START)))
+        spin_ah_start.pack(side="left")
+
+        tk.Label(
+            r_ah_hours, text=":00  to  End:", bg=COLOR_CARD_BG, fg=COLOR_TEXT_SECONDARY,
+            font=(FONT_FAMILY, 9)
+        ).pack(side="left", padx=(2, 2))
+        spin_ah_end = tk.Spinbox(
+            r_ah_hours, from_=0, to=23, width=4, font=(FONT_FAMILY, 10),
+            bg=COLOR_INPUT_BG, fg=COLOR_TEXT_PRIMARY,
+            buttonbackground=COLOR_SIDEBAR_BTN,
+            insertbackground="white",
+            relief="flat", highlightthickness=1,
+            highlightbackground=COLOR_INPUT_BORDER
+        )
+        spin_ah_end.delete(0, "end")
+        spin_ah_end.insert(0, str(self.thresholds.get("after_hours_end", DEFAULT_ALERT_AFTER_HOURS_END)))
+        spin_ah_end.pack(side="left")
+
+        tk.Label(
+            r_ah_hours, text=":00   (Connections outside this window are flagged as anomalies)",
+            bg=COLOR_CARD_BG, fg=COLOR_TEXT_SECONDARY, font=(FONT_FAMILY, 9)
+        ).pack(side="left", padx=6)
+
         # Custom AP Limits Section
         r5 = tk.Frame(th_frame, bg=COLOR_CARD_BG)
         r5.pack(fill="x", pady=10)
@@ -2010,18 +2178,26 @@ class WiFiUsageAnalyzer(tk.Tk):
 
         def save_settings_action():
             try:
-                up_v  = float(spin_up.get().strip())
-                ap_v  = int(spin_ap.get().strip())
-                dev_v = int(spin_dev.get().strip())
-                blk_v = int(spin_blk.get().strip())
+                up_v       = float(spin_up.get().strip())
+                ap_v       = int(spin_ap.get().strip())
+                dev_v      = int(spin_dev.get().strip())
+                blk_v      = int(spin_blk.get().strip())
+                ah_start_v = int(spin_ah_start.get().strip())
+                ah_end_v   = int(spin_ah_end.get().strip())
+                ah_on_v    = bool(var_ah_enabled.get())
 
                 if up_v <= 0 or ap_v <= 0 or dev_v <= 0 or blk_v <= 0:
                     raise ValueError()
+                if not (0 <= ah_start_v <= 23 and 0 <= ah_end_v <= 23):
+                    raise ValueError()
 
-                self.thresholds["high_upload_mb"] = up_v
+                self.thresholds["high_upload_mb"]      = up_v
                 self.thresholds["default_ap_capacity"] = ap_v
-                self.thresholds["max_devices_user"] = dev_v
-                self.thresholds["blocked_attempts"] = blk_v
+                self.thresholds["max_devices_user"]    = dev_v
+                self.thresholds["blocked_attempts"]    = blk_v
+                self.thresholds["after_hours_start"]   = ah_start_v
+                self.thresholds["after_hours_end"]     = ah_end_v
+                self.thresholds["after_hours_enabled"] = ah_on_v
                 self._save_user_settings()
 
                 lbl_feedback.config(
@@ -2030,7 +2206,7 @@ class WiFiUsageAnalyzer(tk.Tk):
                 )
             except ValueError:
                 lbl_feedback.config(
-                    text="❌ Please enter valid positive numbers for all fields.",
+                    text="❌ Please enter valid values (positive numbers, hours 0–23).",
                     fg=COLOR_TEXT_DANGER
                 )
 

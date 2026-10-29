@@ -34,6 +34,9 @@ from config import (
     ALERT_MAX_DEVICES_PER_USER,
     ALERT_BLOCKED_ATTEMPTS,
     ALERT_AP_MAX_USERS,
+    ALERT_AFTER_HOURS_START,
+    ALERT_AFTER_HOURS_END,
+    ALERT_AFTER_HOURS_ENABLED,
 )
 
 
@@ -817,9 +820,17 @@ def alert_after_hours(
         return pd.DataFrame()
 
     df_parsed = parse_timestamps(df)
-    flagged   = df_parsed[
-        (df_parsed["Hour"] < start_hour) | (df_parsed["Hour"] >= end_hour)
-    ].copy()
+    if start_hour < end_hour:
+        flagged = df_parsed[
+            (df_parsed["Hour"] < start_hour) | (df_parsed["Hour"] >= end_hour)
+        ].copy()
+    elif start_hour > end_hour:
+        flagged = df_parsed[
+            (df_parsed["Hour"] >= end_hour) & (df_parsed["Hour"] < start_hour)
+        ].copy()
+    else:
+        # start_hour == end_hour represents 24/7 operating hours
+        return pd.DataFrame()
 
     if flagged.empty:
         return pd.DataFrame()
@@ -847,15 +858,16 @@ def get_all_alerts(
     thresholds: dict = None,
 ) -> dict:
     """
-    Run all five alert checks and return results together.
+    Run all alert checks and return results together.
     Accepts an optional thresholds dictionary to override default values:
         - high_upload_mb (float)
         - max_devices_user (int)
         - blocked_attempts (int)
         - default_ap_capacity (int)
         - ap_capacities (dict)
-        - after_hours_start (int)  — hour to start flagging (default 8)
-        - after_hours_end (int)    — hour to stop allowing (default 20)
+        - after_hours_start (int)    — hour normal shift begins (default 8)
+        - after_hours_end (int)      — hour normal shift ends (default 20)
+        - after_hours_enabled (bool) — toggle after-hours check (False for 24/7 offices)
 
     Returns:
         dict with keys:
@@ -869,13 +881,14 @@ def get_all_alerts(
     """
     t = thresholds if isinstance(thresholds, dict) else {}
 
-    upload_mb    = t.get("high_upload_mb",       ALERT_HIGH_UPLOAD_MB)
-    max_dev      = t.get("max_devices_user",      ALERT_MAX_DEVICES_PER_USER)
-    blocked_att  = t.get("blocked_attempts",      ALERT_BLOCKED_ATTEMPTS)
-    def_ap_cap   = t.get("default_ap_capacity",   ALERT_AP_MAX_USERS)
-    ap_caps      = t.get("ap_capacities",         None)
-    ah_start     = int(t.get("after_hours_start", 8))
-    ah_end       = int(t.get("after_hours_end",   20))
+    upload_mb    = t.get("high_upload_mb",         ALERT_HIGH_UPLOAD_MB)
+    max_dev      = t.get("max_devices_user",        ALERT_MAX_DEVICES_PER_USER)
+    blocked_att  = t.get("blocked_attempts",        ALERT_BLOCKED_ATTEMPTS)
+    def_ap_cap   = t.get("default_ap_capacity",     ALERT_AP_MAX_USERS)
+    ap_caps      = t.get("ap_capacities",           None)
+    ah_start     = int(t.get("after_hours_start",   ALERT_AFTER_HOURS_START))
+    ah_end       = int(t.get("after_hours_end",     ALERT_AFTER_HOURS_END))
+    ah_enabled   = bool(t.get("after_hours_enabled", ALERT_AFTER_HOURS_ENABLED))
 
     high_upload    = alert_high_upload(df, threshold_mb=upload_mb)
     multi_device   = alert_multiple_devices(df, max_devices=max_dev)
@@ -883,7 +896,11 @@ def get_all_alerts(
     overloaded_ap  = alert_overloaded_ap(
         df, ap_capacities=ap_caps, default_capacity=def_ap_cap
     )
-    after_hours    = alert_after_hours(df, start_hour=ah_start, end_hour=ah_end)
+    after_hours    = (
+        alert_after_hours(df, start_hour=ah_start, end_hour=ah_end)
+        if ah_enabled
+        else pd.DataFrame()
+    )
 
     total_alerts = (
         len(high_upload) +
@@ -908,5 +925,6 @@ def get_all_alerts(
             "ap_capacities":       ap_caps or {},
             "after_hours_start":   ah_start,
             "after_hours_end":     ah_end,
+            "after_hours_enabled": ah_enabled,
         },
     }
