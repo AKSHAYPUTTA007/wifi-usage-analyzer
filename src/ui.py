@@ -988,25 +988,18 @@ class WiFiUsageAnalyzer(tk.Tk):
             )
             ax.fill_between(hours, sessions, alpha=0.18, color=COLOR_ACCENT_BLUE)
 
-            # ── Highlight peak with a red dot + annotation ────
+            # ── Highlight peak with a red dot only ────────────
             ax.plot(
                 hours[peak_idx], sessions[peak_idx],
                 marker="o", markersize=9,
                 color=COLOR_STATUS_OVERLOAD,
                 markeredgecolor=COLOR_CARD_BG, markeredgewidth=1.5,
-                zorder=4, label=f"Peak: {hours[peak_idx]:02d}:00  ({sessions[peak_idx]} sessions)",
-            )
-            ax.annotate(
-                f"  Peak\n  {hours[peak_idx]:02d}:00",
-                xy=(hours[peak_idx], sessions[peak_idx]),
-                xytext=(hours[peak_idx] + 0.5, sessions[peak_idx] + max(sessions) * 0.06),
-                color=COLOR_STATUS_OVERLOAD,
-                fontsize=8, fontweight="bold",
+                zorder=4,
             )
 
             ax.set_xlabel("Hour of Day",  fontsize=10, color=COLOR_TEXT_SECONDARY)
             ax.set_ylabel("Sessions",     fontsize=10, color=COLOR_TEXT_SECONDARY)
-            ax.set_title("Network Sessions by Hour  (red = peak activity)",
+            ax.set_title("Network Sessions by Hour",
                          fontsize=12, fontweight="bold",
                          color=COLOR_TEXT_PRIMARY, pad=10)
             ax.set_xticks(range(24))
@@ -1017,8 +1010,6 @@ class WiFiUsageAnalyzer(tk.Tk):
             ax.spines["bottom"].set_color(COLOR_CARD_BORDER)
             ax.grid(axis="y", linestyle="--", alpha=0.25, color="#334155")
             ax.grid(axis="x", linestyle=":",  alpha=0.12, color="#334155")
-            ax.legend(fontsize=8, facecolor=COLOR_CARD_BG,
-                      labelcolor=COLOR_TEXT_PRIMARY, framealpha=0.6)
             fig.tight_layout(pad=1.5)
             self._embed_chart(cf, fig)
 
